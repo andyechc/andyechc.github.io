@@ -1,23 +1,25 @@
 # 👺 Me:
 # Hola, soy Andy👾
-Soy un **Desarrollador Junior** enfocado en el desarrollo web y aplicaciones multiplataforma. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes.
+Soy un **Desarrollador Junior** enfocado en el desarrollo web y aplicaciones multiplataforma. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes. Actualmente me encuentro especializándome en el desarrollo en React ⚛
 
-## 🌐 Desarrollo Web
+## 🌐Desarrollo Web
+Me especializo en el desarrollo web utilizando tecnologías para el **Front-end**
 
-Me especializo en el desarrollo web utilizando tecnologías de vanguardia para el **Front-end**
+**basics**
+- ![HTML5](https://img.shields.io/badge/html5-F13300.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-0022aa.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-`basics`
-- HTML5
-- CSS
-- JavaScript
-
-`frameworks`
-- React
-- Bootstrap
+**frameworks**
+- ![Bootstrap](https://img.shields.io/badge/bootstrap-aa00aa.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+- ![React](https://img.shields.io/badge/react-000533.svg?style=for-the-badge&logo=react&logoColor=1BCAE9) (actualmente aprendiendo)
+- ![Django](https://img.shields.io/badge/Django-227722?style=for-the-badge&logo=django&logoColor=ffdd54) (conocimiento muy abstracto)
 
 ## 🐍 Desarrollo con Python
 
-Utilizo Python para desarrollar aplicaciones multiplataforma, aprovechando librerías como **KivyMD** y **CustomTkinter** para crear interfaces de usuario modernas y funcionales.
+![Python](https://img.shields.io/badge/python-2270Aa?style=for-the-badge&logo=python&logoColor=ffdd54) 
+
+Utilizo Python para desarrollar aplicaciones multiplataforma, aprovechando librerías como ![KivyMD](https://img.shields.io/badge/kivymd-white?style=for-the-badge&logo=kivymd&logoColor=black) y ![CustomTkinter](https://img.shields.io/badge/customtkinter-2270Aa?style=for-the-badge&logo=customtkinter&logoColor=ffdd54) para crear interfaces de usuario modernas y funcionales.
 
 ## ✍️ Frases interesantes sobre tecnología y descubrimiento
 
@@ -28,9 +30,6 @@ Utilizo Python para desarrollar aplicaciones multiplataforma, aprovechando libre
 
 ##  ☕ Social Media:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/andy05.2.2) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/4nd1) 
-
-# 💻 Tech Stack:
-![CSS3](https://img.shields.io/badge/css3-0022aa.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-aa00aa.svg?style=for-the-badge&logo=bootstrap&logoColor=white)![HTML5](https://img.shields.io/badge/html5-F13300.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-000533.svg?style=for-the-badge&logo=react&logoColor=1BCAE9) ![Python](https://img.shields.io/badge/python-2270Aa?style=for-the-badge&logo=python&logoColor=ffdd54) ![Django](https://img.shields.io/badge/Django-227722?style=for-the-badge&logo=django&logoColor=ffdd54) 
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=4nd1-dev&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
