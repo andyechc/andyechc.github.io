@@ -1,6 +1,6 @@
 # 👺 Me:
 # Hola, soy Andy👾
-Soy un **Desarrollador Junior** enfocado en el desarrollo web y aplicaciones multiplataforma. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes. Actualmente me encuentro especializándome en el desarrollo en React ⚛
+Soy un **Desarrollador** enfocado en el desarrollo web y aplicaciones multiplataforma. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes. Actualmente me encuentro especializándome en el desarrollo en React ⚛
 
 ## 🌐Desarrollo Web
 Me especializo en el desarrollo web utilizando tecnologías para el **Front-end**
