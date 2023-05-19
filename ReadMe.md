@@ -1,6 +1,6 @@
-# 👺 Me:
-# Hola, soy Andy👾
-Soy un **Desarrollador** enfocado en el desarrollo web y aplicaciones multiplataforma. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes. Actualmente me encuentro especializándome en el desarrollo en React ⚛
+# 🤺 Me:
+# Hola, soy Andy🧑🏻
+Soy un **Desarrollador Junior** enfocado en el *desarrollo web Front-End* y *aplicaciones multiplataforma*. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes. Actualmente me encuentro especializándome en el desarrollo en React ⚛
 
 ## 🌐Desarrollo Web
 Me especializo en el desarrollo web utilizando tecnologías para el **Front-end**
@@ -12,8 +12,8 @@ Me especializo en el desarrollo web utilizando tecnologías para el **Front-end*
 
 **frameworks**
 - ![Bootstrap](https://img.shields.io/badge/bootstrap-aa00aa.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-- ![React](https://img.shields.io/badge/react-000533.svg?style=for-the-badge&logo=react&logoColor=1BCAE9) (actualmente aprendiendo)
-- ![Django](https://img.shields.io/badge/Django-227722?style=for-the-badge&logo=django&logoColor=ffdd54) (conocimiento muy abstracto)
+- ![React](https://img.shields.io/badge/react-000533.svg?style=for-the-badge&logo=react&logoColor=1BCAE9)
+- ![Django](https://img.shields.io/badge/Django-227722?style=for-the-badge&logo=django&logoColor=ffdd54) 
 
 ## 🐍 Desarrollo con Python
 
