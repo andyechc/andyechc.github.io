@@ -1,7 +1,8 @@
 # 🤺 Me:
 
-![imagen de avatar](Lumii_20230519_183015512.jpg)
+<img style="border-radius:100%" src="Lumii_20230519_183015512.jpg">
 
+  
 # Hola, soy Andy🧑🏻
 Soy un **Desarrollador Junior** enfocado en el *desarrollo web Front-End* y *aplicaciones multiplataforma*. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes. Actualmente me encuentro especializándome en el desarrollo en React ⚛
 
