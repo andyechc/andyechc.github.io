@@ -1,6 +1,6 @@
 # 🤺 Me:
 
-<img style="border-radius:100%" src="Lumii_20230519_183015512.jpg">
+<img src="Lumii_20230519_183015512.jpg">
 
   
 # Hola, soy Andy🧑🏻
@@ -17,13 +17,12 @@ Me especializo en el desarrollo web utilizando tecnologías para el **Front-end*
 **frameworks**
 - ![Bootstrap](https://img.shields.io/badge/bootstrap-aa00aa.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 - ![React](https://img.shields.io/badge/react-000533.svg?style=for-the-badge&logo=react&logoColor=1BCAE9)
-- ![Django](https://img.shields.io/badge/Django-227722?style=for-the-badge&logo=django&logoColor=ffdd54) 
 
 ## 🐍 Desarrollo con Python
 
 ![Python](https://img.shields.io/badge/python-2270Aa?style=for-the-badge&logo=python&logoColor=ffdd54) 
 
-Utilizo Python para desarrollar aplicaciones multiplataforma, aprovechando librerías como ![KivyMD](https://img.shields.io/badge/kivymd-white?style=for-the-badge&logo=kivymd&logoColor=black) y ![CustomTkinter](https://img.shields.io/badge/customtkinter-2270Aa?style=for-the-badge&logo=customtkinter&logoColor=ffdd54) para crear interfaces de usuario modernas y funcionales.
+Utilizo `Python` para desarrollar aplicaciones de escritorio con ![CustomTkinter](https://img.shields.io/badge/customtkinter-2270Aa?style=for-the-badge&logo=customtkinter&logoColor=ffdd54) creando interfaces de usuario modernas y funcionales.
 
 ## ✍️ Frases interesantes sobre tecnología y descubrimiento
 
@@ -43,5 +42,3 @@ Utilizo Python para desarrollar aplicaciones multiplataforma, aprovechando libre
 
 ---
 [![](https://visitcount.itsvg.in/api?id=4nd1-dev&icon=5&color=6)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
