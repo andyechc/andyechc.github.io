@@ -1,6 +1,6 @@
 # 🤺 Me:
 
-<img src="Lumii_20230519_183015512.jpg">
+<img width='30%' src="Lumii_20230519_183015512.jpg">
 
   
 # Hola, soy Andy🧑🏻
