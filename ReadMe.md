@@ -4,7 +4,7 @@
 
   
 # Hola, soy Andy🧑🏻
-Soy un **Desarrollador Junior** enfocado en el *desarrollo web Front-End* y *aplicaciones multiplataforma*. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes. Actualmente me encuentro especializándome en el desarrollo en React ⚛
+Soy un **Desarrollador Junior** enfocado en el *desarrollo web Front-End*. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes. Actualmente me encuentro especializándome en el desarrollo en React ⚛
 
 ## 🌐Desarrollo Web
 Me especializo en el desarrollo web utilizando tecnologías para el **Front-end**
@@ -15,14 +15,10 @@ Me especializo en el desarrollo web utilizando tecnologías para el **Front-end*
 - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 **frameworks**
-- ![Bootstrap](https://img.shields.io/badge/bootstrap-aa00aa.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+- ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-eeeeff.svg?style=for-the-badge&logo=tailwindcss&logoColor=00aaff)
 - ![React](https://img.shields.io/badge/react-000533.svg?style=for-the-badge&logo=react&logoColor=1BCAE9)
 
-## 🐍 Desarrollo con Python
-
-![Python](https://img.shields.io/badge/python-2270Aa?style=for-the-badge&logo=python&logoColor=ffdd54) 
-
-Utilizo `Python` para desarrollar aplicaciones de escritorio con ![CustomTkinter](https://img.shields.io/badge/customtkinter-2270Aa?style=for-the-badge&logo=customtkinter&logoColor=ffdd54) creando interfaces de usuario modernas y funcionales.
+Tambien tengo conocimientos intermedios de ![Python](https://img.shields.io/badge/python-2270Aa?style=for-the-badge&logo=python&logoColor=ffdd54) 
 
 ## ✍️ Frases interesantes sobre tecnología y descubrimiento
 
