@@ -4,7 +4,7 @@
 
   
 # Hola, soy Andy🧑🏻
-Soy un **Desarrollador Junior** enfocado en el *desarrollo web Front-End*. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes. Actualmente me encuentro especializándome en el desarrollo en React ⚛
+Soy un **Desarrollador/Programador** enfocado en el *desarrollo web Front-End*. Me apasiona explorar y aprender nuevas tecnologías para crear soluciones innovadoras y eficientes.
 
 ## 🌐Desarrollo Web
 Me especializo en el desarrollo web utilizando tecnologías para el **Front-end**
