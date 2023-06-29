@@ -1,6 +1,8 @@
-export default function MenuDropUp() {
+export default function MenuDropUp({ onClick }) {
   return (
     <svg
+      onClick={onClick}
+      className="text-3xl text-gray-100 cursor-pointer md:hidden"
       stroke="currentColor"
       fill="currentColor"
       stroke-width="0"
@@ -11,7 +13,7 @@ export default function MenuDropUp() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M0 3h14v3h-14v-3zM0 7h14v3h-14v-3zM0 11h14v3h-14v-3z"></path>
-      <path d="M15.5 7l3 3 3-3z"></path>
+      <path d="M15.5 10l3-3 3 3z"></path>
     </svg>
   );
 }

@@ -1,8 +1,8 @@
-export default function MenuDropDown({ className, onClick }) {
+export default function MenuDropDown({ onClick }) {
   return (
     <svg
       onClick={onClick}
-      className={className}
+      className="text-3xl text-gray-100 cursor-pointer md:hidden"
       stroke="currentColor"
       fill="currentColor"
       stroke-width="0"

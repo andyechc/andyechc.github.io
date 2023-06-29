@@ -1,6 +1,7 @@
 import React, { Suspense, useContext, useState } from "react";
 
 import MenuDropDown from "../icons/MenuDropDown";
+import MenuDropUp from "../icons/MenuDropUp";
 import { Logo } from "../components/Logo";
 const HeaderMenu = React.lazy(() => import("../components/HeaderMenu"));
 
@@ -27,15 +28,9 @@ export function Header() {
           <Logo />
 
           {show ? (
-            <MenuDropDown
-              onClick={handleMenu}
-              className="text-3xl text-gray-100 cursor-pointer md:hidden"
-            />
+            <MenuDropUp onClick={handleMenu} />
           ) : (
-            <MenuDropDown
-              onClick={handleMenu}
-              className="text-3xl text-gray-100 cursor-pointer md:hidden"
-            />
+            <MenuDropDown onClick={handleMenu} />
           )}
         </div>
       </header>

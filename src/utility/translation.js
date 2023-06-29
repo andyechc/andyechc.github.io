@@ -1,23 +1,25 @@
 export const translation = {
   es: {
     header: {
-      Link1: "Inicio",
-      Link2: "Sobre Mi",
-      Link3: "Habilidades",
-      Link4: "Experiencia y Educación",
-      Link5: "Servicios",
-      Link6: "Contacto",
+      link1: "Inicio",
+      link2: "Sobre Mi",
+      link3: "Habilidades",
+      link4: "Experiencia y Educación",
+      link5: "Servicios",
+      link6: "Contacto",
+      langSelect: "Lenguaje",
     },
   },
 
   en: {
     header: {
-      Link1: "Home",
-      Link2: "About Me",
-      Link3: "Skills",
-      Link4: "Education & Experience",
-      Link5: "Services",
-      Link6: "Contact",
+      link1: "Home",
+      link2: "About Me",
+      link3: "Skills",
+      link4: "Education & Experience",
+      link5: "Services",
+      link6: "Contact",
+      langSelect: "Language",
     },
   },
 };
