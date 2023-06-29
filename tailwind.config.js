@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-      primary: "#003BFF",
-    },
+        primary: "#003BFF",
+      },
     },
   },
   plugins: [],
