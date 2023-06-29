@@ -8,14 +8,18 @@ export default function HeaderMenu({ show }) {
   const { text, handleLanguage } = useContext(LanguageContext);
 
   return (
-    <nav className="w-full bg-gray-900 md:hidden border-b border-gray-600 transition-all">
+    <nav
+      className={`w-full py-5 bg-gray-900 md:hidden ${
+        show ? "top-0 left-0 relative" : "absolute left-0 top-[-500px]"
+      } transition-all`}
+    >
       <ul className="w-full h-full">
-        <HeaderMenuListItem>{text.header.link1}</HeaderMenuListItem>
-        <HeaderMenuListItem>{text.header.link2}</HeaderMenuListItem>
-        <HeaderMenuListItem>{text.header.link3}</HeaderMenuListItem>
-        <HeaderMenuListItem>{text.header.link4}</HeaderMenuListItem>
-        <HeaderMenuListItem>{text.header.link5}</HeaderMenuListItem>
-        <HeaderMenuListItem>{text.header.link6}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#">{text.header.link1}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#">{text.header.link2}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#">{text.header.link3}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#">{text.header.link4}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#">{text.header.link5}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#">{text.header.link6}</HeaderMenuListItem>
       </ul>
 
       <TranslateButton />

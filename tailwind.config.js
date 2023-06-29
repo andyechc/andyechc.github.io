@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: "#003BFF",
       },
+
     },
   },
   plugins: [],

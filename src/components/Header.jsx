@@ -1,11 +1,13 @@
 import React, { Suspense, useContext, useState } from "react";
 
+import LanguageContext from "../context/LanguageContext";
+
+import { Logo } from "../components/Logo";
 import MenuDropDown from "../icons/MenuDropDown";
 import MenuDropUp from "../icons/MenuDropUp";
-import { Logo } from "../components/Logo";
-const HeaderMenu = React.lazy(() => import("../components/HeaderMenu"));
 
-import LanguageContext from "../context/LanguageContext";
+const HeaderMenu = React.lazy(() => import("../components/HeaderMenu"));
+const HeaderNav = React.lazy(() => import("../components/HeaderNav"));
 
 export function Header() {
   const { text, handleLanguage } = useContext(LanguageContext);
@@ -17,15 +19,17 @@ export function Header() {
 
   return (
     <>
-      <header className="w-full bg-gray-900 flex flex-col transition-all">
-        {show && (
-          <Suspense>
-            <HeaderMenu show={show} />
-          </Suspense>
-        )}
+      <header className="bg-gray-900 w-full flex flex-col">
+        <Suspense>
+          <HeaderMenu show={show} />
+        </Suspense>
 
-        <div className="w-full max-w-[1000px] h-12 m-auto px-5 xl:px-0 py-5 flex justify-between items-center">
+        <div className="bg-gray-900 w-full max-w-[1000px] h-12 m-auto px-5 xl:px-0 border-t border-gray-600 md:border-0 flex justify-between items-center transition-all">
           <Logo />
+
+          <Suspense>
+            <HeaderNav />
+          </Suspense>
 
           {show ? (
             <MenuDropUp onClick={handleMenu} />
