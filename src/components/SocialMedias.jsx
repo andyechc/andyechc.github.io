@@ -1,7 +1,7 @@
 export function SocialMedias() {
   return (
     <div className="m-auto w-min py-5 flex justify-center items-center gap-5">
-      <a target="_blank" href="https://github.com/andev-code/RM-wiki">
+      <a target="_blank" href="https://github.com/andev-code">
         <svg
           className="text-3xl text-gray-600 dark:text-gray-400 hover:opacity-70 transition-all"
           stroke="currentColor"
