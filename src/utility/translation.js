@@ -7,8 +7,12 @@ export const translation = {
       link4: "Resumen",
       link5: "Servicios",
       link6: "Contacto",
-      langSelect: "Lenguaje",
     },
+    
+    cover:{
+      text1:"Desarrollador Front-End",
+      button: "Contactar",
+    }
   },
 
   en: {
@@ -19,7 +23,11 @@ export const translation = {
       link4: "Resume",
       link5: "Services",
       link6: "Contact",
-      langSelect: "Language",
     },
+    
+    cover:{
+      text1:"Front-End Developer",
+      button: "Contact",
+    }
   },
 };

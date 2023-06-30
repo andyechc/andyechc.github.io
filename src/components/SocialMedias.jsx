@@ -31,7 +31,7 @@ export function SocialMedias() {
         </svg>
       </a>
 
-      <a target="_blank" href="https:/instagram.com/andev_code">
+      <a target="_blank" href="https://instagram.com/andev_code">
         <svg
           className="text-3xl text-gray-600 dark:text-gray-400 hover:opacity-70 transition-all"
           stroke="currentColor"

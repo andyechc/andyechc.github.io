@@ -5,7 +5,7 @@ import { TranslateButton } from "../components/TranslateButton";
 import { useContext } from "react";
 
 export default function HeaderMenu({ show }) {
-  const { text, handleLanguage } = useContext(LanguageContext);
+  const { text } = useContext(LanguageContext);
 
   return (
     <nav
