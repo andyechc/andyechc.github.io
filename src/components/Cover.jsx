@@ -5,21 +5,23 @@ import andev from "../assets/andev.jpg";
 
 export function Cover() {
   const { text } = useContext(LanguageContext);
-  
+
   return (
-    <main className="flex flex-wrap-reverse justify-center items-center gap-10 bg-gradient-to-b from-gray-900 from-30% to-zinc-900 px-10 md:px-0 py-20">
-      <section className="flex flex-col gap-3 animate-show">
+    <main
+      className={`bg-[url('assets/bg-image.jpg')] bg-center bg-cover bg-no-repeat flex flex-wrap-reverse justify-center items-center gap-10 px-10 md:px-0 py-20 `}
+    >
+      <section className="flex flex-col gap-6 animate-show">
         <h2 className="text-4xl font-extrabold text-gray-100">
           J.Andy Echevarria Contreras
         </h2>
 
-        <span className="text-md font-normal text-gray-300">
+        <span className="text-md font-normal text-gray-100">
           {text.cover.text1}
         </span>
 
-        <button className="w-[150px]">
+        <button className="w-[100px]">
           <a
-            className="block h-full py-1 text-sm text-blue-600 font-extrabold border border-blue-600 hover:bg-blue-600 hover:text-gray-100 rounded-md transition-all"
+            className="block h-full py-1 text-sm text-white font-extrabold border border-sky-600 hover:bg-sky-600 hover:text-gray-100 rounded-md transition-all"
             href="#"
           >
             {text.cover.button}
@@ -29,7 +31,7 @@ export function Cover() {
 
       <aside className="animate-show">
         <img
-          className="w-[200px] md:w-[300px] rounded-full shadow-md"
+          className="w-[200px] md:w-[300px] rounded-full shadow-xl"
           src={andev}
           alt="Jose Andy Echevarria Contreras - andev"
         />
