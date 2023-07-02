@@ -6,18 +6,21 @@ export default {
       colors: {
         primary: "#003BFF",
       },
-      
+
       keyframes: {
         show: {
           "0%": { transform: "translateX(-50px)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
       },
-      
+
       animation: {
         show: "show 1s ease-in-out",
       },
 
+      backgroundImage: {
+        coverImg: "url('assets/bg-image.jpg')",
+      },
     },
   },
   plugins: [],
