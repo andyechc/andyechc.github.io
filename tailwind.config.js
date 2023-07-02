@@ -19,7 +19,7 @@ export default {
       },
 
       backgroundImage: {
-        coverImg: "url('assets/bg-image.jpg')",
+        coverImg: "url('src/assets/bg-image.jpg')",
       },
     },
   },
