@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -16,10 +17,6 @@ export default {
 
       animation: {
         show: "show 1s ease-in-out",
-      },
-
-      backgroundImage: {
-        coverImg: "url('src/assets/bg-image.jpg')",
       },
     },
   },

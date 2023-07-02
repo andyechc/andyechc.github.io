@@ -19,12 +19,12 @@ export function Header() {
 
   return (
     <>
-      <header className="bg-gray-900 w-full flex flex-col">
+      <header className="bg-blue-950 w-full flex flex-col">
         <Suspense>
           <HeaderMenu show={show} />
         </Suspense>
 
-        <div className="bg-gray-900 w-full max-w-[1000px] h-12 m-auto px-5 xl:px-0 border-t border-gray-600 md:border-0 flex justify-between items-center transition-all">
+        <div className="bg-blue-950 w-full max-w-[1000px] h-12 m-auto px-5 xl:px-0 border-t border-gray-600 md:border-0 flex justify-between items-center transition-all">
           <Logo />
 
           <Suspense>

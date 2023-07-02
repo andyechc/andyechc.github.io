@@ -10,10 +10,10 @@ export default function HeaderNav() {
     <nav className="md:inline hidden h-full flex">
       <ul className="h-full flex items-center gap-2 lg:gap-5 border-amber-100 text-sm font-normal text-gray-100">
         <li className="hover:text-blue-500 transition-colors">
-          <a>{text.header.link1}</a>
+          <a href="#home">{text.header.link1}</a>
         </li>
         <li className="hover:text-blue-500 transition-colors">
-          <a>{text.header.link2}</a>
+          <a href="#about">{text.header.link2}</a>
         </li>
         <li className="hover:text-blue-500 transition-colors">
           <a>{text.header.link3}</a>

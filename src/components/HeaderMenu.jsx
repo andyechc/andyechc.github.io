@@ -9,13 +9,13 @@ export default function HeaderMenu({ show }) {
 
   return (
     <nav
-      className={`w-full py-5 bg-gray-900 md:hidden ${
+      className={`w-full py-5 bg-blue-950 md:hidden ${
         show ? "top-0 left-0 relative" : "absolute left-0 top-[-500px]"
       } transition-all`}
     >
       <ul className="w-full h-full">
-        <HeaderMenuListItem to="#">{text.header.link1}</HeaderMenuListItem>
-        <HeaderMenuListItem to="#">{text.header.link2}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#home">{text.header.link1}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#about">{text.header.link2}</HeaderMenuListItem>
         <HeaderMenuListItem to="#">{text.header.link3}</HeaderMenuListItem>
         <HeaderMenuListItem to="#">{text.header.link4}</HeaderMenuListItem>
         <HeaderMenuListItem to="#">{text.header.link5}</HeaderMenuListItem>

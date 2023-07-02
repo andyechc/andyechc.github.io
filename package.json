@@ -12,6 +12,7 @@
   "dependencies": {
     "@swc/core": "^1.3.66",
     "@swc/wasm": "^1.3.66",
+    "intersection-observer": "^0.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
