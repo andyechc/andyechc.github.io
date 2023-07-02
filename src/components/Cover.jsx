@@ -2,14 +2,13 @@ import LanguageContext from "../context/LanguageContext";
 import { useContext } from "react";
 
 import andev from "../assets/andev.jpg";
-import bgImage from "../assets/bg-image.jpg";
 
 export function Cover() {
   const { text } = useContext(LanguageContext);
 
   return (
     <main
-      className={`bg-[url(${bgImage})] bg-center bg-cover bg-no-repeat bg-gradient-to-b from-gray-900 from-30% to-zinc-950 flex flex-wrap-reverse justify-center items-center gap-10 px-10 md:px-0 py-20 shadow-[inset_0_60px_55px_-10px] shadow-gray-900 `}
+      className={`bg-[url('bg-image.jpg')] bg-center bg-cover bg-no-repeat bg-gradient-to-b from-gray-900 from-30% to-zinc-950 flex flex-wrap-reverse justify-center items-center gap-10 px-10 md:px-0 py-20 shadow-[inset_0_60px_55px_-10px] shadow-gray-900 `}
     >
       <section className="flex flex-col gap-6 animate-show">
         <h2 className="text-4xl font-extrabold text-gray-100">
