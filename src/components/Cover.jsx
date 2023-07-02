@@ -21,7 +21,7 @@ export function Cover() {
 
         <button className="w-[100px]">
           <a
-            className="block h-full py-1 text-sm text-white font-extrabold border border-sky-600 hover:bg-sky-600 hover:text-gray-100 rounded-md transition-all"
+            className="block h-full py-1 bg-black bg-opacity-20 text-sm text-white font-extrabold border border-primary hover:bg-primary hover:text-gray-100 rounded-md transition-all"
             href="#"
           >
             {text.cover.button}
