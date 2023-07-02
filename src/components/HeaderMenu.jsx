@@ -9,7 +9,7 @@ export default function HeaderMenu({ show }) {
 
   return (
     <nav
-      className={`w-full py-5 bg-blue-950 md:hidden ${
+      className={`w-full py-5 bg-gradient-to-b from-gray-950 to-blue-950 md:hidden ${
         show ? "top-0 left-0 relative" : "absolute left-0 top-[-500px]"
       } transition-all`}
     >

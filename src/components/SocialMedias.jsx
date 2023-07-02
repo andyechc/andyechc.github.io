@@ -3,7 +3,7 @@ export function SocialMedias() {
     <div className="m-auto h-full w-min flex justify-center items-center gap-5">
       <a target="_blank" href="https://github.com/andev-code">
         <svg
-          className="text-3xl text-gray-600 dark:text-gray-400 hover:opacity-70 transition-all"
+          className="text-3xl text-gray-200 hover:opacity-70 transition-all"
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"
@@ -18,7 +18,7 @@ export function SocialMedias() {
 
       <a target="_blank" href="https://twitter.com/andev_code?s=08">
         <svg
-          className="text-3xl text-gray-600 dark:text-gray-400 hover:opacity-70 transition-all"
+          className="text-3xl text-gray-200 hover:opacity-70 transition-all"
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"
@@ -33,7 +33,7 @@ export function SocialMedias() {
 
       <a target="_blank" href="https://instagram.com/andev_code">
         <svg
-          className="text-3xl text-gray-600 dark:text-gray-400 hover:opacity-70 transition-all"
+          className="text-3xl text-gray-200 hover:opacity-70 transition-all"
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"

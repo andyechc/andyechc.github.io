@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply scroll-smooth;
+@layer base{
+  :root{
+    @apply scroll-smooth
   }
 }
