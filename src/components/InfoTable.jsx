@@ -5,8 +5,8 @@ export function InfoTable() {
   const { text } = useContext(LanguageContext);
 
   return (
-    <div className="w-full flex flex-wrap sm:flex-nowrap md:flex-wrap lg:flex-nowrap border border-gray-600 rounded-lg animate-appear">
-      <div className="w-full p-10 flex flex-col justify-center items-center gap-5">
+    <div className="w-full flex flex-wrap sm:flex-nowrap md:flex-grow border border-gray-600 rounded-lg animate-appear">
+      <div className="min-w-[250px] w-full p-10 flex flex-col justify-center items-center gap-5">
         <div className="w-full text-left">
           <span className="text-md font-bold text-white">
             {text.about.table.name}
@@ -29,7 +29,7 @@ export function InfoTable() {
         </div>
       </div>
 
-      <div className="w-full p-10 flex flex-col justify-center items-center gap-5 border-t sm:border-l sm:border-t-0 md:border-t md:border-l-0 lg:border-l lg:border-t-0 border-gray-600">
+      <div className="min-w-[250px] w-full p-10 flex flex-col justify-center items-center gap-5 border-t sm:border-l sm:border-t-0 border-gray-600">
         <div className="w-full text-left">
           <span className="text-md font-bold text-white">
             {text.about.table.addres}
