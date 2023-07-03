@@ -27,7 +27,7 @@ export default {
 
       animation: {
         show: "show 1s ease-in-out",
-        appear: "appear 1.5s ease-in-out",
+        appear: "appear 2s ease-in-out",
         reveal: "reveal 1.5s ease-in-out",
       },
     },
