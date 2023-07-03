@@ -14,14 +14,14 @@ export function About() {
   const bioVisorRef = useRef();
   const { text } = useContext(LanguageContext);
 
-  const [isTitleIntersecting] = useIntersectionObserver(titleVisorRef, false);
-  const [isImgIntersecting] = useIntersectionObserver(imgVisorRef, false);
-  const [isBioIntersecting] = useIntersectionObserver(bioVisorRef, false);
+  const [isTitleIntersecting] = useIntersectionObserver(titleVisorRef);
+  const [isImgIntersecting] = useIntersectionObserver(imgVisorRef);
+  const [isBioIntersecting] = useIntersectionObserver(bioVisorRef);
 
   return (
     <section
       id="about"
-      className="w-full h-full bg-gradient-to-b from-zinc-950 from-30% to-gray-900 flex flex-col gap-32 py-32 px-10 xl:px-24"
+      className="w-full min-h-[500px] bg-gradient-to-b from-zinc-950 from-30% to-gray-900 flex flex-col gap-32 py-32 px-10 xl:px-24"
     >
       <Suspense>
         <div ref={titleVisorRef}>
@@ -43,7 +43,6 @@ export function About() {
             />
           )}
         </aside>
-
 
         <Suspense>
           <div ref={bioVisorRef}>{isBioIntersecting && <Bio />}</div>

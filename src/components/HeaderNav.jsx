@@ -16,16 +16,16 @@ export default function HeaderNav() {
           <a href="#about">{text.header.link2}</a>
         </li>
         <li className="hover:text-primary transition-colors">
-          <a>{text.header.link3}</a>
+          <a href="#skills">{text.header.link3}</a>
         </li>
         <li className="hover:text-primary transition-colors">
-          <a>{text.header.link4}</a>
+          <a href="#resume">{text.header.link4}</a>
         </li>
         <li className="hover:text-primary transition-colors">
-          <a>{text.header.link5}</a>
+          <a href="#services">{text.header.link5}</a>
         </li>
         <li className="hover:text-primary transition-colors">
-          <a>{text.header.link6}</a>
+          <a href="#contact">{text.header.link6}</a>
         </li>
 
         <hr className="w-[1px] h-6 bg-gray-600 lg:mx-10" />

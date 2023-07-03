@@ -16,10 +16,10 @@ export default function HeaderMenu({ show }) {
       <ul className="w-full h-full">
         <HeaderMenuListItem to="#home">{text.header.link1}</HeaderMenuListItem>
         <HeaderMenuListItem to="#about">{text.header.link2}</HeaderMenuListItem>
-        <HeaderMenuListItem to="#">{text.header.link3}</HeaderMenuListItem>
-        <HeaderMenuListItem to="#">{text.header.link4}</HeaderMenuListItem>
-        <HeaderMenuListItem to="#">{text.header.link5}</HeaderMenuListItem>
-        <HeaderMenuListItem to="#">{text.header.link6}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#skills">{text.header.link3}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#resume">{text.header.link4}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#services">{text.header.link5}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#contact">{text.header.link6}</HeaderMenuListItem>
       </ul>
 
       <TranslateButton />
