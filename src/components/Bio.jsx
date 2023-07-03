@@ -23,7 +23,6 @@ export function Bio() {
           <b>{text.about.bio.text2} </b> {text.about.bio.text3}
           <b> {text.about.bio.text4}</b>
         </p>
-        
 
         <p className="text-gray-300 text-md md:text-lg font-light">
           {text.about.bio.text5}
