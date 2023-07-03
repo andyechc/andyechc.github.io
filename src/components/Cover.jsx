@@ -9,7 +9,7 @@ export function Cover() {
   return (
     <main
       id="home"
-      className="bg-center bg-cover bg-no-repeat bg-gradient-to-b from-blue-950 from-30% to-zinc-950 flex flex-wrap-reverse justify-center items-center gap-10 px-10 md:px-0 py-20 shadow-gray-900"
+      className="bg-center bg-cover bg-no-repeat bg-gradient-to-b from-blue-950 from-30% to-zinc-950 flex flex-wrap-reverse justify-center items-center gap-10 px-10 py-32 shadow-gray-900"
     >
       <section className="flex flex-col gap-6 animate-show">
         <h2 className="text-4xl font-extrabold text-gray-100">
@@ -30,7 +30,7 @@ export function Cover() {
         </button>
       </section>
 
-      <aside className="animate-show">
+      <aside className="animate-appear">
         <img
           className="w-[200px] md:w-[300px] rounded-full shadow-xl"
           src={andev}

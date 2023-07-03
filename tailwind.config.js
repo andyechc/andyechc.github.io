@@ -13,16 +13,22 @@ export default {
           "0%": { transform: "translateX(-50px)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
-        
+
         appear: {
-          "0%": {  opacity: "0" },
+          "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+
+        reveal: {
+          "0%": { height: "100%" },
+          "100%": { height: "0" },
         },
       },
 
       animation: {
         show: "show 1s ease-in-out",
-        appear: "show 1s ease-in-out",
+        appear: "appear 1.5s ease-in-out",
+        reveal: "reveal 1.5s ease-in-out",
       },
     },
   },
