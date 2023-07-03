@@ -3,7 +3,7 @@ import { LanguageProvider } from "./context/LanguageContext";
 import { useIntersectionObserver } from "./hooks/useIntersectionObserver";
 
 import { Header } from "./components/Header";
-import { Home } from "./components/Cover";
+import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 
