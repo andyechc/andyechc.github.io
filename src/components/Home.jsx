@@ -3,7 +3,7 @@ import { useContext } from "react";
 
 import andev from "../assets/andev.jpg";
 
-export function Cover() {
+export function Home() {
   const { text } = useContext(LanguageContext);
 
   return (

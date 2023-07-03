@@ -44,6 +44,7 @@ export function About() {
           )}
         </aside>
 
+
         <Suspense>
           <div ref={bioVisorRef}>{isBioIntersecting && <Bio />}</div>
         </Suspense>
