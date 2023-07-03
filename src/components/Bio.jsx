@@ -12,12 +12,12 @@ export function Bio() {
   };
 
   return (
-    <article className="relative w-full text-left flex flex-col items-center gap-10">
+    <article className="relative w-full text-left flex flex-col items-center gap-10 animate-show">
       <h4 className="text-xl md:text-2xl text-white font-bold">
         {text.about.bio.title}
       </h4>
 
-      <p className="flex flex-col gap-5 justify-center after:content-[''] after:absolute after:top-0 after:left-0 after:bg-gradient-to-b from-zinc-950 to-black after:w-full after:h-0 after:animate-reveal">
+      <p className="flex flex-col gap-5 justify-center">
         <p className="text-gray-300 text-md md:text-lg font-light">
           {text.about.bio.text1}
           <b>{text.about.bio.text2} </b> {text.about.bio.text3}

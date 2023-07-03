@@ -19,16 +19,13 @@ export default {
           "100%": { opacity: "1" },
         },
 
-        reveal: {
-          "0%": { height: "100%" },
-          "100%": { height: "0" },
-        },
+        
       },
 
       animation: {
         show: "show 1s ease-in-out",
-        appear: "appear 2s ease-in-out",
-        reveal: "reveal 1.5s ease-in-out",
+        appear: "appear 1.5s ease-in-out",
+        
       },
     },
   },
