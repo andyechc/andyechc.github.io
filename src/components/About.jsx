@@ -14,7 +14,7 @@ export function About() {
   const bioVisorRef = useRef();
   const { text } = useContext(LanguageContext);
 
-  const [isTitleIntersecting] = useIntersectionObserver(titleVisorRef);
+  const [isTitleIntersecting] = useIntersectionObserver(titleVisorRef, false);
   const [isImgIntersecting] = useIntersectionObserver(imgVisorRef);
   const [isBioIntersecting] = useIntersectionObserver(bioVisorRef);
 
