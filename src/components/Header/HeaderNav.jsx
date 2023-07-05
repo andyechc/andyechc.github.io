@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import LanguageContext from "../context/LanguageContext";
-import { SocialMedias } from "../components/SocialMedias";
-import { TranslateButton } from "../components/TranslateButton";
+import LanguageContext from "/src/context/LanguageContext";
+import { SocialMedias } from "../SocialMedias";
+import { TranslateButton } from "./TranslateButton";
 
 export default function HeaderNav() {
   const { text } = useContext(LanguageContext);

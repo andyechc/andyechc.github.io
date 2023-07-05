@@ -1,4 +1,4 @@
-import LanguageContext from "../context/LanguageContext";
+import LanguageContext from "/src/context/LanguageContext";
 import { useContext } from "react";
 
 export function InfoTable() {

@@ -13,6 +13,11 @@ export default {
           "0%": { transform: "translateX(-50px)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        
+        showY: {
+          "0%": { transform: "translateY(50px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
 
         appear: {
           "0%": { opacity: "0" },
@@ -28,6 +33,7 @@ export default {
 
       animation: {
         show: "show 1s ease-in-out",
+        showY: "showY 1s ease-in-out",
         appear: "appear 1.5s ease-in-out",
         moving: "moving 60s infinite ease-in-out",
       },

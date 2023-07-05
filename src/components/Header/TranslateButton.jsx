@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import LanguageContext from "../context/LanguageContext";
+import LanguageContext from "/src/context/LanguageContext";
 
 export function TranslateButton() {
   const { lang, handleLanguage } = useContext(LanguageContext);

@@ -20,27 +20,27 @@ export const translation = {
       bio: {
         title: "BIO",
         text1:
-          "Durante mis estudios universitarios en Ciencias Médicas, descubrí ",
-        text2: "mi interés por la programación",
+          "Durante mis estudios universitarios en Ciencias Médicas, descubrí",
+        text2: " mi interés por la programación ",
         text3:
-          "y decidí explorar más sobre el desarrollo web. Aunque mi formación académica no estaba relacionada con la informática, me di cuenta de la capacidad que poseía para destacar en el mundo del ",
-        text4: "Desarrollo Digital.",
+          "y decidí explorar más sobre el desarrollo web. Aunque mi formación académica no estaba relacionada con la informática, me di cuenta de la capacidad que poseía para destacar en el mundo del  ",
+        text4: "Desarrollo Digital. ",
         text5: "Comencé mi viaje como desarrollador front-end de forma ",
-        text6: "Autodidacta",
+        text6: "Autodidacta ",
         text7:
-          " aprendiendo por mi cuenta a través de cursos en línea y proyectos personales. Aprendí lenguajes como",
+          "aprendiendo por mi cuenta a través de cursos en línea y proyectos personales. Aprendí lenguajes como",
 
         text8:
-          "y frameworks relacionados a este para la construcción de sitios web. Terminé enamorado del ecosistema de",
+          "y frameworks relacionados a este para la construcción de sitios web. Terminé enamorado del ecosistema de ",
 
         text9:
           '"La autodisciplina y la motivación han sido clave en mi éxito como desarrollador autodidacta".',
         text10:
-          "A lo largo de mi aprendizaje, he enfrentado desafíos y obstáculos, pero siempre he mantenido mi pasión por aprender y mejorar mis habilidades. ",
+          "  A lo largo de mi aprendizaje, he enfrentado desafíos y obstáculos, pero siempre he mantenido mi pasión por aprender y mejorar mis habilidades. ",
         text11:
           "Estoy constantemente buscando nuevas formas de mejorar mi trabajo y estar al tanto de las últimas tendencias en tecnología.",
         text12:
-          "Estoy siempre abierto a nuevas oportunidades y desafíos en el campo de la programación.",
+          " Estoy siempre abierto a nuevas oportunidades y desafíos en el campo de la programación.",
         text13:
           "¡Emocionado de seguir aprendiendo y de crear soluciones innovadoras en el mundo del desarrollo web!",
       },
@@ -57,6 +57,17 @@ export const translation = {
         birth: "Nacimiento",
         freelance: "Disponible",
       },
+    },
+
+    skills: {
+      html5:
+        "Lenguaje de marcado para estructurar y presentar contenido en la web.",
+      css3: "Lenguaje de hojas de estilo utilizado para describir la apariencia y el formato de un documento HTML.",
+      js: "Lenguaje de programación de alto nivel utilizado para crear contenido web interactivo y dinámico.",
+      react:
+        "Biblioteca de JavaScript para construir interfaces de usuario, permitiendo la creación de componentes de interfaz de usuario reutilizables.",
+      tailwind:
+        "Framework de CSS altamente personalizable que ayuda a los desarrolladores a construir rápidamente sitios web modernos y responsive.",
     },
   },
 
@@ -118,6 +129,17 @@ export const translation = {
         birth: "Birth",
         freelance: "Available",
       },
+    },
+
+    skills: {
+      html5:
+        "Markup language for structuring and presenting content on the web.",
+      css3: "Style sheet language used for describing the look and formatting of a document written in HTML.",
+      js: "High-level programming language used for creating interactive and dynamic web content.",
+      react:
+        "JavaScript library for building user interfaces, allowing for the creation of reusable UI components.",
+      tailwind:
+        "Highly customizable CSS framework that helps developers quickly build modern and responsive websites.",
     },
   },
 };

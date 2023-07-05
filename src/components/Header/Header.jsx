@@ -1,13 +1,13 @@
 import React, { Suspense, useContext, useState } from "react";
 
-import LanguageContext from "../context/LanguageContext";
+import LanguageContext from "/src/context/LanguageContext";
 
-import { Logo } from "../components/Logo";
-import MenuDropDown from "../icons/MenuDropDown";
-import MenuDropUp from "../icons/MenuDropUp";
+import { Logo } from "../Logo";
+import MenuDropDown from "/src/icons/MenuDropDown";
+import MenuDropUp from "/src/icons/MenuDropUp";
 
-const HeaderMenu = React.lazy(() => import("../components/HeaderMenu"));
-const HeaderNav = React.lazy(() => import("../components/HeaderNav"));
+const HeaderMenu = React.lazy(() => import("./HeaderMenu"));
+const HeaderNav = React.lazy(() => import("./HeaderNav"));
 
 export function Header() {
   const { text, handleLanguage } = useContext(LanguageContext);

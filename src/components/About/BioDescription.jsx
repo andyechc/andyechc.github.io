@@ -1,10 +1,9 @@
-import LanguageContext from "../context/LanguageContext";
 import { useContext, useState } from "react";
+import LanguageContext from "/src/context/LanguageContext";
 
-import { InfoTable } from "./InfoTable";
-
-export function Bio() {
+export function BioDescription() {
   const { text } = useContext(LanguageContext);
+
   const [more, setMore] = useState(false);
 
   const handleMore = () => {
@@ -12,15 +11,16 @@ export function Bio() {
   };
 
   return (
-    <article className="relative w-full text-left flex flex-col items-center gap-10 animate-show">
-      <h4 className="text-xl md:text-2xl text-white font-bold">
+    <>
+      <h4 className="text-xl md:text-2xl text-white font-extrabold animate-show">
         {text.about.bio.title}
       </h4>
 
-      <p className="flex flex-col gap-5 justify-center">
+      <p className="min-h-[400px] flex flex-col gap-5 justify-center">
         <p className="text-gray-300 text-md md:text-lg font-light">
           {text.about.bio.text1}
-          <b>{text.about.bio.text2} </b> {text.about.bio.text3}
+          <b>{text.about.bio.text2} </b>
+          {text.about.bio.text3}
           <b> {text.about.bio.text4}</b>
         </p>
 
@@ -38,7 +38,7 @@ export function Bio() {
             onClick={handleMore}
             className="mb-5 cursor-pointer animate-bounce"
           >
-            {more ? `${text.about.details.less}` : `${text.about.details.more}`}
+            {more ? text.about.details.less : text.about.details.more}
           </summary>
 
           <p className="flex flex-col gap-5">
@@ -48,7 +48,8 @@ export function Bio() {
 
             <p className="text-gray-300 text-md md:text-lg font-light">
               {text.about.bio.text10}
-              <b>{text.about.bio.text11}</b> {text.about.bio.text12}
+              <b>{text.about.bio.text11}</b>
+              {text.about.bio.text12}
             </p>
 
             <b className="text-md text-white font-bold">
@@ -57,8 +58,6 @@ export function Bio() {
           </p>
         </details>
       </p>
-
-      <InfoTable />
-    </article>
+    </>
   );
 }
