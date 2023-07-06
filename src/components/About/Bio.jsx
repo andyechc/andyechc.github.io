@@ -1,6 +1,5 @@
 import React, {  useRef, Suspense } from "react";
 
-
 import {BioDescription} from "./BioDescription";
 import {InfoTable} from "./InfoTable";
 

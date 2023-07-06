@@ -11,19 +11,20 @@ const TitleSection = React.lazy(() => import("../TitleSection"));
 export function About() {
   const imgVisorRef = useRef();
   const { text } = useContext(LanguageContext);
+  const aboutText = { ...text.about };
 
   const [isImgIntersecting] = useIntersectionObserver(imgVisorRef);
 
   return (
     <section
       id="about"
-      className="w-full bg-gradient-to-b from-zinc-950 from-30% to-gray-900 flex flex-col gap-28 py-32 px-10 xl:px-24"
+      className="w-full bg-gradient-to-b from-zinc-950 from-30% to-gray-900 flex flex-col items-center gap-28 py-32 px-10"
     >
       <Suspense>
-        <TitleSection title={text.about.title} quote={text.about.quote} />
+        <TitleSection title={aboutText.title} quote={aboutText.quote} />
       </Suspense>
 
-      <article className="w-full flex justify-center items-center flex-wrap lg:flex-nowrap gap-10 transition-all">
+      <article className="w-full max-w-[1000px] flex justify-center items-center flex-wrap lg:flex-nowrap gap-10 transition-all">
         <aside
           ref={imgVisorRef}
           className="min-w-[300px] max-w-[400px] min-h-[300px] p-5 flex justify-center items-center"
@@ -32,7 +33,7 @@ export function About() {
             <img
               className="rounded-lg aspect-square lg:aspect-[3/4] object-cover shadow-[20px_20px_0] shadow-primary animate-appear"
               src={developer}
-              alt={text.about.quote}
+              alt={aboutText.quote}
             />
           )}
         </aside>

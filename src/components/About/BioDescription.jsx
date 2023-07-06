@@ -3,6 +3,8 @@ import LanguageContext from "/src/context/LanguageContext";
 
 export function BioDescription() {
   const { text } = useContext(LanguageContext);
+  const bioText = { ...text.about.bio };
+  const detailsText = { ...text.about.details };
 
   const [more, setMore] = useState(false);
 
@@ -13,23 +15,23 @@ export function BioDescription() {
   return (
     <>
       <h4 className="text-xl md:text-2xl text-white font-extrabold animate-show">
-        {text.about.bio.title}
+        {bioText.title}
       </h4>
 
       <p className="min-h-[400px] flex flex-col gap-5 justify-center">
         <p className="text-gray-300 text-md md:text-lg font-light">
-          {text.about.bio.text1}
-          <b>{text.about.bio.text2} </b>
-          {text.about.bio.text3}
-          <b> {text.about.bio.text4}</b>
+          {bioText.text1}
+          <b>{bioText.text2} </b>
+          {bioText.text3}
+          <b> {bioText.text4}</b>
         </p>
 
         <p className="text-gray-300 text-md md:text-lg font-light">
-          {text.about.bio.text5}
-          <b>{text.about.bio.text6}</b>
-          {text.about.bio.text7}
+          {bioText.text5}
+          <b>{bioText.text6}</b>
+          {bioText.text7}
           <b className="text-yellow-500"> Javascript </b>
-          {text.about.bio.text8}
+          {bioText.text8}
           <b className="text-sky-500"> React.</b>
         </p>
 
@@ -38,22 +40,22 @@ export function BioDescription() {
             onClick={handleMore}
             className="mb-5 cursor-pointer animate-bounce"
           >
-            {more ? text.about.details.less : text.about.details.more}
+            {more ? detailsText.less : detailsText.more}
           </summary>
 
           <p className="flex flex-col gap-5">
             <b className="text-md text-white font-bold">
-              {text.about.bio.text9}
+              {bioText.text9}
             </b>
 
             <p className="text-gray-300 text-md md:text-lg font-light">
-              {text.about.bio.text10}
-              <b>{text.about.bio.text11}</b>
-              {text.about.bio.text12}
+              {bioText.text10}
+              <b>{bioText.text11}</b>
+              {bioText.text12}
             </p>
 
             <b className="text-md text-white font-bold">
-              {text.about.bio.text13}
+              {bioText.text13}
             </b>
           </p>
         </details>

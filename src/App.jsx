@@ -6,6 +6,7 @@ import { Header } from "./components/Header/Header";
 import { Home } from "./components/Home/Home";
 import { About } from "./components/About/About";
 import { Skills } from "./components/Skills/Skills";
+import { Resume } from "./components/Resume/Resume";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Resume />
     </LanguageProvider>
   );
 }

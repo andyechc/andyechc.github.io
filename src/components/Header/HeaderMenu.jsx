@@ -3,11 +3,10 @@ import { useContext } from "react";
 import LanguageContext from "/src/context/LanguageContext";
 import { HeaderMenuListItem } from "./HeaderMenuListItem";
 import { SocialMedias } from "../SocialMedias";
-import { TranslateButton } from "./TranslateButton";
 
 export default function HeaderMenu({ show }) {
   const { text } = useContext(LanguageContext);
-  const headerText = {...text.header}
+  const headerText = { ...text.header };
 
   return (
     <nav
@@ -16,23 +15,13 @@ export default function HeaderMenu({ show }) {
       } transition-all`}
     >
       <ul className="w-full h-full">
-        <HeaderMenuListItem to="#home">{text.header.link1}</HeaderMenuListItem>
-        <HeaderMenuListItem to="#about">{text.header.link2}</HeaderMenuListItem>
-        <HeaderMenuListItem to="#skills">
-          {text.header.link3}
-        </HeaderMenuListItem>
-        <HeaderMenuListItem to="#resume">
-          {text.header.link4}
-        </HeaderMenuListItem>
-        <HeaderMenuListItem to="#services">
-          {text.header.link5}
-        </HeaderMenuListItem>
-        <HeaderMenuListItem to="#contact">
-          {text.header.link6}
-        </HeaderMenuListItem>
+        <HeaderMenuListItem to="#home">{headerText.link1}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#about">{headerText.link2}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#skills">{headerText.link3}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#resume">{headerText.link4}</HeaderMenuListItem>
+        <HeaderMenuListItem to="#contact">{headerText.link5}</HeaderMenuListItem>
       </ul>
 
-      <TranslateButton />
       <SocialMedias />
     </nav>
   );
