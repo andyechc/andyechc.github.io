@@ -1,5 +1,7 @@
+import vite from '/public/vite.svg'
+
 export default function Vite() {
   return ( 
-    < img className = "w-14 h-14" src = "/public/vite.svg"/ >
+    < img className = "w-14 h-14" src={vite} / >
   );
 }
