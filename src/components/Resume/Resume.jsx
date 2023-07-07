@@ -20,7 +20,7 @@ export function Resume() {
     <section id="resume" className="bg-gradient-to-b from-zinc-950 from-30% to-black px-10 py-32 flex flex-col justify-center items-center gap-20">
       <TitleSection title="Resume" quote="Some of my Recent Project" />
       
-      <article className="w-full max-w-[1000px] flex flex-col justify-center items-center gap-20">
+      <article className="w-full max-w-[1000px] flex flex-col justify-center items-center gap-24">
         <ResumeCard title="Rick & Morty Wiki" description={resumeText.description.rm} img={rm} repo="RM-Wiki" web="rm-wk"/>
         <ResumeCard title="🛒Tienda" description={resumeText.description.tienda} img={tienda} repo="tienda" web="tienda-ecomers"/>
         <ResumeCard title="Twitter Follow Card" description={resumeText.description.tfc} img={tfc} repo="TwitterFollowCard-Replica" web="twitter-follow-card-replica"/>
