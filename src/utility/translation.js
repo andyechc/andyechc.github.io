@@ -60,6 +60,14 @@ export const translation = {
       vite: "Herramienta de compilación rápida y ligera para proyectos web modernos.",
       vscode: "Editor de código fuente altamente personalizable y extensible desarrollado por Microsoft.",
     },
+    
+    resume: {
+      description: {
+        rm: "Aplicación de una sola página (SPA) que mostrará descripciones de personajes y ubicaciones de la serie de Rick and Morty. Esta aplicación utilizará la API de Rick and Morty (rickandmortyapi) para obtener la información necesaria. Creada con HTML, CSS, JS, Tailwind y React",
+        tienda: "Plantilla de una Eccomerce, incluye filtros por categoría y precio mínimo. Además, los usuarios podrán agregar y eliminar productos del carrito de compras. Creada con HTML, CSS, JS y React.",
+        tfc: "Una réplica visual del componente Twitter Follow Card de Twitter utilizando React y CSS. Esta réplica se realizo como una práctica de componentes en React como parte de mi proceso educativo.",
+      },
+    },
   },
 
   en: {
@@ -122,6 +130,15 @@ export const translation = {
       vercel: "Platform for hosting and deploying static web applications and serverless functions.",
       vite: " Fast and lightweight build tool for modern web projects.",
       vscode: "Highly customizable and extensible source code editor developed by Microsoft.",
+    },
+    
+    resume: {
+      description: {
+        rm: "Single-page application (SPA) that will display descriptions of characters and locations from the Rick and Morty series. This application will use the Rick and Morty API (rickandmortyapi) to retrieve the necessary information. Created with HTML, CSS, JS, Tailwind, and React.",
+        tienda: "Template for an eCommerce website, includes filters by category and minimum price. Additionally, users will be able to add and remove products from the shopping cart. Created with HTML, CSS, JS, and React.",
+        tfc: "A visual replica of the Twitter Follow Card component from Twitter using React and CSS. This replica was created as a practice of React components as part of my educational process.",
+      },
+  
     },
   },
 };

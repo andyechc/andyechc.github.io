@@ -1,18 +1,23 @@
 import Page from "/src/icons/page";
 import Github from "/src/icons/github";
 
-export function ResumeCard({description, repo, web, img, alt}){
+export function ResumeCard({title, description, repo, web, img, alt}){
   return(
-    <div className="relative w-full max-w-[600px] max-h-[500px] bg-primary overflow-hidden rounded-md flex flex-col gap-2 shadow-xl shadow-[#00f5]">
-      <div className='w-full h-full flex justify-center bg-primary bg-opacity-50 opacity-0 absolute top-0 left-0 p-10 hover:opacity-100 rounded-md transition-all z-10'>
-        <p className='text-3xl sm:text-5xl lg:text-6xl text-white font-extrabold text-center'>{description}</p>
+    <div className="w-full rounded-md flex flex-wrap md:flex-nowrap justify-center items-center gap-10 animate-showY">
+      <div className='max-w-[200px] md:max-w-[300px] mb-[15px] flex justify-center'>
+        <img className="object-cover aspect-auto rounded-md shadow-[15px_15px_0] shadow-primary" src={img}/>
       </div>
       
-      <img className="w-full object-cover aspect-auto" src={img} alt={alt}/>
-      
-      <div className='w-full flex justify-center items-center gap-5 p-3 z-10'>
-        <a className='w-10' href={`https://github.com/andev-code/${repo}`} target="_blank"><Github/></a>
-        <a className='w-10' href={`https://${web}.vercel.app`} target="_blank"><Page/></a>
+      <div className='flex flex-col items-center gap-5'>
+        <div className='w-full flex justify-center items-center flex-col gap-2'>
+          <h4 className="text-center text-xl font-bold text-white">{title}</h4>
+          <p className="text-md text-gray-200 font-normal">{description}</p>
+        </div>
+        
+        <div className='flex justify-center items-center gap-5'>
+          <a className='w-8' href={`https://github.com/andev-code/${repo}`} target="_blank"><Github/></a>
+          <a className='w-8' href={`https://${web}.vercel.app`} target="_blank"><Page/></a>
+        </div>
       </div>
     </div>
   )
