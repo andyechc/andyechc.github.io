@@ -1,4 +1,4 @@
-import vite from '/public/vite.svg'
+import vite from '/vite.svg'
 
 export default function Vite() {
   return ( 

@@ -23,7 +23,7 @@ export function Home() {
         <button className="w-[100px]">
           <a
             className="block h-full py-1 bg-primary text-sm text-white font-extrabold border border-primary hover:bg-opacity-25 hover:text-gray-100 rounded-md transition-all"
-            href="#"
+            href="#contact"
           >
             {text.cover.button}
           </a>

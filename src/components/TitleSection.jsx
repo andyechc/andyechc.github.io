@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
-export default function TitleSection({ title, quote }) {
+export function TitleSection({ title, quote }) {
   const titleVisorRef = useRef();
   const [isTitleIntersecting] = useIntersectionObserver(titleVisorRef, false);
 

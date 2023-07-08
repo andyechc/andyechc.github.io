@@ -4,6 +4,7 @@ import { useIntersectionObserver } from "/src/hooks/useIntersectionObserver";
 import LanguageContext from "/src/context/LanguageContext";
 
 import { SkillsCard } from "./SkillsCard";
+import {TitleSection} from "../TitleSection";
 
 import Html5 from "/src/icons/html5";
 import Css3 from "/src/icons/css3";
@@ -14,8 +15,6 @@ import Git from "/src/icons/git";
 import Vercel from "/src/icons/vercel";
 import Vite from "/src/icons/vite";
 import VsCode from "/src/icons/vscode";
-
-const TitleSection = React.lazy(() => import("../TitleSection"));
 
 export function Skills() {
   const { text } = useContext(LanguageContext);

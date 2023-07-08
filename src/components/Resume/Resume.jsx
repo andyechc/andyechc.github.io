@@ -2,7 +2,7 @@ import React, { useContext, Suspense, useRef } from "react";
 import LanguageContext from "/src/context/LanguageContext";
 import { useIntersectionObserver } from "/src/hooks/useIntersectionObserver";
 
-import TitleSection from "../TitleSection";
+import {TitleSection} from "../TitleSection";
 import {ResumeCard} from './ResumeCard'
 
 import tienda from "/src/assets/tienda-ecc.png";
@@ -17,8 +17,8 @@ export function Resume() {
   const resumeText = {...text.resume}
   
   return (
-    <section id="resume" className="bg-gradient-to-b from-zinc-950 from-30% to-black px-10 py-32 flex flex-col justify-center items-center gap-20">
-      <TitleSection title="Resume" quote="Some of my Recent Project" />
+    <section id="resume" className="bg-gradient-to-b from-zinc-950 from-30% to-black px-10 py-32 flex flex-col justify-center items-center gap-32">
+      <TitleSection title={resumeText.title} quote={resumeText.quote}/>
       
       <article className="w-full max-w-[1000px] flex flex-col justify-center items-center gap-24">
         <ResumeCard title="Rick & Morty Wiki" description={resumeText.description.rm} img={rm} repo="RM-Wiki" web="rm-wk"/>

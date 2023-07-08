@@ -62,6 +62,8 @@ export const translation = {
     },
     
     resume: {
+      title: 'Resumen',
+      quote: 'Estos Son Algunos De Mis Proyectos Personales',
       description: {
         rm: "Aplicación de una sola página (SPA) que mostrará descripciones de personajes y ubicaciones de la serie de Rick and Morty. Esta aplicación utilizará la API de Rick and Morty (rickandmortyapi) para obtener la información necesaria. Creada con HTML, CSS, JS, Tailwind y React",
         tienda: "Plantilla de una Eccomerce, incluye filtros por categoría y precio mínimo. Además, los usuarios podrán agregar y eliminar productos del carrito de compras. Creada con HTML, CSS, JS y React.",
@@ -133,6 +135,8 @@ export const translation = {
     },
     
     resume: {
+      title: 'Resume',
+      quote: 'This Are Some Of My Personal Projects',
       description: {
         rm: "Single-page application (SPA) that will display descriptions of characters and locations from the Rick and Morty series. This application will use the Rick and Morty API (rickandmortyapi) to retrieve the necessary information. Created with HTML, CSS, JS, Tailwind, and React.",
         tienda: "Template for an eCommerce website, includes filters by category and minimum price. Additionally, users will be able to add and remove products from the shopping cart. Created with HTML, CSS, JS, and React.",

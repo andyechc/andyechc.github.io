@@ -1,4 +1,4 @@
-import React, { useContext, useRef, Suspense } from "react";
+import React, { useContext, useRef } from "react";
 
 import developer from "/src/assets/coding.jpg";
 
@@ -6,7 +6,8 @@ import { useIntersectionObserver } from "/src/hooks/useIntersectionObserver";
 import LanguageContext from "/src/context/LanguageContext";
 
 import { Bio } from "./Bio";
-const TitleSection = React.lazy(() => import("../TitleSection"));
+import { TitleSection } from "../TitleSection";
+
 
 export function About() {
   const imgVisorRef = useRef();
@@ -20,9 +21,9 @@ export function About() {
       id="about"
       className="w-full bg-gradient-to-b from-zinc-950 from-30% to-gray-900 flex flex-col items-center gap-28 py-32 px-10"
     >
-      <Suspense>
-        <TitleSection title={aboutText.title} quote={aboutText.quote} />
-      </Suspense>
+      
+      <TitleSection title={aboutText.title} quote={aboutText.quote} />
+      
 
       <article className="w-full max-w-[1000px] flex justify-center items-center flex-wrap lg:flex-nowrap gap-10 transition-all">
         <aside
