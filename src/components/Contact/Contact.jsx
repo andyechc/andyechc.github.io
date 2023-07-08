@@ -6,22 +6,22 @@ export function Contact(){
       <TitleSection title="Contact" quote="Keep In Touch"/>
       
       <form className="w-full h-full max-w-[1000px] flex flex-col justify-center items-center gap-5 accent-primary text-white text-md font-normal caret-primary">
-        <div className="flex gap-5 justify-center items-center">
+        <div className="w-full flex gap-5 justify-center items-center">
         <input 
-          className="w-full bg-transparent border border-gray-600 rounded px-2 py-3 focus:outline-primary" 
+          className="w-full bg-transparent border border-gray-600 rounded px-2 py-3 focus:border-primary focus:placeholder-primary transition-all" 
           type="text" 
           placeholder="Nombre"
         />
         
         <input 
-          className="w-full bg-transparent border border-gray-600 rounded px-2 py-3" 
+          className="w-full bg-transparent border border-gray-600 rounded px-2 py-3 focus:border-primary focus:placeholder-primary transition-all" 
           type="text" 
           placeholder="Apellidos"
         />
         </div>
         
         <textarea 
-          className="w-full h-full bg-transparent border border-gray-600 rounded px-2 py-3 resize-y" 
+          className="w-full h-full bg-transparent border border-gray-600 rounded px-2 py-3 resize-y focus:border-primary focus:placeholder-primary transition-all" 
           placeholder="Comments"
         />
       </form>
