@@ -70,7 +70,20 @@ export const translation = {
         tfc: "Una réplica visual del componente Twitter Follow Card de Twitter utilizando React y CSS. Esta réplica se realizo como una práctica de componentes en React como parte de mi proceso educativo.",
       },
     },
+    
+    contact: {
+      title: "Contacto",
+      quote: "Déjame Saber Que Opinás",
+      form: {
+        name: "Nombre",
+        lastName: "Apellido",
+        message: "Mensaje",
+        button: "Enviar",
+        not: "Mensaje Enviado Exitosamente ✅."
+      },
+    },
   },
+
 
   en: {
     header: {
@@ -142,7 +155,18 @@ export const translation = {
         tienda: "Template for an eCommerce website, includes filters by category and minimum price. Additionally, users will be able to add and remove products from the shopping cart. Created with HTML, CSS, JS, and React.",
         tfc: "A visual replica of the Twitter Follow Card component from Twitter using React and CSS. This replica was created as a practice of React components as part of my educational process.",
       },
-  
     },
+    
+    contact: {
+      title: "Contact",
+      quote: "Let Me Know What You Think",
+      form: {
+        name: "Name",
+        lastName: "Last Name",
+        message: "Message",
+        button: "Send",
+        not: "Message Sent Successfully ✅."
+      },
+    }
   },
 };
