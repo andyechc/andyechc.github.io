@@ -79,9 +79,18 @@ export const translation = {
         lastName: "Apellido",
         message: "Mensaje",
         button: "Enviar",
-        not: "Mensaje Enviado Exitosamente ✅."
+        btnSubmitting: "Enviando..",
+        not: "Mensaje Enviado Exitosamente ✅",
+        warn: "Al pulsar enviar Uds acepta mi Términos y Condiciones asi como mi Política de Privacidad."
       },
     },
+    
+    footer:{
+      nav: "Enlaces",
+      copy: "Diseñado y Desarrollado por",
+      tc: "Condiciones y Terminos",
+      pp: "Políticas de Privacidad"
+    }
   },
 
 
@@ -165,8 +174,17 @@ export const translation = {
         lastName: "Last Name",
         message: "Message",
         button: "Send",
-        not: "Message Sent Successfully ✅."
+        btnSubmitting: "Sending..",
+        not: "Message Sent Successfully ✅",
+        warn:"When you click send, you accept my Terms & Conditions and my Privacy Policy.",
       },
+    },
+    
+    footer:{
+      nav: "Shortcuts",
+      copy: "Designed and Developed by",
+      tc: "Terms & Conditions",
+      pp: "Privacy Policy",
     }
   },
 };
