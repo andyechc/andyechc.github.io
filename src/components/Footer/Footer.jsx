@@ -3,7 +3,7 @@ import { SocialMedias } from "../SocialMedias";
 
 export function Footer(){
   return(
-    <section className='w-full flex flex-wrap md:justify-evenly items-center py-10 px-10 bg-gradient-to-b from-gray-950 to-blue-950 gap-20'>
+    <footer className='w-full flex flex-wrap md:justify-evenly items-center py-10 px-10 bg-gradient-to-b from-gray-950 to-blue-950 gap-20'>
       <article className='max-w-[300px] flex flex-col justify-center gap-5'>
         <Logo />
         <p className="text-md font-normal text-gray-300">J.Andy Echevarria Contreras. Frontend Developer. A Developer Who Loves To Code. "Self-discipline and motivation have been key to my success as a Self-Taught Developer".</p>
@@ -42,6 +42,6 @@ export function Footer(){
         <a className='text-gray-300 hover:primary'>Terms & Conditions</a>
         <a className='text-gray-300 hover:primary'>Privacy Policy</a>
       </div>
-    </section>
+    </footer>
   )
 }

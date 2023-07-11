@@ -10,8 +10,8 @@ export function ResumeCard({title, description, repo, web, img, alt}){
       
       <div className='flex flex-col items-center gap-5'>
         <div className='w-full flex justify-center items-center flex-col gap-2'>
-          <h4 className="text-center text-xl font-bold text-white">{title}</h4>
-          <p className="text-md text-gray-200 font-normal">{description}</p>
+          <h4 className="text-xl font-bold text-white md:w-full">{title}</h4>
+          <p className="text-center md:text-left text-md text-gray-200 font-normal">{description}</p>
         </div>
         
         <div className='flex justify-center items-center gap-5'>

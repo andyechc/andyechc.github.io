@@ -1,6 +1,6 @@
 export function Logo() {
   return (
-    <h2 className="font-extrabold text-xl text-gray-100 flex justify-center items-center select-none cursor-default inline">
+    <h2 className="font-extrabold text-xl text-gray-100 flex items-center select-none cursor-default inline">
       <svg
         className="text-blue-600 text-2xl mr-1"
         stroke="currentColor"
