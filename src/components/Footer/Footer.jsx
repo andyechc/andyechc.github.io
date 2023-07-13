@@ -2,6 +2,8 @@ import {useContext} from 'react'
 
 import { Logo } from "../Logo";
 import { SocialMedias } from "../SocialMedias";
+import { TermsConditions } from "./TermsConditions";
+import { PrivacyPolicy } from "./PrivacyPolicy";
 
 import LanguageContext from "/src/context/LanguageContext";
 
@@ -16,28 +18,27 @@ export function Footer(){
         <SocialMedias/>
       </article>
       
-      <article className='max-w-[150px] flex flex-col justify-center gap-5'>
-        <span className='text-white text-lg font-bold'>{text.footer.nav}</span>
-        <nav className="text-md text-gray-300 font-normal flex flex-col gap-2">
-          <a className='hover:text-primary' href='#home'>{text.header.link1}</a>
-          <a className='hover:text-primary' href='#about'>{text.header.link2}</a>
-          <a className='hover:text-primary' href='#skills'>{text.header.link3}</a>
-          <a className='hover:text-primary' href='#resume'>{text.header.link4}</a>
-          <a className='hover:text-primary' href='#contact'>{text.header.link5}</a>
-        </nav>
-      </article>
-      
-      <article className='max-w-[150px] flex flex-col justify-center gap-2'>
-       <span className='text-white text-lg font-bold'>Adress
-          <p className="text-md font-normal text-gray-300">Havana, Cuba</p>
-        </span>
-       <span className='text-white text-lg font-bold'>Email
-        <p className="text-md font-normal text-gray-300">andevcode@gmail.com</p>
-       </span>
-       <span className='text-white text-lg font-bold'>Phone
-        <p className="text-md font-normal text-gray-300">+5356804881</p>
-       </span>
-      </article>
+      <div className='w-full max-w-[300px] flex justify-evenly'>
+        <article className='max-w-[150px] flex flex-col gap-5'>
+          <span className='text-white text-lg font-bold'>{text.footer.nav}</span>
+          <nav className="text-md text-gray-300 font-normal flex flex-col gap-2">
+            <a className='hover:text-primary' href='#home'>{text.header.link1}</a>
+            <a className='hover:text-primary' href='#about'>{text.header.link2}</a>
+            <a className='hover:text-primary' href='#skills'>{text.header.link3}</a>
+            <a className='hover:text-primary' href='#resume'>{text.header.link4}</a>
+            <a className='hover:text-primary' href='#contact'>{text.header.link5}</a>
+          </nav>
+        </article>
+        
+        <article className='max-w-[150px] flex flex-col gap-5'>
+          <span className='text-white text-lg font-bold'>{text.footer.ref}</span>
+          <nav className="text-md text-gray-300 font-normal flex flex-col gap-2">
+            <a className='hover:text-primary' href='https://formspree.io/'>Formspree</a>
+            <a className='hover:text-primary' href='https://icon-icons.com/'>icon-icons</a>
+            <a className='hover:text-primary' href='https://react-icons.github.io/react-icons'>react-icons</a>
+          </nav>
+        </article>
+      </div>
       
       <div className='w-full max-w-[1000px] flex-grow flex flex-wrap justify-between gap-5'>
         <span className="text-md text-gray-300 flex-grow">
@@ -45,8 +46,10 @@ export function Footer(){
             <strong className="text-white"> andev </strong>
           © 2023
         </span>
-        <a className='text-gray-300 hover:primary'>{text.footer.tc}</a>
-        <a className='text-gray-300 hover:primary'>{text.footer.pp}</a>
+        
+        <TermsConditions/>
+        <PrivacyPolicy/>
+
       </div>
     </footer>
   )

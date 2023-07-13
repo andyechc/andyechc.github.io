@@ -8,7 +8,7 @@ import Spinner from '/src/icons/spinner'
 import LanguageContext from "/src/context/LanguageContext";
 
 export function Form(){
-  const [state, handleSumit] = useForm("mqkvkbab");
+  const [state, handleSubmit] = useForm("mqkvkbab");
   
   const { text } = useContext(LanguageContext);
   const textContact = {...text.contact};
@@ -16,7 +16,7 @@ export function Form(){
   return(
     <form 
       className="w-full h-full max-w-[800px] flex flex-col justify-center items-center gap-5 accent-primary text-white text-md font-normal caret-primary"
-      onSubmit={handleSumit}
+      onSubmit={handleSubmit}
     >
       <div className="w-full flex gap-5 justify-center items-center">
         <input
@@ -89,7 +89,9 @@ export function Form(){
       
       {
         state.succeeded &&
-          <span className="text-center text-lg sm:text-xl text-green-200 font-bold animate-showY">{textContact.form.not}</span>
+          <span className="text-center text-lg sm:text-xl text-green-200 font-bold animate-showY">
+            {textContact.form.success}
+          </span>
       }
     </form>
   )
