@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import LanguageContext from "/src/context/LanguageContext";
-import { SocialMedias } from "../SocialMedias";
 import { TranslateButton } from "./TranslateButton";
 
 export default function HeaderNav() {
@@ -29,7 +28,6 @@ export default function HeaderNav() {
         <hr className="w-[1px] h-6 bg-gray-600 lg:mx-10" />
 
         <div className="h-full flex justify-center items-center">
-          <SocialMedias />
           <TranslateButton />
         </div>
       </ul>

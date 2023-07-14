@@ -1,6 +1,6 @@
 export function SocialMedias() {
   return (
-    <div className="m-auto h-full w-min flex justify-center items-center gap-5">
+    <div className="h-full flex justify-center items-center gap-5">
       <a target="_blank" href="https://github.com/andev-code">
         <svg
           className="text-3xl text-gray-200 hover:opacity-70 transition-all"

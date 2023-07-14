@@ -1,5 +1,6 @@
 import LanguageContext from "/src/context/LanguageContext";
 import { useContext } from "react";
+import { SocialMedias } from "../SocialMedias";
 
 import andev from "/src/assets/andev.jpg";
 
@@ -16,18 +17,21 @@ export function Home() {
           J.Andy Echevarria Contreras
         </h2>
 
-        <span className="text-md font-normal text-gray-100">
-          {text.cover.text1}
+        <span className="text-lg font-normal text-gray-100 ">
+          {text.cover.text1}.
         </span>
 
-        <button className="w-[100px]">
+        <div className="flex items-center gap-5">
           <a
-            className="block h-full py-1 bg-primary text-sm text-white font-extrabold border border-primary hover:bg-opacity-25 hover:text-gray-100 rounded-md transition-all"
+            className=" h-full px-4 py-1 bg-primary text-center text-sm text-white font-extrabold border border-primary hover:bg-opacity-25 hover:text-gray-100 rounded-md transition-all"
             href="#contact"
           >
             {text.cover.button}
           </a>
-        </button>
+          
+          <SocialMedias />
+        </div>
+        
       </section>
 
       <aside className="animate-appear">
