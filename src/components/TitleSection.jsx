@@ -12,7 +12,7 @@ export function TitleSection({ title, quote }) {
     >
       {isTitleIntersecting && (
         <>
-          <span className="text-primary text-md font-medium animate-show">
+          <span className="text-primary text-xl font-medium animate-show">
             {title}
           </span>
           <h3 className="text-white text-4xl font-extrabold text-center inline animate-show">

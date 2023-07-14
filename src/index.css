@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  :root{
-    @apply scroll-smooth
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+  
+  :root {
+    @apply scroll-smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Carter One", "System Ui";
   }
 }

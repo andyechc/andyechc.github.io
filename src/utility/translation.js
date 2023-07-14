@@ -15,27 +15,19 @@ export const translation = {
 
     about: {
       title: "Sobre Mi",
-      quote: "Un Desarrollador Que Le Apasiona Crear Codigo",
+      quote: "Un Desarrollador Que Le Apasiona Crear Código",
       bio: {
         title: "BIO",
-        text1: "Durante mis estudios universitarios en Ciencias Médicas, descubrí",
+        text1: "Al terminar el Bachiller, descubrí",
         text2: " mi interés por la programación ",
-        text3: "y decidí explorar más sobre el desarrollo web. Aunque mi formación académica no estaba relacionada con la informática, me di cuenta de la capacidad que poseía para destacar en el mundo del  ",
+        text3: "y decidí explorar más sobre el desarrollo web. Me di cuenta de la capacidad que poseía para destacar en el mundo del  ",
         text4: "Desarrollo Digital. ",
-        text5: "Comencé mi viaje como desarrollador front-end de forma ",
+        text5: "En mi viaje como desarrollador front-end de forma ",
         text6: "Autodidacta ",
-        text7: "aprendiendo por mi cuenta a través de cursos en línea y proyectos personales. Aprendí lenguajes como",
-        text8: "y frameworks relacionados a este para la construcción de sitios web. Terminé enamorado del ecosistema de ",
-        text9: '"La autodisciplina y la motivación han sido clave en mi éxito como desarrollador autodidacta".',
-        text10: "  A lo largo de mi aprendizaje, he enfrentado desafíos y obstáculos, pero siempre he mantenido mi pasión por aprender y mejorar mis habilidades. ",
-        text11: "Estoy constantemente buscando nuevas formas de mejorar mi trabajo y estar al tanto de las últimas tendencias en tecnología.",
-        text12: " Estoy siempre abierto a nuevas oportunidades y desafíos en el campo de la programación.",
-        text13: "¡Emocionado de seguir aprendiendo y de crear soluciones innovadoras en el mundo del desarrollo web!",
-      },
-
-      details: {
-        more: "Mostrar Más",
-        less: "Mostrar Menos",
+        text7: "adquirí conocimientos a través de cursos en línea y proyectos personales. Aprendí lenguajes como",
+        text8: "y frameworks/librerias relacionados a este. Especializandome en ",
+        text9: '"La autodisciplina y la motivación han sido clave en mi éxito".',
+        text10: "Estoy constantemente buscando nuevas formas de mejorar mi trabajo y estar al tanto de las últimas tendencias en tecnología.",
       },
 
       table: {
@@ -63,7 +55,7 @@ export const translation = {
     
     resume: {
       title: 'Resumen',
-      quote: 'Estos Son Algunos De Mis Proyectos Personales',
+      quote: 'Proyectos Personales',
       description: {
         rm: "Aplicación de una sola página (SPA) que mostrará descripciones de personajes y ubicaciones de la serie de Rick and Morty. Esta aplicación utilizará la API de Rick and Morty (rickandmortyapi) para obtener la información necesaria. Creada con HTML, CSS, JS, Tailwind y React",
         tienda: "Plantilla de una Eccomerce, incluye filtros por categoría y precio mínimo. Además, los usuarios podrán agregar y eliminar productos del carrito de compras. Creada con HTML, CSS, JS y React.",
@@ -117,24 +109,16 @@ export const translation = {
       quote: "A Developer Who Loves To Code",
       bio: {
         title: "BIO",
-        text1: "During my university studies in Medical Sciences, I discovered ",
+        text1: "After obtaining the baccalaureate degree, I discovered ",
         text2: "my interest in programming",
-        text3: "and decided to explore more about web development. Despite not having a background in computer science, I realized the potential I had to deploy in the world of ",
+        text3: "and decided to explore more about web development. I realized the potential I had to exel in the world of ",
         text4: "Digital Development.",
-        text5: "To start my journey as a ",
+        text5: "On my journey as a ",
         text6: "Self-Taught Front-End Developer, ",
-        text7: "  I learned on my own through online courses and personal projects. I learned languages like ",
-        text8: " and related frameworks for building websites. I fell in love with ",
-        text9: '"Self-discipline and motivation have been key to my success as a Self-Taught Developer".',
-        text10: " Throughout my learning process, I have faced challenges and obstacles, but I have always maintained my passion for learning and improving my skills. ",
-        text11: " I am constantly seeking new ways to enhance my work and stay up-to-date with the latest technology trends. ",
-        text12: "I am always open to new opportunities and challenges in the programming field.",
-        text13: "¡I'm excited to continue learning and creating innovative solutions in the world of web development!",
-      },
-
-      details: {
-        more: "Show More",
-        less: "Show Less",
+        text7: "I acquired knowledge through online courses and personal projects. I learned languages such as",
+        text8: " and related frameworks/libraries. I specialized in ",
+        text9: '"Self-discipline and motivation have been key to my success".',
+        text10: "I am constantly seeking new ways to improve my work and stay up-to-date with the latest technology trends.",
       },
 
       table: {
@@ -162,7 +146,7 @@ export const translation = {
     
     resume: {
       title: 'Resume',
-      quote: 'This Are Some Of My Personal Projects',
+      quote: 'Personal Projects',
       description: {
         rm: "Single-page application (SPA) that will display descriptions of characters and locations from the Rick and Morty series. This application will use the Rick and Morty API (rickandmortyapi) to retrieve the necessary information. Created with HTML, CSS, JS, Tailwind, and React.",
         tienda: "Template for an eCommerce website, includes filters by category and minimum price. Additionally, users will be able to add and remove products from the shopping cart. Created with HTML, CSS, JS, and React.",

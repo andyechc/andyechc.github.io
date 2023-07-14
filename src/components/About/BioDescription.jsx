@@ -35,30 +35,16 @@ export function BioDescription() {
           <b className="text-sky-500"> React.</b>
         </p>
 
-        <details className="text-md text-primary">
-          <summary
-            onClick={handleMore}
-            className="mb-5 cursor-pointer animate-bounce"
-          >
-            {more ? detailsText.less : detailsText.more}
-          </summary>
+        <p className="flex flex-col gap-5">
+          <b className="text-md text-white font-bold">
+            {bioText.text9}
+          </b>
 
-          <p className="flex flex-col gap-5">
-            <b className="text-md text-white font-bold">
-              {bioText.text9}
-            </b>
-
-            <p className="text-gray-300 text-md md:text-lg font-light">
-              {bioText.text10}
-              <b>{bioText.text11}</b>
-              {bioText.text12}
-            </p>
-
-            <b className="text-md text-white font-bold">
-              {bioText.text13}
-            </b>
+          <p className="text-gray-300 text-md md:text-lg font-normal">
+            {bioText.text10}
           </p>
-        </details>
+        </p>
+       
       </p>
     </>
   );
