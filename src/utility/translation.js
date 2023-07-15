@@ -15,7 +15,7 @@ export const translation = {
 
     about: {
       title: "Sobre Mi",
-      quote: "Un Desarrollador Que Le Apasiona Crear Código",
+      quote: "Desarrollador Que Ama Crear Código",
       bio: {
         title: "BIO",
         text1: "Al terminar el Bachiller, descubrí",

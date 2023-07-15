@@ -21,8 +21,6 @@ export default function HeaderMenu({ show }) {
         <HeaderMenuListItem to="#resume">{headerText.link4}</HeaderMenuListItem>
         <HeaderMenuListItem to="#contact">{headerText.link5}</HeaderMenuListItem>
       </ul>
-
-      <SocialMedias />
     </nav>
   );
 }
