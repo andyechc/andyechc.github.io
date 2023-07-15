@@ -1,4 +1,4 @@
-import React, { Suspense, useContext, useState } from "react";
+import {useContext, useState } from "react";
 
 import LanguageContext from "/src/context/LanguageContext";
 
@@ -7,8 +7,8 @@ import MenuDropDown from "/src/icons/MenuDropDown";
 import MenuDropUp from "/src/icons/MenuDropUp";
 import { TranslateButton } from "./TranslateButton";
 
-const HeaderMenu = React.lazy(() => import("./HeaderMenu"));
-const HeaderNav = React.lazy(() => import("./HeaderNav"));
+import HeaderMenu from "./HeaderMenu";
+import HeaderNav from "./HeaderNav";
 
 export function Header() {
   const { text, handleLanguage } = useContext(LanguageContext);
@@ -21,16 +21,11 @@ export function Header() {
   return (
     <>
       <header className="bg-blue-950 w-full flex flex-col">
-        <Suspense>
-          <HeaderMenu show={show} />
-        </Suspense>
+        <HeaderMenu show={show} />
 
         <div className="w-full max-w-[1000px] h-12 m-auto px-5 xl:px-0 border-t border-gray-600 md:border-0 flex justify-between items-center transition-all">
           <Logo />
-
-          <Suspense>
-            <HeaderNav />
-          </Suspense>
+          <HeaderNav />
           
           <div className="md:hidden flex items-center justify-center">
             <TranslateButton />
