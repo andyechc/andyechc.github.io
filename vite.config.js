@@ -15,6 +15,7 @@ export default defineConfig({
         short_name: "andev",
         description: "J.Andy Echevarria Contreras. Front-End Developer. A Developer Who Loves To Code.",
         theme_color: '#001120',
+        background_color: '#001120',
         
         icons: [
           {
