@@ -2,7 +2,7 @@ import LanguageContext from "/src/context/LanguageContext";
 import { useContext } from "react";
 import { SocialMedias } from "../SocialMedias";
 
-import andev from "/src/assets/andev.jpg";
+import andev from "/andev.jpg";
 
 export function Home() {
   const { text } = useContext(LanguageContext);
