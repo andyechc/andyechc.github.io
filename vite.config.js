@@ -44,10 +44,6 @@ export default defineConfig({
         display: "standalone",
         scope: "/",
         start_url: "/"
-      },
-      
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,jpg,png,svg}']
       }
     })
   ],
