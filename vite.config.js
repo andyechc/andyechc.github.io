@@ -14,6 +14,7 @@ export default defineConfig({
         short_name: "andev",
         description: "J.Andy Echevarria Contreras. Front-End Developer. A Developer Who Loves To Code.",
         theme_color: '#001120',
+        background_color: '#001120',
         icons: [
           {
             src: "/and-icon.svg",
@@ -22,10 +23,6 @@ export default defineConfig({
           },
         ]
       },
-      
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,jpg,png,svg}']
-      }
     })
   ],
 })
