@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      regiterType: 'prompt',
+      regiterType: 'autoUpdate',
       
       manifest: {
         name: "andev | Portfolio",
@@ -22,6 +22,10 @@ export default defineConfig({
           },
         ]
       },
+      
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,jpg,png,svg}']
+      }
     })
   ],
 })
