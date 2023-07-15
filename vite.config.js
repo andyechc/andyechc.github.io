@@ -9,8 +9,9 @@ export default defineConfig({
     VitePWA({
       regiterType: 'prompt',
       includeAssets:['and-icon.svg'],
+      
       manifest: {
-        name: "andev|Portfolio",
+        name: "andev | Portfolio",
         short_name: "andev",
         desciption: "J.Andy Echevarria Contreras. Front-End Developer. A Developer Who Loves To Code.",
         theme_color: '#001120',
@@ -43,6 +44,10 @@ export default defineConfig({
         display: "standalone",
         scope: "/",
         start_url: "/"
+      },
+      
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,jpg,png,svg}']
       }
     })
   ],
