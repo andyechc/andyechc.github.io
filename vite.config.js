@@ -7,8 +7,6 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      injectRegister: 'auto',
-      
       manifest: {
         name: "andev|Portfolio",
         short_name: "andev",
@@ -31,8 +29,6 @@ export default defineConfig({
       },
       
       workbox: {
-        clientsClaim: true,
-        skipWaiting: true,
         globPatterns: ['**/*.{js,css,html,jpg,png,svg}']
       }
     })
