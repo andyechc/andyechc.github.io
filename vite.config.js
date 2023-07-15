@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      regiterType: 'autoUpdate',
+      registerType: 'autoUpdate',
       
       manifest: {
         name: "andev | Portfolio",
