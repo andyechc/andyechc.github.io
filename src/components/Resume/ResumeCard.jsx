@@ -1,11 +1,25 @@
+import {useRef} from 'react'
+import { useIntersectionObserver } from "/src/hooks/useIntersectionObserver";
+
 import Page from "/src/icons/page";
 import Github from "/src/icons/github";
 
 export function ResumeCard({title, description, repo, web, img, alt}){
+  const imgVisorRef = useRef();
+  const [isImgIntersecting] = useIntersectionObserver(imgVisorRef);
+  
   return(
     <div className="w-full rounded-md flex flex-wrap md:flex-nowrap justify-center items-center gap-10 animate-showY">
-      <div className='max-w-[200px] md:max-w-[300px] mb-[15px] flex justify-center'>
-        <img className="object-cover aspect-auto rounded-md shadow-[15px_15px_0] shadow-primary" src={img}/>
+      <div 
+        className='max-w-[200px] min-h-[200px] md:min-w-[200px] md:max-w-[300px] mb-[15px] flex justify-center'
+        ref={imgVisorRef}
+      >
+        {isImgIntersecting &&
+          <img 
+            className="aspect-square object-top rounded-md shadow-[15px_15px_0] shadow-primary animate-appear" 
+            src={img}
+          />
+        }
       </div>
       
       <div className='flex flex-col items-center gap-5'>
@@ -15,8 +29,12 @@ export function ResumeCard({title, description, repo, web, img, alt}){
         </div>
         
         <div className='flex justify-center items-center gap-5'>
-          <a className='w-8' href={`https://github.com/andev-code/${repo}`} target="_blank"><Github/></a>
-          <a className='w-8' href={`https://${web}.vercel.app`} target="_blank"><Page/></a>
+          <a className='w-8' href={`https://github.com/andev-code/${repo}`} target="_blank">
+            <Github/>
+          </a>
+          <a className='w-8' href={`https://${web}.vercel.app`} target="_blank">
+            <Page/>
+          </a>
         </div>
       </div>
     </div>

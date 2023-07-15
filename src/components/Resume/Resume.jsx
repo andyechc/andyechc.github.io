@@ -1,4 +1,4 @@
-import React, { useContext, Suspense, useRef } from "react";
+import { useContext, Suspense, useRef } from "react";
 import LanguageContext from "/src/context/LanguageContext";
 import { useIntersectionObserver } from "/src/hooks/useIntersectionObserver";
 
