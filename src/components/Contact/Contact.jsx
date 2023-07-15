@@ -16,7 +16,11 @@ export function Contact(){
       <span className='text-md font-normal text-gray-500 flex justify-center items-center gap-2'>
         Powered by 
         <a href="https://formspree.io">
-          <img className="w-[160px]" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/formspree_logo_icon_170134.png"/>
+          <img 
+            className="w-[160px]" 
+            alt="Formspree"
+            src="https://cdn.icon-icons.com/icons2/2699/PNG/512/formspree_logo_icon_170134.png"
+          />
         </a>
       </span>
     </section>

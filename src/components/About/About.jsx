@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from "react";
 
-import developer from "/src/assets/coding.jpg";
+const developer = React.lazy(()=> import( "/src/assets/coding.jpg"));
 
 import { useIntersectionObserver } from "/src/hooks/useIntersectionObserver";
 import LanguageContext from "/src/context/LanguageContext";
