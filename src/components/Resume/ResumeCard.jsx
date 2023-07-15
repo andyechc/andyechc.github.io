@@ -29,10 +29,10 @@ export function ResumeCard({title, description, repo, web, img, alt}){
         </div>
         
         <div className='flex justify-center items-center gap-5'>
-          <a className='w-8' href={`https://github.com/andev-code/${repo}`} target="_blank">
+          <a className='text-3xl' href={`https://github.com/andev-code/${repo}`} target="_blank">
             <Github/>
           </a>
-          <a className='w-8' href={`https://${web}.vercel.app`} target="_blank">
+          <a className='text-3xl' href={`https://${web}.vercel.app`} target="_blank">
             <Page/>
           </a>
         </div>
