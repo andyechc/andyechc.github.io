@@ -7,10 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      regiterType: 'autoUpdate',
+      regiterType: 'prompt',
       
       manifest: {
-        name: "andev|Portfolio",
+        name: "andev | Portfolio",
         short_name: "andev",
         description: "J.Andy Echevarria Contreras. Front-End Developer. A Developer Who Loves To Code.",
         theme_color: '#001120',
