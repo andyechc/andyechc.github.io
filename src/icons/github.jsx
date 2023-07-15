@@ -6,7 +6,7 @@ export default function Github() {
       fill="currentColor"
       stroke-width="0"
       viewBox="0 0 1024 1024"
-      height="auto"
+      height="1em"
       width="100%"
       xmlns="http://www.w3.org/2000/svg"
     >
