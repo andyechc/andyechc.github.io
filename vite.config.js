@@ -8,7 +8,32 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      devOptions : {enabled: true}
+      devOptions : {enabled: true},
+      
+      manifest: {
+        name: "andev|Portfolio",
+        short_name: "andev",
+        desciption: "J.Andy Echevarria Contreras. Front-End Developer. A Developer Who Loves To Code.",
+        theme_color: '#001120',
+        icons: [
+          {
+            src: "/and-icon.svg",
+            sizes: "512x512",
+            type: "image/svg+xml",
+            purpose: "any maskable"
+          },
+          {
+            src: "/and-icon.svg",
+            sizes: "192x192",
+            type: "image/svg+xml",
+            purpose: "any maskable"
+          }
+        ]
+      },
+      
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,jpg,png,svg}']
+      }
     })
   ],
 })
