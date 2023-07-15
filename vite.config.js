@@ -7,18 +7,27 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      regiterType: 'autoUpdate',
+      
       manifest: {
         name: "andev|Portfolio",
         short_name: "andev",
-        desciption: "J.Andy Echevarria Contreras. Front-End Developer. A Developer Who Loves To Code.",
+        description: "J.Andy Echevarria Contreras. Front-End Developer. A Developer Who Loves To Code.",
         theme_color: '#001120',
         icons: [
+          {
+            src: "/and-icon.svg",
+            type: "image/svg+xml",
+            purpose: "any maskable"
+          },
+          
           {
             src: "/and-icon.svg",
             sizes: "512x512",
             type: "image/svg+xml",
             purpose: "any maskable"
           },
+          
           {
             src: "/and-icon.svg",
             sizes: "192x192",

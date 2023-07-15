@@ -5,7 +5,7 @@ export default function Vercel() {
     fill = "currentColor"
     strokeWidth = "0"
     viewBox = "0 0 512 512"
-    height = "1em"
+    height = "auto"
     width = "1em"
     xmlns = "http://www.w3.org/2000/svg" > < path fill-rule = "evenodd" d = "M256 48l240 416H16z"></path > < /svg >
   );

@@ -7,7 +7,7 @@ export default function Spinner() {
        stroke-width="0" 
        version="1.1" 
        viewBox="0 0 16 16" 
-       height="1em" 
+       height="auto" 
        width="1em" 
        xmlns="http://www.w3.org/2000/svg"
     >
