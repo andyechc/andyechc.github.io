@@ -15,10 +15,19 @@ export default defineConfig({
         description: "J.Andy Echevarria Contreras. Front-End Developer. A Developer Who Loves To Code.",
         theme_color: '#001120',
         background_color: '#001120',
+        
         icons: [
           {
             src: "/and-icon.svg",
             type: "image/svg+xml",
+            size:"512x512",
+            purpose: "any maskable"
+          },
+          
+          {
+            src: "/and-icon.svg",
+            type: "image/svg+xml",
+            size:"192x192",
             purpose: "any maskable"
           },
         ]
