@@ -20,14 +20,14 @@ export default defineConfig({
           {
             src: "/and-icon.svg",
             type: "image/svg+xml",
-            size:"512x512",
+            sizes:"512x512",
             purpose: "any maskable"
           },
           
           {
             src: "/and-icon.svg",
             type: "image/svg+xml",
-            size:"192x192",
+            sizes:"192x192",
             purpose: "any maskable"
           },
         ]
