@@ -15,13 +15,13 @@ export function Form(){
   
   return(
     <form 
-      className="w-full h-full max-w-[800px] flex flex-col justify-center items-center gap-5 accent-primary text-white text-md font-normal caret-primary"
+      className="w-full h-full max-w-[800px] flex flex-col justify-center items-center gap-5 accent-primary text-white text-md font-normal autofill:bg-transparent caret-primary"
       onSubmit={handleSubmit}
     >
       <div className="w-full flex gap-5 justify-center items-center">
         <input
           name="name"
-          className="w-full bg-transparent border border-gray-600 rounded px-2 py-3 focus:border-primary focus:outline-0 active:border-0 active:outline-0  transition-all" 
+          className="w-full bg-transparent border border-gray-600 rounded px-2 py-3 focus:border-primary focus:outline-0 active:border-0 active:outline-0 transition-all" 
           type="text" 
           placeholder={textContact.form.name}
           required
