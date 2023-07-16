@@ -21,7 +21,7 @@ export function Home() {
           {text.cover.text1}.
         </span>
 
-        <div className="flex items-center gap-5">
+        <footer className="flex items-center gap-5">
           <a
             className=" h-full px-4 py-1 bg-primary text-center text-sm text-white font-extrabold border border-primary hover:bg-opacity-25 hover:text-gray-100 rounded-md transition-all"
             href="#contact"
@@ -30,7 +30,7 @@ export function Home() {
           </a>
           
           <SocialMedias />
-        </div>
+        </footer>
         
       </section>
 

@@ -9,8 +9,8 @@ export function ResumeCard({title, description, repo, web, img, alt}){
   const [isImgIntersecting] = useIntersectionObserver(imgVisorRef);
   
   return(
-    <div className="w-full rounded-md flex flex-wrap md:flex-nowrap justify-center items-center gap-10 animate-showY">
-      <div 
+    <article className="w-full rounded-md flex flex-wrap md:flex-nowrap justify-center items-center gap-10 animate-showY">
+      <aside 
         className='max-w-[200px] min-h-[200px] md:min-w-[200px] md:max-w-[300px] mb-[15px] flex justify-center'
         ref={imgVisorRef}
       >
@@ -20,23 +20,23 @@ export function ResumeCard({title, description, repo, web, img, alt}){
             src={img}
           />
         }
-      </div>
+      </aside>
       
-      <div className='flex flex-col items-center gap-5'>
-        <div className='w-full flex justify-center items-center flex-col gap-2'>
+      <section className='flex flex-col items-center gap-5'>
+        <article className='w-full flex justify-center items-center flex-col gap-2'>
           <h4 className="text-xl font-bold text-white md:w-full">{title}</h4>
           <p className="text-center md:text-left text-md text-gray-200 font-normal">{description}</p>
-        </div>
+        </article>
         
-        <div className='flex justify-center items-center gap-5'>
+        <footer className='flex justify-center items-center gap-5'>
           <a className='text-3xl' href={`https://github.com/andev-code/${repo}`} target="_blank">
             <Github/>
           </a>
           <a className='text-3xl' href={`https://${web}.vercel.app`} target="_blank">
             <Page/>
           </a>
-        </div>
-      </div>
-    </div>
+        </footer>
+      </section>
+    </article>
   )
 }

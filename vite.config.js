@@ -29,24 +29,6 @@ export default defineConfig({
           },
           {
             src: "/and-icon.svg",
-            sizes: "180x180",
-            type: "image/svg+xml",
-            purpose: "apple touch icon"
-          },
-          {
-            src: "/and-icon.svg",
-            sizes: "192x192",
-            type: "image/svg+xml",
-            purpose: "apple touch icon"
-          },
-          {
-            src: "/and-icon.svg",
-            sizes: "512x512",
-            type: "image/svg+xml",
-            purpose: "apple touch icon"
-          },
-          {
-            src: "/and-icon.svg",
             sizes: "225x225",
             type: "image/svg+xml",
             purpose: "any maskable"

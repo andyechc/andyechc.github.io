@@ -18,7 +18,7 @@ export function Footer(){
         <SocialMedias/>
       </article>
       
-      <div className='w-full max-w-[300px] flex justify-evenly'>
+      <section className='w-full max-w-[300px] flex justify-evenly'>
         <article className='max-w-[150px] flex flex-col gap-5'>
           <span className='text-white text-lg font-bold'>{text.footer.nav}</span>
           <nav className="text-md text-gray-300 font-normal flex flex-col gap-2">
@@ -38,9 +38,9 @@ export function Footer(){
             <a className='hover:text-primary' href='https://react-icons.github.io/react-icons'>react-icons</a>
           </nav>
         </article>
-      </div>
+      </section>
       
-      <div className='w-full max-w-[1000px] flex-grow flex flex-wrap justify-between gap-5'>
+      <article className='w-full max-w-[1000px] flex-grow flex flex-wrap justify-between gap-5'>
         <span className="text-md text-gray-300 flex-grow">
           {text.footer.copy}
             <strong className="text-white"> andev </strong>
@@ -50,7 +50,7 @@ export function Footer(){
         <TermsConditions/>
         <PrivacyPolicy/>
 
-      </div>
+      </article>
     </footer>
   )
 }
