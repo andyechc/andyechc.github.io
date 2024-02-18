@@ -8,7 +8,7 @@
   src: url('assets/Poppins-Regular.ttf');
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -103,23 +103,82 @@ b{
   color: var(--primary);
 }
 
-header nav {
+header .menu {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
+header .menu-responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 340;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+header .menu-responsive .menu-responsive-nav{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  background: #f5f5f577;
+  backdrop-filter: blur(3px);
+  border: 1px solid var(--primary);
+  border-radius: 15px;
+  height: max-content;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+} body.dark header .menu-responsive .menu-responsive-nav {
+  background: #3337;
+}
+
+@keyframes show-menu {
+  from {
+    display: none;
+    top: -200px;
+  }
+  to{
+    display: flex;
+    top: 10px;
+  }
+}
+
+@keyframes hidde-menu {
+  from {
+    display: flex;
+    top: 10px;
+  }
+  to{
+    top: -200px;
+    display: none;
+  }
+}
+
 header nav a:hover{
   border-bottom: 2px solid var(--primary);
 }
 
-header .theme{
+header .buttons-ctn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header .buttons-ctn img{
   width: 20px;
   height: 20px;
   display: flex;
   border: none;
   cursor: pointer;
+}
+
+header .buttons-ctn .menu-button {
+  display: none;
 }
 
 main{
@@ -189,6 +248,8 @@ section {
 .hero .name .subtitle div {
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 10px;
   color: #555;
 }
@@ -344,7 +405,7 @@ h2 {
 
 footer {
   padding-top: 80px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   max-width: 600px;
   margin: auto;
   display: flex;
@@ -399,4 +460,139 @@ footer .links nav a:hover {
   font-family: 'Poppins';
   color: #ffb1b1;
   font-weight: 300;
+}
+
+@media screen and (width <= 640px) {
+  header{
+    padding: 0 20px 0 20px;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  header .buttons-ctn .menu-button {
+    display: block;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (width <= 496px) {
+  .hero .name h1 {
+    flex-wrap: wrap;
+    gap: 10px;
+  } 
+
+  .hero .name p {
+    margin-top: 40px;
+  }
+
+  .hero .name .subtitle div p {
+    margin: 0;
+  }
+
+  .skills article img {
+    width: 70px;
+  }
+}
+
+@media screen and (width <= 484px) {
+  .hero .name h1 {
+    gap: 0;
+  }
+}
+
+@media screen and (width <= 460px) {
+  .about .social {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (width <= 450px) {
+  .about div {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (width <= 420px) {
+  .hero .name .subtitle {
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+  }
+
+  .skills article img {
+    width: 60px;
+  }
+}
+
+@media screen and (width <= 410px) {
+  .hero .name .subtitle {
+    gap: 10px;
+  }
+
+  footer .info .logo-ctn{
+    max-width: 150px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  footer .info p {
+    font-size: 12px;
+  }
+
+  footer .info .tyc {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media screen and (width < 379px) {
+  .hero .name h1 {
+    font-size: 35px;
+  }
+  
+  .hero .name .subtitle {
+    gap: 0;
+  }
+
+  .about .info h3 {
+    font-size: 30px;
+  }
+
+  footer .info {
+    max-width: 160px;
+  }
+
+  footer .info .tyc {
+    gap: 0;
+  }
+}
+
+@media screen and (width <= 350px) {
+  .hero .name h1 {
+    font-size: 30px;
+  }
+  
+  .skills article img {
+    width: 50px;
+  }
+
+  footer .info p {
+    font-size: 12px;
+    max-width: 150px;
+  }
+}
+
+@media screen and (width <= 320px) {
+  .about .info h3 {
+    font-size: 25px;
+  }
 }

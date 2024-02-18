@@ -26,27 +26,39 @@
     <div class="ctn-header">
       <div>
         <img src="assets/logo2.jpg" alt="">
-        <span class="logo">andev . <b>code</b></span>
+        <a href="#hero" class="logo" translate="no">andev.<b>code</b></a>
       </div>
 
-      <nav>
+      <nav class="menu">
         <a href="#experiencia">Experiencia</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#sobre-mi">Sobre Mi</a>
       </nav>
 
-      <img src="assets/Icons/sun.svg" alt="icono de un Sol" class="theme" id="theme" role="button">
+      <div class="menu-responsive" id="menu-resp">
+        <nav class="menu-responsive-nav" id="menu-nav">
+          <a href="#experiencia">Experiencia</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#sobre-mi">Sobre Mi</a>
+        </nav>
+      </div>
+
+      <div class="buttons-ctn">
+        <img src="assets/Icons/sun.svg" alt="icono de un Sol" class="theme" id="theme" role="button">
+        <img src="assets/Icons/menu.svg" alt="menu icon" class="menu-button" id="menu-button">
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <img src="assets/profile.jpg" alt="J.Andy Echevarria Contreras en una oficina verde." width="100px" height="100px">
 
       <article class="name">
         <article class="social">
-          <span class="logo">andev . <b>code</b></span>
+          <span class="logo" translate="no">andev.<b>code</b></span>
 
           <a href="https://github.com/andev-code"><img src="assets/Icons/github.svg" alt="github link">Github</a>
         </article>
@@ -191,15 +203,15 @@
 
   <footer>
     <article class="info">
-      <div>
+      <div class="logo-ctn">
         <img src="assets/logo2.jpg" alt="logo">
-        <span class="logo">andev . <b>code</b></span>
+        <span class="logo" translate="no">andev.<b>code</b></span>
       </div>
 
       <p>Desarrollador que le <b>apasiona</b> crear <b>soluciones</b></p>
 
       <div class="tyc">
-        <small>Terminos de uso</small>
+        <small>Terminos de Uso</small>
         <small>Condiciones de Privacidad</small>
       </div>
     </article>
@@ -208,9 +220,9 @@
       <strong>Enlaces</strong>
 
       <nav>
-        <a href="https://svgrepo.com" target="_blank">SVG-Repo</a>
-        <a href="https://fonts.google.com" target="_blank">Google Fonts</a>
-        <a href="https://shots.so" target="_blank">Shots</a>
+        <a href="https://svgrepo.com" target="_blank" translate="no">SVG-Repo</a>
+        <a href="https://fonts.google.com" target="_blank" translate="no">Google Fonts</a>
+        <a href="https://shots.so" target="_blank" translate="no">Shots</a>
       </nav>
     </article>
   </footer>
