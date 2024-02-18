@@ -124,7 +124,7 @@ header .menu-responsive .menu-responsive-nav{
   display: flex;
   flex-direction: column;
   padding: 20px 10px;
-  background: #f5f5f577;
+  background: #f5f5f5;
   backdrop-filter: blur(3px);
   border: 1px solid var(--primary);
   border-radius: 15px;
@@ -133,7 +133,7 @@ header .menu-responsive .menu-responsive-nav{
   right: 30px;
   top: 10px;
 } body.dark header .menu-responsive .menu-responsive-nav {
-  background: #3337;
+  background: #333;
 }
 
 @keyframes show-menu {
