@@ -6,6 +6,10 @@ const rmImg = $('#rm')
 const menuResp = $('#menu-resp')
 const menuNav = $('#menu-nav')
 const menuButton = $('#menu-button')
+const copy = $('#copy')
+
+const year = Date().split(" ")[3]
+copy.innerText = "© " + year
 
 // Theme restore from cache
 const theme = localStorage.getItem("theme")
@@ -36,7 +40,7 @@ themeButton.addEventListener('click', ()=>{
 // Menu functionality
 menuButton.addEventListener('click', ()=>{
   menuNav.style.animation = "show-menu 300ms backwards ease-in"
-  menuResp.style.display = "block" // Show
+  menuResp.style.display = "block"
 })
 
 menuResp.addEventListener('click', ()=>{

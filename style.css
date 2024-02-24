@@ -387,13 +387,13 @@ h2 {
   font-weight: 400;
 }
 
-.about .info div small {
+.about .info div small, .about .info div a {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.about .info div small img {
+.about .info div a img {
   width: 20px;
 }
 
@@ -412,10 +412,8 @@ footer {
   justify-content: space-between;
 }
 
-footer .info .tyc{
-  display: flex;
-  gap: 20px;
-  padding-top: 20px;
+footer .info .copy{
+  padding-top: 15px;
 }
 
 footer .info div img {
@@ -427,8 +425,8 @@ footer .info p {
 }
 
 footer .info div small {
-  color: var(--primary);
-  cursor: pointer;
+  color: #444;
+  font-size: 14px;
 }
 
 footer .links {
