@@ -340,10 +340,11 @@ h2 {
 .projects li div {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .projects li div span {
-  width: 100px;
+  width: fit-content;
   display: flex;
   align-items: center;
 }
