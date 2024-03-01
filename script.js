@@ -1,8 +1,6 @@
 const $ = el => document.querySelector(el)
 
 const themeButton = $('#theme')
-const markyImg = $('#marky')
-const rmImg = $('#rm')
 const menuResp = $('#menu-resp')
 const menuNav = $('#menu-nav')
 const menuButton = $('#menu-button')
@@ -23,14 +21,10 @@ themeButton.addEventListener('click', ()=>{
   if (document.body.className === "dark") {
     // Light theme actions
     themeButton.src = "./assets/Icons/moon.svg"
-    markyImg.src = "./assets/Projects/marky.png"
-    rmImg.src = "./assets/Projects/rm.png"
     localStorage.setItem("theme", "light")
   } else {
     // Dark theme actions
     themeButton.src = "./assets/Icons/sun.svg"
-    markyImg.src = "./assets/Projects/marky-dark.png"
-    rmImg.src = "./assets/Projects/rm-dark.png"
     localStorage.setItem("theme", "dark")
   }
 
