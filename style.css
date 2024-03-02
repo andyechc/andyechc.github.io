@@ -371,7 +371,7 @@ h2 {
   display: flex;
   gap: 10px;
   margin-top: 20px;
-  overflow-x: hidden;
+  overflow-x: scroll;
   width: 100%;
   border-radius: 20px;
   padding: 40px 0;
