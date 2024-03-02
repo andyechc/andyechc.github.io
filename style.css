@@ -23,7 +23,6 @@
   font-size: 14px;
   scroll-behavior: smooth;
   --primary: #569880;
-  background: linear-gradient(to top right, #f5f5f5, var(--primary), #f0f0f0, #ffffff, var(--primary)) no-repeat cover center;
   --secondary: #CF2669;
 }
 
