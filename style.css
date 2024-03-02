@@ -369,7 +369,7 @@ h2 {
 
 .skills .marquee {
   display: flex;
-  gap: 10px;
+  gap: 25px;
   margin-top: 20px;
   overflow-x: scroll;
   width: 100%;
