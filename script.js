@@ -5,6 +5,9 @@ const menuResp = $('#menu-resp')
 const menuNav = $('#menu-nav')
 const menuButton = $('#menu-button')
 const copy = $('#copy')
+const marquee = $('#marquee')
+const firstSkills = $('#firstSkills')
+const secondsSkills = $('#secondsSkills')
 
 const year = Date().split(" ")[3]
 copy.innerText = "© " + year
@@ -43,4 +46,10 @@ menuResp.addEventListener('click', ()=>{
   setTimeout(()=>{
     menuResp.style.display = "none"
   },300)
+})
+
+// skills handler
+marquee.addEventListener("click", ()=>{
+  secondsSkills.classList.toggle("hidde")
+  firstSkills.classList.toggle("grid")
 })
