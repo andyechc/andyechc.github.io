@@ -505,6 +505,8 @@ footer .info p {
 footer .info div small {
   color: #444;
   font-size: 14px;
+}body.dark footer .info div small {
+  color: #8a8a8a;
 }
 
 footer .links {
