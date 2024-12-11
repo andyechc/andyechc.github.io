@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+---
+
+<header
+  class="h-[50px] max-w-[1000px] m-auto w-full flex justify-between items-center"
+>
+  <picture>
+    <Image src="/logo.svg" alt="the logo" width="30" height="30" loading={"eager"}/>
+  </picture>
+
+  <nav class="flex justify-center items-center gap-4">
+    <a href="#hero" class="text-white/80 hover:text-[#c87137] transition-colors"
+      >Inicio</a
+    >
+    <a href="#experience" class="text-white/80 hover:text-[#c87137] transition-colors"
+      >Experiencia</a
+    >
+    <a href="#hero" class="text-white/80 hover:text-[#c87137] transition-colors"
+      >Proyectos</a
+    >
+    <a href="#hero" class="text-white/80 hover:text-[#c87137] transition-colors"
+      >TechStack</a
+    >
+    <a href="#hero" class="text-white/80 hover:text-[#c87137] transition-colors"
+      >Acerca</a
+    >
+  </nav>
+
+  
+</header>

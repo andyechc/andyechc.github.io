@@ -1,22 +1,91 @@
+---
+import background from "../assets/background.svg";
+---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>andyechc - Portafolio</title>
+  </head>
+
+  <body class="bg-black">
+    <img
+      id="background"
+      src={background.src}
+      alt="a circle forms in the background"
+      fetchpriority="high"
+      class="absolute left-[50%] top-0 translate-x-[-50%] z-[-1]"
+    />
+
+    <slot />
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Teko";
+    src: url("/fonts/Teko-Regular.ttf");
+  }
+
+  * {
+    font-family:
+      "Poppins",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+  }
+
+  ::-webkit-selection {
+    background-color: #c87137;
+    color: #000;
+  }
+
+  ::-moz-selection {
+    background-color: #c87137;
+    color: #000;
+  }
+
+  ::selection {
+    background-color: #c87137;
+    color: #000;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  strong,
+  b {
+    font-family:
+      "Teko",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    letter-spacing: 2px;
+  }
 </style>
