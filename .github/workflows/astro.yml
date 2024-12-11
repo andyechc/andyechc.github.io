@@ -1,48 +1,24 @@
-name: Deploy Astro site to GitHub Pages
+name: Deploy Astro to GitHub Pages
 
 on:
-  # Ejecuta el workflow en cada push al branch principal (ajusta si necesitas otro)
   push:
-    branches: [main]
-
-  # Permite ejecutar el workflow manualmente
-  workflow_dispatch:
-
-# Permisos necesarios para interactuar con GitHub
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Permite solo un despliegue concurrente
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches: [dev]
 
 jobs:
-  build:
-    name: Build
+  build-and-deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20' # Ajusta la versión de Node.js si es necesario
-      - name: Install dependencies
-        run: npm ci
-      - name: Build with Astro
-        run: npm run build
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          folder: dist # Asegúrate de que 'dist' sea el directorio de salida de tu build
+          node-version: 20  # Ajusta según tu versión de Node.js
+      - run: npm ci
+      - run: npm run build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist  # Asegúrate de que coincida con el directorio de salida de tu build
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: Deploy to GitHub Pages
