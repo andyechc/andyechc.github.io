@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20  # Ajusta según tu versión de Node.js
-      - run: npm ci
+      - run: npm i
       - run: npm run build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
