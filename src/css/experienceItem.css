@@ -1,0 +1,34 @@
+.item::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 6px;
+  background: #09090b;
+  z-index: -1;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: var(--x);
+  left: var(--y);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(#c87137, transparent, transparent, transparent);
+  border-radius: 6px;
+  opacity: 0;
+  z-index: -1;
+  translate:
+    0.5s,
+    top 0s,
+    left 0s;
+}
+
+.item:hover::before {
+  opacity: 1;
+}
+
+.item p {
+  word-spacing: 2px;
+}

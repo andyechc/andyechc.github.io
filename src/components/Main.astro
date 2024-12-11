@@ -1,0 +1,19 @@
+---
+import Hero from "./Sections/Hero.astro";
+import Header from "./Header.astro";
+import Experience from "./Sections/Experience.astro";
+import Projects from "./Sections/Projects.astro";
+---
+
+<main id="container" class="w-full flex flex-col">
+  <Header />
+  <Hero />
+  <Experience />
+  <Projects />
+</main>
+
+<style>
+  #container {
+    backdrop-filter: blur(100px);
+  }
+</style>
