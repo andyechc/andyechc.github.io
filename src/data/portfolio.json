@@ -9,7 +9,8 @@
     "social": {
       "github": "https://github.com/andyechc",
       "linkedin": "https://linkedin.com/in/andyechc",
-      "twitter": "https://x.com/andyechc"
+      "twitter": "https://x.com/andyechc",
+      "substack": "https://substack.com/@andyechc"
     }
   },
   "about": {
@@ -18,7 +19,7 @@
     "highlights": [
       "Desarrollo frontend con tecnologías modernas",
       "Diseño minimalista y enfoque en UX",
-      "Experiencia en optimización de rendimiento",
+      "+4 años de experiencia",
       "Aprendizaje continuo y adaptación"
     ]
   },
@@ -37,6 +38,7 @@
       {
         "name": "Backend",
         "items": [
+          { "name": "Ktor", "icon": "ktor" },
           { "name": "Node.js", "icon": "nodejs" },
           { "name": "Python", "icon": "python" },
           { "name": "MongoDB", "icon": "mongodb" }
@@ -46,15 +48,14 @@
         "name": "Nativo",
         "items": [
           { "name": "Kotlin", "icon": "kotlin" },
-          { "name": "Swift", "icon": "swift" }
+          { "name": "Swift", "icon": "swift" },
+          { "name": "KMP", "icon": "kmp" }
         ]
       },
       {
         "name": "Herramientas",
         "items": [
-          { "name": "Git", "icon": "git" },
-          { "name": "Docker", "icon": "docker" },
-          { "name": "Vite", "icon": "vite" }
+          { "name": "Git", "icon": "git" }
         ]
       }
     ]
@@ -64,7 +65,7 @@
       "id": 1,
       "title": "Proyecto Minimalista",
       "description": "Una aplicación web minimalista con enfoque en la experiencia de usuario y rendimiento.",
-      "image": "/projects/project1.jpg",
+      "image": "/projects/placeholder.jpg",
       "technologies": ["React", "TypeScript", "Tailwind CSS"],
       "liveUrl": "https://project1.example.com",
       "githubUrl": "https://github.com/tu-usuario/project1",
@@ -75,7 +76,7 @@
       "id": 2,
       "title": "Dashboard Analytics",
       "description": "Panel de análisis de datos con visualizaciones interactivas y tiempo real.",
-      "image": "/projects/project2.jpg",
+      "image": "/projects/placeholder.jpg",
       "technologies": ["Vue.js", "Node.js", "D3.js"],
       "liveUrl": "https://project2.example.com",
       "githubUrl": "",
@@ -87,7 +88,7 @@
       "id": 3,
       "title": "E-commerce Platform",
       "description": "Plataforma de comercio electrónico con carrito de compras y pasarela de pago.",
-      "image": "/projects/project3.jpg",
+      "image": "/projects/placeholder.jpg",
       "technologies": ["Next.js", "Stripe", "PostgreSQL"],
       "liveUrl": "",
       "githubUrl": "https://github.com/tu-usuario/project3",
@@ -99,7 +100,7 @@
       "id": 4,
       "title": "Proyecto Confidencial",
       "description": "Aplicación empresarial interna con datos sensibles. No disponible para visualización pública.",
-      "image": "/projects/project4.jpg",
+      "image": "/projects/placeholder.jpg",
       "technologies": ["React", "Node.js", "MongoDB"],
       "liveUrl": "",
       "githubUrl": "",
@@ -109,24 +110,35 @@
       "noPreview": true
     }
   ],
-  "experience": [
-    {
-      "id": 1,
-      "company": "Tech Company",
-      "position": "Desarrollador Frontend",
-      "period": "2022 - Presente",
-      "description": "Desarrollo de aplicaciones web modernas con React y TypeScript. Enfoque en optimización de rendimiento y experiencia de usuario.",
-      "technologies": ["React", "TypeScript", "Tailwind CSS", "GraphQL"]
-    },
-    {
-      "id": 2,
-      "company": "Startup Digital",
-      "position": "Desarrollador Full Stack",
-      "period": "2020 - 2022",
-      "description": "Creación de aplicaciones web completas desde el diseño hasta el despliegue. Implementación de APIs RESTful y bases de datos.",
-      "technologies": ["Node.js", "React", "MongoDB", "Docker"]
-    }
-  ],
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "id": 1,
+        "company": "Tech Company",
+        "position": "Desarrollador Frontend",
+        "period": "2022 - Presente",
+        "description": "Desarrollo de aplicaciones web modernas con React y TypeScript. Enfoque en optimización de rendimiento y experiencia de usuario.",
+        "technologies": ["React", "TypeScript", "Tailwind CSS", "GraphQL"]
+      },
+      {
+        "id": 2,
+        "company": "Startup Digital",
+        "position": "Desarrollador Full Stack",
+        "period": "2020 - 2022",
+        "description": "Creación de aplicaciones web completas desde el diseño hasta el despliegue. Implementación de APIs RESTful y bases de datos.",
+        "technologies": ["Node.js", "React", "MongoDB", "Docker"]
+      },
+      {
+        "id": 3,
+        "company": "Agencia de Software",
+        "position": "Desarrollador Junior",
+        "period": "2019 - 2020",
+        "description": "Desarrollo de sitios web y aplicaciones para clientes diversos. Aprendizaje de mejores prácticas y metodologías ágiles.",
+        "technologies": ["HTML", "CSS", "JavaScript", "WordPress"]
+      }
+    ]
+  },
   "contact": {
     "title": "Contacto",
     "description": "¿Interesado en colaborar? No dudes en contactarme.",

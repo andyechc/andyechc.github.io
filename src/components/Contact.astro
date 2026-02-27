@@ -34,7 +34,7 @@ const { title, description, form } = Astro.props;
             id="name" 
             name="name" 
             required
-            class="w-full px-4 py-3 border border-gray-600 bg-gray-800 text-white rounded-3xl focus:ring-2 focus:ring-white focus:border-transparent outline-none transition-all"
+            class="w-full px-4 py-3 border border-zinc-600 bg-zinc-900 text-white rounded-[2rem] focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
             placeholder="Tu nombre"
           />
         </div>
@@ -48,7 +48,7 @@ const { title, description, form } = Astro.props;
             id="email" 
             name="email" 
             required
-            class="w-full px-4 py-3 border border-gray-600 bg-gray-800 text-white rounded-3xl focus:ring-2 focus:ring-white focus:border-transparent outline-none transition-all"
+            class="w-full px-4 py-3 border border-zinc-600 bg-zinc-900 text-white rounded-[2rem] focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
             placeholder="tu@email.com"
           />
         </div>
@@ -63,7 +63,7 @@ const { title, description, form } = Astro.props;
           name="message" 
           rows="6" 
           required
-          class="w-full px-4 py-3 border border-gray-600 bg-gray-800 text-white rounded-3xl focus:ring-2 focus:ring-white focus:border-transparent outline-none transition-all resize-none"
+          class="w-full px-4 py-3 border border-zinc-600 bg-zinc-900 text-white rounded-[2rem] focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all resize-none"
           placeholder="Tu mensaje..."
         ></textarea>
       </div>
@@ -71,7 +71,7 @@ const { title, description, form } = Astro.props;
       <div class="text-center">
         <button 
           type="submit"
-          class="inline-flex items-center px-8 py-3 bg-white text-black font-medium rounded-3xl hover:bg-gray-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+          class="inline-flex items-center px-8 py-3 bg-accent text-black font-medium rounded-[2rem] hover:bg-accent/80 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
         >
           {form.submit}
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +84,7 @@ const { title, description, form } = Astro.props;
     <div class="mt-12 text-center">
       <p class="text-sm text-gray-400">
         También puedes contactarme directamente en 
-        <a href="mailto:andyechc@gmail.com" class="text-white hover:opacity-70 transition-opacity">
+        <a href="mailto:andyechc@gmail.com" class="text-accent hover:opacity-70 transition-opacity">
           andyechc@gmail.com
         </a>
       </p>

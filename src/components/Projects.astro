@@ -30,8 +30,8 @@ const otherProjects = projects.filter(project => !project.featured);
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         {featuredProjects.map((project, index) => (
           <div class="project-card slide-up" style={`animation-delay: ${index * 0.1}s`}>
-            <div class="bg-gray-900 rounded-3xl overflow-hidden group cursor-pointer">
-              <div class="aspect-video bg-gray-800 relative overflow-hidden">
+            <div class="bg-zinc-900 rounded-[2rem] overflow-hidden group cursor-pointer">
+              <div class="aspect-video bg-zinc-800 relative overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title}
@@ -47,7 +47,7 @@ const otherProjects = projects.filter(project => !project.featured);
                 <div class="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, techIndex) => (
                     <span 
-                      class="px-3 py-1 bg-gray-800 text-white text-sm rounded-3xl"
+                      class="px-3 py-1 bg-zinc-800 text-white text-sm rounded-[2rem]"
                     >
                       {tech}
                     </span>
@@ -124,14 +124,14 @@ const otherProjects = projects.filter(project => !project.featured);
         <div class="grid md:grid-cols-2 gap-6">
           {otherProjects.map((project, index) => (
             <div class="project-card-simple slide-up" style={`animation-delay: ${index * 0.1}s`}>
-              <div class="border border-gray-700 rounded-3xl p-6 hover:border-gray-600 transition-colors">
+              <div class="border border-zinc-700 rounded-[2rem] p-6 hover:border-zinc-600 transition-colors">
                 <h3 class="text-lg font-semibold mb-2">{project.title}</h3>
                 <p class="text-gray-300 mb-4 text-sm line-clamp-2">{project.description}</p>
                 
                 <div class="flex flex-wrap gap-2 mb-4">
                   {project.technologies.slice(0, 3).map((tech, techIndex) => (
                     <span 
-                      class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded-3xl"
+                      class="px-2 py-1 bg-zinc-800 text-gray-300 text-xs rounded-[2rem]"
                     >
                       {tech}
                     </span>

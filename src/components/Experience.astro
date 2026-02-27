@@ -1,0 +1,123 @@
+---
+interface ExperienceItem {
+  id: number;
+  company: string;
+  position: string;
+  period: string;
+  description: string;
+  technologies: string[];
+}
+
+interface Props {
+  experiences: ExperienceItem[];
+  title: string;
+}
+
+const { experiences, title } = Astro.props;
+
+// Sort experiences by period (most recent first)
+const sortedExperiences = [...experiences].reverse();
+---
+
+<section class="py-20 bg-black">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-16 text-white">
+      {title}
+    </h2>
+    
+    <div class="max-w-4xl mx-auto">
+      <!-- Timeline line -->
+      <div class="relative">
+        <!-- Vertical line -->
+        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-accent to-zinc-700"></div>
+        
+        <!-- Timeline items -->
+        <div class="space-y-12">
+          {
+            sortedExperiences.map((exp, index) => (
+              <div class="relative flex items-start space-x-8 group">
+                <!-- Timeline dot -->
+                <div class="relative flex-shrink-0">
+                  <div class="w-16 h-16 bg-zinc-900 border-2 border-accent rounded-full flex items-center justify-center z-10 relative">
+                    <div class="w-3 h-3 bg-accent rounded-full"></div>
+                  </div>
+                  <!-- Glow effect on hover -->
+                  <div class="absolute inset-0 w-16 h-16 bg-accent rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Content -->
+                <div class="flex-1 min-w-0">
+                  <div class="item bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-accent/50 transition-all duration-300 relative overflow-hidden">
+                    <!-- Header -->
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                      <div>
+                        <h3 class="text-xl font-bold text-white mb-1">
+                          {exp.position}
+                        </h3>
+                        <p class="text-accent font-medium">
+                          {exp.company}
+                        </p>
+                      </div>
+                      <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-zinc-800 text-zinc-300 mt-2 sm:mt-0">
+                        {exp.period}
+                      </span>
+                    </div>
+                    
+                    <!-- Description -->
+                    <p class="text-zinc-300 mb-4 leading-relaxed">
+                      {exp.description}
+                    </p>
+                    
+                    <!-- Technologies -->
+                    <div class="flex flex-wrap gap-2">
+                      {exp.technologies.map((tech) => (
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-400 text-sm rounded-lg border border-zinc-700">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Import the existing experience item styles */
+  @import '../css/experienceItem.css';
+  
+  /* Additional timeline-specific styles */
+  .item {
+    transition: all 0.3s ease;
+  }
+  
+  .item:hover {
+    transform: translateX(4px);
+  }
+  
+  /* Timeline dot animation */
+  .group:hover .w-16.h-16 {
+    box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .absolute.left-8 {
+      left: 1rem;
+    }
+    
+    .w-16.h-16 {
+      width: 3rem;
+      height: 3rem;
+    }
+    
+    .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+      margin-left: 2rem;
+    }
+  }
+</style>

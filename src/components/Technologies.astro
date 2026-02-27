@@ -11,7 +11,9 @@ import {
   Container,
   Zap,
   Smartphone,
-  Apple
+  Apple,
+  Layers,
+  Cpu
 } from 'lucide-static';
 
 export interface Props {
@@ -38,6 +40,8 @@ const getIcon = (iconName: string) => {
     case 'mongodb': return Database;
     case 'kotlin': return Smartphone;
     case 'swift': return Apple;
+    case 'kmp': return Layers;
+    case 'ktor': return Cpu;
     case 'git': return GitBranch;
     case 'docker': return Container;
     case 'vite': return Zap;
