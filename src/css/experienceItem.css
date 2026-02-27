@@ -2,7 +2,7 @@
   content: "";
   position: absolute;
   inset: 2px;
-  border-radius: 6px;
+  border-radius: 16px;
   background: #09090b;
   z-index: -1;
 }
@@ -16,7 +16,7 @@
   left: var(--y);
   transform: translate(-50%, -50%);
   background: radial-gradient(#c87137, transparent, transparent, transparent);
-  border-radius: 6px;
+  border-radius: 16px;
   opacity: 0;
   z-index: -1;
   translate:

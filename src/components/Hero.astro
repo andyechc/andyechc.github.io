@@ -22,7 +22,7 @@ const { name, title, description, avatar, social } = Astro.props;
         <img 
           src={avatar} 
           alt={name}
-          class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-gray-800 shadow-2xl"
+          class="w-32 h-32 md:w-48 md:h-48 rounded-[3.5rem] object-cover border-4 border-gray-800 shadow-2xl"
         />
       </div>
       
@@ -46,7 +46,7 @@ const { name, title, description, avatar, social } = Astro.props;
             href={social.github}
             target="_blank"
             rel="noopener noreferrer"
-            class="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200"
+            class="p-3 bg-gray-800 rounded-2xl hover:bg-gray-700 transition-colors duration-200"
             aria-label="GitHub"
           >
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@ const { name, title, description, avatar, social } = Astro.props;
             href={social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            class="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200"
+            class="p-3 bg-gray-800 rounded-2xl hover:bg-gray-700 transition-colors duration-200"
             aria-label="LinkedIn"
           >
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ const { name, title, description, avatar, social } = Astro.props;
             href={social.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            class="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200"
+            class="p-3 bg-gray-800 rounded-2xl hover:bg-gray-700 transition-colors duration-200"
             aria-label="Twitter"
           >
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
