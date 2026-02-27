@@ -48,7 +48,6 @@ const otherProjects = projects.filter(project => !project.featured);
                   {project.technologies.map((tech, techIndex) => (
                     <span 
                       class="px-3 py-1 bg-gray-800 text-white text-sm rounded-full"
-                      key={techIndex}
                     >
                       {tech}
                     </span>
@@ -133,7 +132,6 @@ const otherProjects = projects.filter(project => !project.featured);
                   {project.technologies.slice(0, 3).map((tech, techIndex) => (
                     <span 
                       class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded-full"
-                      key={techIndex}
                     >
                       {tech}
                     </span>
