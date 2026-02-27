@@ -1,31 +1,114 @@
 ---
-import { Image } from "astro:assets";
+export interface Props {
+  personal: {
+    name: string;
+    title: string;
+  };
+  sections: Array<{
+    id: string;
+    name: string;
+  }>;
+}
+
+const { personal, sections } = Astro.props;
 ---
 
-<header
-  class="h-[50px] max-w-[1000px] m-auto w-full flex justify-between items-center"
->
-  <picture>
-    <Image src="/logo.svg" alt="the logo" width="30" height="30" loading={"eager"}/>
-  </picture>
-
-  <nav class="flex justify-center items-center gap-4">
-    <a href="#hero" class="text-white/80 hover:text-[#c87137] transition-colors"
-      >Inicio</a
-    >
-    <a href="#experience" class="text-white/80 hover:text-[#c87137] transition-colors"
-      >Experiencia</a
-    >
-    <a href="#hero" class="text-white/80 hover:text-[#c87137] transition-colors"
-      >Proyectos</a
-    >
-    <a href="#hero" class="text-white/80 hover:text-[#c87137] transition-colors"
-      >TechStack</a
-    >
-    <a href="#hero" class="text-white/80 hover:text-[#c87137] transition-colors"
-      >Acerca</a
-    >
+<header class="header fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-md z-50 border-b border-gray-800">
+  <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <a href="#hero" class="text-xl font-bold text-white hover:opacity-70 transition-opacity">
+          {personal.name}
+        </a>
+      </div>
+      
+      <div class="hidden md:flex items-center space-x-8">
+        {sections.map((section) => (
+          <a 
+            href={`#${section.id}`}
+            class="text-gray-400 hover:text-white transition-colors duration-200 font-medium"
+          >
+            {section.name}
+          </a>
+        ))}
+      </div>
+      
+      <button 
+        class="md:hidden text-gray-400 hover:text-white transition-colors"
+        id="mobile-menu-button"
+        aria-label="Toggle mobile menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="hidden md:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-black border-t border-gray-800">
+        {sections.map((section) => (
+          <a 
+            href={`#${section.id}`}
+            class="block px-3 py-2 text-gray-400 hover:text-white transition-colors duration-200 font-medium"
+          >
+            {section.name}
+          </a>
+        ))}
+      </div>
+    </div>
   </nav>
-
-  
 </header>
+
+<style>
+  .header {
+    transition: all 0.3s ease;
+  }
+  
+  .header.scrolled {
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<script>
+  const header = document.querySelector('.header');
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  // Add scroll effect
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header?.classList.add('scrolled');
+    } else {
+      header?.classList.remove('scrolled');
+    }
+  });
+  
+  // Mobile menu toggle
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+  
+  // Close mobile menu when clicking on a link
+  const mobileLinks = mobileMenu?.querySelectorAll('a');
+  mobileLinks?.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+</script>

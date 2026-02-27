@@ -1,0 +1,110 @@
+---
+import { 
+  Atom,
+  Code2,
+  Wind,
+  Rocket,
+  Server,
+  Terminal,
+  Database,
+  GitBranch,
+  Container,
+  Zap,
+  Smartphone,
+  Apple
+} from 'lucide-static';
+
+export interface Props {
+  title: string;
+  categories: Array<{
+    name: string;
+    items: Array<{
+      name: string;
+      icon: string;
+    }>;
+  }>;
+}
+
+const { title, categories } = Astro.props;
+
+const getIcon = (iconName: string) => {
+  switch(iconName) {
+    case 'react': return Atom;
+    case 'typescript': return Code2;
+    case 'tailwind': return Wind;
+    case 'astro': return Rocket;
+    case 'nodejs': return Server;
+    case 'python': return Terminal;
+    case 'mongodb': return Database;
+    case 'kotlin': return Smartphone;
+    case 'swift': return Apple;
+    case 'git': return GitBranch;
+    case 'docker': return Container;
+    case 'vite': return Zap;
+    default: return null;
+  }
+};
+---
+
+<section class="technologies py-24 bg-black border-t border-gray-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-5xl md:text-6xl font-bold mb-20 text-center fade-in">
+      {title}
+    </h2>
+    
+    <div class="grid md:grid-cols-3 gap-16">
+      {categories.map((category, categoryIndex) => (
+        <div class="slide-up" style={`animation-delay: ${categoryIndex * 0.1}s`}>
+          <h3 class="text-xl font-medium mb-8 text-gray-400">
+            {category.name}
+          </h3>
+          
+          <div class="space-y-4">
+            {category.items.map((tech) => (
+              <div class="tech-item flex items-center space-x-4">
+                <div class="w-8 h-8 flex items-center justify-center text-white">
+                  {
+                    (() => {
+                      const iconSvg = getIcon(tech.icon);
+                      if (iconSvg) {
+                        return <div set:html={iconSvg}></div>;
+                      }
+                      return <div class="w-6 h-6 bg-gray-600 rounded"></div>;
+                    })()
+                  }
+                </div>
+                <span class="text-white font-medium">{tech.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .tech-item {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .tech-item:hover {
+    background: #111111;
+    transform: translateX(4px);
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

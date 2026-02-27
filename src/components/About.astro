@@ -1,0 +1,45 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  highlights: string[];
+}
+
+const { title, description, highlights } = Astro.props;
+---
+
+<section class="about py-20 bg-black">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center fade-in">
+      {title}
+    </h2>
+    
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="slide-up">
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          {description}
+        </p>
+      </div>
+      
+      <div class="slide-up">
+        <ul class="space-y-4">
+          {highlights.map((highlight, index) => (
+            <li class="flex items-start space-x-3" key={index}>
+              <svg class="w-6 h-6 text-white mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-200">{highlight}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    border-top: 1px solid #374151;
+    border-bottom: 1px solid #374151;
+  }
+</style>

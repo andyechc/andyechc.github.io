@@ -1,91 +1,143 @@
 ---
-import background from "../assets/background.svg";
+import portfolioData from '../data/portfolio.json';
+
+const { seo } = portfolioData;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>andyechc - Portafolio</title>
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <meta name="keywords" content={seo.keywords.join(', ')} />
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:image" content={seo.image} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seo.title} />
+    <meta name="twitter:description" content={seo.description} />
+    <meta name="twitter:image" content={seo.image} />
   </head>
 
-  <body class="bg-black">
-    <img
-      id="background"
-      src={background.src}
-      alt="a circle forms in the background"
-      fetchpriority="high"
-      class="absolute left-[50%] top-0 translate-x-[-50%] z-[-1]"
-    />
-
-    <slot />
+  <body class="bg-black text-white min-h-screen">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+      <slot />
+    </div>
   </body>
 </html>
 
 <style is:global>
-  @font-face {
-    font-family: "Poppins";
-    src: url("/fonts/Poppins-Regular.ttf");
-  }
-
-  @font-face {
-    font-family: "Teko";
-    src: url("/fonts/Teko-Regular.ttf");
-  }
-
   * {
-    font-family:
-      "Poppins",
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  ::-webkit-selection {
-    background-color: #c87137;
-    color: #000;
+  html {
+    scroll-behavior: smooth;
   }
 
-  ::-moz-selection {
-    background-color: #c87137;
-    color: #000;
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: #000000;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   }
 
   ::selection {
-    background-color: #c87137;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  strong,
-  b {
-    font-family:
-      "Teko",
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    letter-spacing: 2px;
+  ::-webkit-selection {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  ::-moz-selection {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+  }
+
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding: 0 2rem;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 </style>

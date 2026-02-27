@@ -1,0 +1,128 @@
+{
+  "personal": {
+    "name": "andyechc",
+    "title": "Desarrollador de Software",
+    "description": "Coding for fun and profit",
+    "email": "andyechc@gmail.com",
+    "location": "La Habana, Cuba",
+    "avatar": "/profile.png",
+    "social": {
+      "github": "https://github.com/andyechc",
+      "linkedin": "https://linkedin.com/in/andyechc",
+      "twitter": "https://x.com/andyechc"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Soy un desarrollador de software especializado en crear aplicaciones modernas y eficientes. Me enfoco en minimalismo y funcionalidad para ofrecer la mejor experiencia de usuario.",
+    "highlights": [
+      "Desarrollo frontend con tecnologías modernas",
+      "Diseño minimalista y enfoque en UX",
+      "Experiencia en optimización de rendimiento",
+      "Aprendizaje continuo y adaptación"
+    ]
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "categories": [
+      {
+        "name": "Frontend",
+        "items": [
+          { "name": "React", "icon": "react" },
+          { "name": "TypeScript", "icon": "typescript" },
+          { "name": "Tailwind CSS", "icon": "tailwind" },
+          { "name": "Astro", "icon": "astro" }
+        ]
+      },
+      {
+        "name": "Backend",
+        "items": [
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "Python", "icon": "python" },
+          { "name": "MongoDB", "icon": "mongodb" }
+        ]
+      },
+      {
+        "name": "Nativo",
+        "items": [
+          { "name": "Kotlin", "icon": "kotlin" },
+          { "name": "Swift", "icon": "swift" }
+        ]
+      },
+      {
+        "name": "Herramientas",
+        "items": [
+          { "name": "Git", "icon": "git" },
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Vite", "icon": "vite" }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Proyecto Minimalista",
+      "description": "Una aplicación web minimalista con enfoque en la experiencia de usuario y rendimiento.",
+      "image": "/projects/project1.jpg",
+      "technologies": ["React", "TypeScript", "Tailwind CSS"],
+      "liveUrl": "https://project1.example.com",
+      "githubUrl": "https://github.com/tu-usuario/project1",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Dashboard Analytics",
+      "description": "Panel de análisis de datos con visualizaciones interactivas y tiempo real.",
+      "image": "/projects/project2.jpg",
+      "technologies": ["Vue.js", "Node.js", "D3.js"],
+      "liveUrl": "https://project2.example.com",
+      "githubUrl": "https://github.com/tu-usuario/project2",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "E-commerce Platform",
+      "description": "Plataforma de comercio electrónico con carrito de compras y pasarela de pago.",
+      "image": "/projects/project3.jpg",
+      "technologies": ["Next.js", "Stripe", "PostgreSQL"],
+      "liveUrl": "https://project3.example.com",
+      "githubUrl": "https://github.com/tu-usuario/project3",
+      "featured": true
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Tech Company",
+      "position": "Desarrollador Frontend",
+      "period": "2022 - Presente",
+      "description": "Desarrollo de aplicaciones web modernas con React y TypeScript. Enfoque en optimización de rendimiento y experiencia de usuario.",
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "GraphQL"]
+    },
+    {
+      "id": 2,
+      "company": "Startup Digital",
+      "position": "Desarrollador Full Stack",
+      "period": "2020 - 2022",
+      "description": "Creación de aplicaciones web completas desde el diseño hasta el despliegue. Implementación de APIs RESTful y bases de datos.",
+      "technologies": ["Node.js", "React", "MongoDB", "Docker"]
+    }
+  ],
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Interesado en colaborar? No dudes en contactarme.",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "seo": {
+    "title": "J. Andy Echavarria Contreras - Desarrollador de Software",
+    "description": "Portafolio de J. Andy Echavarria Contreras, desarrollador de software especializado en crear experiencias modernas y eficientes.",
+    "keywords": ["desarrollador de software", "kotlin", "frontend", "react", "typescript", "minimalista"],
+    "image": "/og-image.jpg"
+  }
+}
