@@ -68,7 +68,8 @@
       "technologies": ["React", "TypeScript", "Tailwind CSS"],
       "liveUrl": "https://project1.example.com",
       "githubUrl": "https://github.com/tu-usuario/project1",
-      "featured": true
+      "featured": true,
+      "private": false
     },
     {
       "id": 2,
@@ -77,8 +78,10 @@
       "image": "/projects/project2.jpg",
       "technologies": ["Vue.js", "Node.js", "D3.js"],
       "liveUrl": "https://project2.example.com",
-      "githubUrl": "https://github.com/tu-usuario/project2",
-      "featured": false
+      "githubUrl": "",
+      "featured": false,
+      "private": true,
+      "noCode": true
     },
     {
       "id": 3,
@@ -86,9 +89,24 @@
       "description": "Plataforma de comercio electrónico con carrito de compras y pasarela de pago.",
       "image": "/projects/project3.jpg",
       "technologies": ["Next.js", "Stripe", "PostgreSQL"],
-      "liveUrl": "https://project3.example.com",
+      "liveUrl": "",
       "githubUrl": "https://github.com/tu-usuario/project3",
-      "featured": true
+      "featured": true,
+      "private": false,
+      "noPreview": true
+    },
+    {
+      "id": 4,
+      "title": "Proyecto Confidencial",
+      "description": "Aplicación empresarial interna con datos sensibles. No disponible para visualización pública.",
+      "image": "/projects/project4.jpg",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": false,
+      "private": true,
+      "noCode": true,
+      "noPreview": true
     }
   ],
   "experience": [
