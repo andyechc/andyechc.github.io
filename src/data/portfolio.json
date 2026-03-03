@@ -6,12 +6,12 @@
     "email": "andyechc@gmail.com",
     "location": "La Habana, Cuba",
     "avatar": "/profile.png",
-    "social": {
-      "github": "https://github.com/andyechc",
-      "linkedin": "https://linkedin.com/in/andyechc",
-      "twitter": "https://x.com/andyechc",
-      "substack": "https://substack.com/@andyechc"
-    }
+    "social": [
+      { "name": "github", "url": "https://github.com/andyechc", "icon": "devicon-github-original" },
+      { "name": "linkedin", "url": "https://linkedin.com/in/andyechc", "icon": "devicon-linkedin-plain" },
+      { "name": "twitter", "url": "https://x.com/andyechc", "icon": "devicon-twitter-original" },
+      { "name": "substack", "url": "https://substack.com/@andyechc", "icon": "bi bi-substack" }
+    ]
   },
   "about": {
     "title": "Sobre Mí",
@@ -29,33 +29,33 @@
       {
         "name": "Frontend",
         "items": [
-          { "name": "React", "icon": "react" },
-          { "name": "TypeScript", "icon": "typescript" },
-          { "name": "Tailwind CSS", "icon": "tailwind" },
-          { "name": "Astro", "icon": "astro" }
+          { "name": "React", "icon": "devicon-react-original" },
+          { "name": "TypeScript", "icon": "devicon-typescript-plain" },
+          { "name": "Tailwind CSS", "icon": "devicon-tailwindcss-plain" },
+          { "name": "Astro", "icon": "devicon-astro-plain" }
         ]
       },
       {
         "name": "Backend",
         "items": [
-          { "name": "Ktor", "icon": "ktor" },
-          { "name": "Node.js", "icon": "nodejs" },
-          { "name": "Python", "icon": "python" },
-          { "name": "MongoDB", "icon": "mongodb" }
+          { "name": "Ktor", "icon": "devicon-kotlin-plain" },
+          { "name": "Node.js", "icon": "devicon-nodejs-plain" },
+          { "name": "Python", "icon": "devicon-python-plain" },
+          { "name": "MongoDB", "icon": "devicon-mongodb-plain" }
         ]
       },
       {
         "name": "Nativo",
         "items": [
-          { "name": "Kotlin", "icon": "kotlin" },
-          { "name": "Swift", "icon": "swift" },
-          { "name": "KMP", "icon": "kmp" }
+          { "name": "Kotlin", "icon": "devicon-kotlin-plain" },
+          { "name": "Swift", "icon": "devicon-swift-plain" },
+          { "name": "KMP", "icon": "devicon-kotlin-plain" }
         ]
       },
       {
         "name": "Herramientas",
         "items": [
-          { "name": "Git", "icon": "git" }
+          { "name": "Git", "icon": "devicon-git-plain" }
         ]
       }
     ]

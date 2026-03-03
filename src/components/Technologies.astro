@@ -1,20 +1,5 @@
 ---
-import { 
-  Atom,
-  Code2,
-  Wind,
-  Rocket,
-  Server,
-  Terminal,
-  Database,
-  GitBranch,
-  Container,
-  Zap,
-  Smartphone,
-  Apple,
-  Layers,
-  Cpu
-} from 'lucide-static';
+import { Image } from 'astro:assets';
 
 export interface Props {
   title: string;
@@ -28,26 +13,6 @@ export interface Props {
 }
 
 const { title, categories } = Astro.props;
-
-const getIcon = (iconName: string) => {
-  switch(iconName) {
-    case 'react': return Atom;
-    case 'typescript': return Code2;
-    case 'tailwind': return Wind;
-    case 'astro': return Rocket;
-    case 'nodejs': return Server;
-    case 'python': return Terminal;
-    case 'mongodb': return Database;
-    case 'kotlin': return Smartphone;
-    case 'swift': return Apple;
-    case 'kmp': return Layers;
-    case 'ktor': return Cpu;
-    case 'git': return GitBranch;
-    case 'docker': return Container;
-    case 'vite': return Zap;
-    default: return null;
-  }
-};
 ---
 
 <section class="technologies py-24 bg-black">
@@ -65,18 +30,8 @@ const getIcon = (iconName: string) => {
           
           <div class="flex flex-wrap gap-3">
             {category.items.map((tech, techIndex) => (
-              <div class="tech-tag bg-zinc-900 rounded-xl px-4 py-3 border border-zinc-800 hover:border-accent/50 transition-all duration-300 flex items-center space-x-2">
-                <div class="w-5 h-5 flex items-center justify-center text-white">
-                  {
-                    (() => {
-                      const iconSvg = getIcon(tech.icon);
-                      if (iconSvg) {
-                        return <div set:html={iconSvg}></div>;
-                      }
-                      return <div class="w-3 h-3 bg-gray-600 rounded"></div>;
-                    })()
-                  }
-                </div>
+              <div class="tech-tag bg-zinc-900 rounded-xl px-4 py-3 border border-zinc-800 hover:border-accent/50 transition-all duration-300 flex items-center justify-center space-x-2">
+                <i class={`${tech.icon} text-2xl`}></i>
                 <span class="text-zinc-300 text-sm font-medium">{tech.name}</span>
               </div>
             ))}
