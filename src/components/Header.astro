@@ -3,6 +3,7 @@ export interface Props {
   personal: {
     name: string;
     title: string;
+    avatar: string;
   };
   sections: Array<{
     id: string;
@@ -17,8 +18,15 @@ const { personal, sections } = Astro.props;
   <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <div class="flex items-center">
-        <a href="#hero" class="text-xl font-bold text-white hover:opacity-70 transition-opacity">
-          {personal.name}
+        <a href="#hero" class="flex items-center space-x-3 hover:opacity-70 transition-opacity opacity-0" id="header-brand">
+          <img 
+            src={personal.avatar} 
+            alt={personal.name}
+            class="w-8 h-8 rounded-full border-2 border-accent"
+          />
+          <span class="text-xl font-bold text-white">
+            {personal.name}
+          </span>
         </a>
       </div>
       
@@ -34,13 +42,15 @@ const { personal, sections } = Astro.props;
       </div>
       
       <button 
-        class="md:hidden text-gray-400 hover:text-white transition-colors"
+        class="md:hidden text-gray-400 hover:text-white transition-colors relative"
         id="mobile-menu-button"
         aria-label="Toggle mobile menu"
       >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
+        <div class="w-6 h-6 relative">
+          <span class="hamburger-line absolute top-0 left-0 w-full h-0.5 bg-current transition-all duration-300"></span>
+          <span class="hamburger-line absolute top-1/2 left-0 w-full h-0.5 bg-current transition-all duration-300 -translate-y-1/2"></span>
+          <span class="hamburger-line absolute bottom-0 left-0 w-full h-0.5 bg-current transition-all duration-300"></span>
+        </div>
       </button>
     </div>
     
@@ -69,25 +79,90 @@ const { personal, sections } = Astro.props;
     backdrop-filter: blur(10px);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
+
+  /* Mobile menu animations */
+  #mobile-menu {
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-origin: top;
+  }
+
+  #mobile-menu.hidden {
+    opacity: 0;
+    transform: scaleY(0) translateY(-20px);
+    visibility: hidden;
+  }
+
+  #mobile-menu:not(.hidden) {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+    visibility: visible;
+  }
+
+  /* Hamburger button animations */
+  #mobile-menu-button.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  #mobile-menu-button.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  #mobile-menu-button.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+
+  /* Mobile menu items - sin animación individual */
+  #mobile-menu a {
+    transition: all 0.2s ease;
+  }
+
+  /* Header brand animation */
+  #header-brand {
+    transition: opacity 0.3s ease;
+  }
+
+  #header-brand.visible {
+    opacity: 1;
+  }
 </style>
 
 <script>
   const header = document.querySelector('.header');
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
+  const headerBrand = document.getElementById('header-brand');
   
   // Add scroll effect
   window.addEventListener('scroll', () => {
+    const heroSection = document.getElementById('hero');
+    const heroBottom = heroSection ? heroSection.getBoundingClientRect().bottom : 0;
+    
     if (window.scrollY > 50) {
       header?.classList.add('scrolled');
     } else {
       header?.classList.remove('scrolled');
     }
+
+    // Show/hide header brand based on hero visibility
+    if (heroBottom < 100) {
+      headerBrand?.classList.add('visible');
+    } else {
+      headerBrand?.classList.remove('visible');
+    }
   });
   
   // Mobile menu toggle
   mobileMenuButton?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('hidden');
+    const isHidden = mobileMenu?.classList.contains('hidden');
+    
+    if (isHidden) {
+      mobileMenu?.classList.remove('hidden');
+      mobileMenuButton?.classList.add('active');
+    } else {
+      mobileMenu?.classList.add('hidden');
+      mobileMenuButton?.classList.remove('active');
+    }
   });
   
   // Close mobile menu when clicking on a link
@@ -95,6 +170,7 @@ const { personal, sections } = Astro.props;
   mobileLinks?.forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu?.classList.add('hidden');
+      mobileMenuButton?.classList.remove('active');
     });
   });
   
