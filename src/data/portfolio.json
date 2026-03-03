@@ -63,51 +63,39 @@
   "projects": [
     {
       "id": 1,
-      "title": "Proyecto Minimalista",
-      "description": "Una aplicación web minimalista con enfoque en la experiencia de usuario y rendimiento.",
-      "image": "/projects/placeholder.jpg",
-      "technologies": ["React", "TypeScript", "Tailwind CSS"],
-      "liveUrl": "https://project1.example.com",
-      "githubUrl": "https://github.com/tu-usuario/project1",
+      "title": "Isla Pos",
+      "description": "App de pago con diferentes métodos (contactless, payment link) para terminales POS iMin",
+      "image": "/projects/islapos.png",
+      "technologies": ["Kotlin", "Android"],
+      "liveUrl": "",
+      "githubUrl": "",
       "featured": true,
-      "private": false
+      "private": true,
+      "noCode": true
     },
     {
       "id": 2,
-      "title": "Dashboard Analytics",
-      "description": "Panel de análisis de datos con visualizaciones interactivas y tiempo real.",
-      "image": "/projects/placeholder.jpg",
-      "technologies": ["Vue.js", "Node.js", "D3.js"],
-      "liveUrl": "https://project2.example.com",
+      "title": "entreGo!",
+      "description": "App delivery-boy con sistema de gestión de ordenes de entrega y almacenamiento local de ordenes completadas en caso de pérdida de conexión u otros problemas.",
+      "image": "/projects/entrego.png",
+      "technologies": ["KMP", "Android", "iOS"],
+      "liveUrl": "",
       "githubUrl": "",
-      "featured": false,
+      "featured": true,
       "private": true,
       "noCode": true
     },
     {
       "id": 3,
-      "title": "E-commerce Platform",
-      "description": "Plataforma de comercio electrónico con carrito de compras y pasarela de pago.",
-      "image": "/projects/placeholder.jpg",
-      "technologies": ["Next.js", "Stripe", "PostgreSQL"],
-      "liveUrl": "",
-      "githubUrl": "https://github.com/tu-usuario/project3",
+      "title": "Marky",
+      "description": "Un editor de markdown en línea con almacenamiento local y exportación de archivo.",
+      "image": "/projects/marky.png",
+      "technologies": ["reactjs", "tailwindcss"],
+      "liveUrl": "https://marky-md.vercel.app",
+      "githubUrl": "https://github.com/andyechc/marky.git",
       "featured": true,
       "private": false,
-      "noPreview": true
-    },
-    {
-      "id": 4,
-      "title": "Proyecto Confidencial",
-      "description": "Aplicación empresarial interna con datos sensibles. No disponible para visualización pública.",
-      "image": "/projects/placeholder.jpg",
-      "technologies": ["React", "Node.js", "MongoDB"],
-      "liveUrl": "",
-      "githubUrl": "",
-      "featured": false,
-      "private": true,
-      "noCode": true,
-      "noPreview": true
+      "noPreview": false
     }
   ],
   "experience": {

@@ -29,24 +29,24 @@ const sortedExperiences = [...experiences].reverse();
       <!-- Timeline line -->
       <div class="relative">
         <!-- Vertical line -->
-        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-accent to-zinc-700"></div>
+        <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-accent to-zinc-700"></div>
         
         <!-- Timeline items -->
         <div class="space-y-12">
           {
             sortedExperiences.map((exp, index) => (
-              <div class="relative flex items-start space-x-8 group">
+              <div class="relative flex items-start space-x-6 group sm:flex-row sm:items-start sm:space-x-8">
                 <!-- Timeline dot -->
                 <div class="relative flex-shrink-0">
-                  <div class="w-16 h-16 bg-zinc-900 border-2 border-accent rounded-full flex items-center justify-center z-10 relative">
-                    <div class="w-3 h-3 bg-accent rounded-full"></div>
+                  <div class="w-10 h-10 bg-zinc-900 border-2 border-accent rounded-full flex items-center justify-center z-10 relative">
+                    <div class="w-2 h-2 bg-accent rounded-full"></div>
                   </div>
                   <!-- Glow effect on hover -->
-                  <div class="absolute inset-0 w-16 h-16 bg-accent rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
+                  <div class="absolute inset-0 w-10 h-10 bg-accent rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
                 </div>
                 
                 <!-- Content -->
-                <div class="flex-1 min-w-0">
+                <div class="flex-1 min-w-0 sm:relative">
                   <div class="item bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-accent/50 transition-all duration-300 relative overflow-hidden">
                     <!-- Header -->
                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
@@ -101,23 +101,41 @@ const sortedExperiences = [...experiences].reverse();
   }
   
   /* Timeline dot animation */
-  .group:hover .w-16.h-16 {
+  .group:hover .w-10.h-10 {
     box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
   }
   
   /* Responsive adjustments */
   @media (max-width: 640px) {
-    .absolute.left-8 {
-      left: 1rem;
+    .absolute.left-6 {
+      left: 50%;
+      transform: translateX(-50%);
     }
     
-    .w-16.h-16 {
-      width: 3rem;
-      height: 3rem;
+    .w-10.h-10 {
+      width: 2rem;
+      height: 2rem;
     }
     
-    .space-x-8 > :not([hidden]) ~ :not([hidden]) {
-      margin-left: 2rem;
+    .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+      margin-left: 0;
+    }
+    
+    .relative.flex.items-start.space-x-6.group {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .relative.flex-shrink-0 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 20;
+    }
+    
+    .flex-1.min-w-0.sm\:relative {
+      margin-top: 2rem;
+      width: 100%;
     }
   }
 </style>
