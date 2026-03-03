@@ -45,17 +45,29 @@
         ]
       },
       {
-        "name": "Nativo",
+        "name": "Nativo & Multiplataforma",
         "items": [
           { "name": "Kotlin", "icon": "devicon-kotlin-plain" },
-          { "name": "Swift", "icon": "devicon-swift-plain" },
-          { "name": "KMP", "icon": "devicon-kotlin-plain" }
+          { "name": "KMP", "icon": "devicon-kotlin-plain" },
+          { "name": "Swift", "icon": "devicon-swift-plain" }
         ]
       },
       {
         "name": "Herramientas",
         "items": [
-          { "name": "Git", "icon": "devicon-git-plain" }
+          { "name": "Git", "icon": "devicon-git-plain" },
+          { "name": "Photoshop", "icon": "devicon-photoshop-plain" }
+        ]
+      },
+      {
+        "name": "Plataformas",
+        "items": [
+          { "name": "Android", "icon": "devicon-android-plain" },
+          { "name": "iOS", "icon": "devicon-apple-plain" },
+          { "name": "Web", "icon": "bi bi-globe" },
+          { "name": "Windows", "icon": "devicon-windows11-plain" },
+          { "name": "MacOs", "icon": "devicon-apple-plain" },
+          { "name": "Linux", "icon": "devicon-linux-plain" }
         ]
       }
     ]
@@ -102,28 +114,28 @@
     "title": "Experiencia",
     "items": [
       {
-        "id": 1,
-        "company": "Tech Company",
-        "position": "Desarrollador Frontend",
-        "period": "2022 - Presente",
-        "description": "Desarrollo de aplicaciones web modernas con React y TypeScript. Enfoque en optimización de rendimiento y experiencia de usuario.",
-        "technologies": ["React", "TypeScript", "Tailwind CSS", "GraphQL"]
+        "id": 3,
+        "company": "Isoltec",
+        "position": "Desarrollador de Aplicaciones",
+        "period": "2025 - Presente",
+        "description": "Desarrollo de aplicaciones multiplataforma con KMP y Kotlin. Enfoque en la seguridad y experiencia de usuario. Implementación de encriptaciones, JSONRPC, Comunicación bidireccional y métodos de pago",
+        "technologies": ["KMP", "Kotlin", "Android", "iOS"]
       },
       {
         "id": 2,
-        "company": "Startup Digital",
+        "company": "Shirkasoft",
         "position": "Desarrollador Full Stack",
-        "period": "2020 - 2022",
-        "description": "Creación de aplicaciones web completas desde el diseño hasta el despliegue. Implementación de APIs RESTful y bases de datos.",
-        "technologies": ["Node.js", "React", "MongoDB", "Docker"]
+        "period": "2022 - 2024",
+        "description": "Creación de aplicaciones web complejas desde el diseño hasta el despliegue. Implementación de APIs RESTful y bases de datos. Implementaciones de Sistemas de Gestiones, asi como uso de documentos Excel y Word para la gestion de datos.",
+        "technologies": ["Node.js", "React", "MongoDB", "Next.js", "Tailwind CSS"]
       },
       {
-        "id": 3,
-        "company": "Agencia de Software",
-        "position": "Desarrollador Junior",
-        "period": "2019 - 2020",
-        "description": "Desarrollo de sitios web y aplicaciones para clientes diversos. Aprendizaje de mejores prácticas y metodologías ágiles.",
-        "technologies": ["HTML", "CSS", "JavaScript", "WordPress"]
+        "id": 1,
+        "company": "Freelance",
+        "position": "Desarrollador Web",
+        "period": "2021 - 2022",
+        "description": "Desarrollo de Landing Pages y Utilidades para diversos clientes.",
+        "technologies": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Tailwind CSS"]
       }
     ]
   },
@@ -135,11 +147,14 @@
       "email": "Email",
       "message": "Mensaje",
       "submit": "Enviar Mensaje"
+    },
+    "formspree": {
+      "endpoint": "https://formspree.io/f/xnjbendl"
     }
   },
   "seo": {
     "title": "J. Andy Echavarria Contreras - Desarrollador de Software",
-    "description": "Portafolio de J. Andy Echavarria Contreras, desarrollador de software especializado en crear experiencias modernas y eficientes.",
+    "description": "Portafolio de J. Andy Echavarria Contreras, desarrollador de software con experiencia en desarrollo de aplicaciones multiplataforma.",
     "keywords": ["desarrollador de software", "kotlin", "frontend", "react", "typescript", "minimalista"],
     "image": "/og-image.jpg"
   }

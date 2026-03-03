@@ -15,8 +15,8 @@ interface Props {
 
 const { experiences, title } = Astro.props;
 
-// Sort experiences by period (most recent first)
-const sortedExperiences = [...experiences].reverse();
+// Use experiences as they appear in JSON (no sorting)
+const experienceItems = experiences;
 ---
 
 <section class="py-20 bg-black">
@@ -34,7 +34,7 @@ const sortedExperiences = [...experiences].reverse();
         <!-- Timeline items -->
         <div class="space-y-12">
           {
-            sortedExperiences.map((exp, index) => (
+            experienceItems.map((exp, index) => (
               <div class="relative flex items-start space-x-6 group sm:flex-row sm:items-start sm:space-x-8">
                 <!-- Timeline dot -->
                 <div class="relative flex-shrink-0">

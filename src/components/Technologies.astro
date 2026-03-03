@@ -21,10 +21,10 @@ const { title, categories } = Astro.props;
       {title}
     </h2>
     
-    <div class="grid md:grid-cols-3 gap-16">
+    <div class="grid md:grid-cols-3 gap-8">
       {categories.map((category, categoryIndex) => (
-        <div class="slide-up" style={`animation-delay: ${categoryIndex * 0.1}s`}>
-          <h3 class="text-xl font-medium mb-8 text-gray-400">
+        <div class="slide-up w-full" style={`animation-delay: ${categoryIndex * 0.1}s`}>
+          <h3 class="text-xl font-medium mb-2 text-gray-400">
             {category.name}
           </h3>
           

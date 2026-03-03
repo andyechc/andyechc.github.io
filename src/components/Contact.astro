@@ -8,9 +8,12 @@ export interface Props {
     message: string;
     submit: string;
   };
+  formspree: {
+    endpoint: string;
+  };
 }
 
-const { title, description, form } = Astro.props;
+const { title, description, form, formspree } = Astro.props;
 ---
 
 <section class="contact py-20 bg-black">
@@ -23,7 +26,7 @@ const { title, description, form } = Astro.props;
       {description}
     </p>
     
-    <form class="contact-form slide-up max-w-2xl mx-auto" method="POST" action="/api/contact">
+    <form class="contact-form slide-up max-w-2xl mx-auto" method="POST" action={formspree.endpoint}>
       <div class="grid md:grid-cols-2 gap-6 mb-6">
         <div class="form-group">
           <label for="name" class="block text-sm font-medium text-gray-300 mb-2">
