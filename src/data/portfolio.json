@@ -112,8 +112,8 @@
     {
       "id": 4,
       "title": "DownGram CLI",
-      "description": "Una herramienta de terminal para descargar videos desde canales especificos que el usuario seleccione.",
-      "image": "/projects/marky.png",
+      "description": "Una herramienta de terminal para descargar multimedia desde canales o bots que el usuario seleccione.",
+      "image": "/projects/downgram-cli.png",
       "technologies": ["Python"],
       "liveUrl": "",
       "githubUrl": "https://github.com/andyechc/downgram-cli",
