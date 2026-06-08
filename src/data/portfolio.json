@@ -74,30 +74,6 @@
   },
   "projects": [
     {
-      "id": 1,
-      "title": "Isla Pos",
-      "description": "App de pago con diferentes métodos (contactless, payment link) para terminales POS iMin",
-      "image": "/projects/islapos.png",
-      "technologies": ["Kotlin", "Android"],
-      "liveUrl": "",
-      "githubUrl": "",
-      "featured": true,
-      "private": true,
-      "noCode": true
-    },
-    {
-      "id": 2,
-      "title": "entreGo!",
-      "description": "App delivery-boy con sistema de gestión de ordenes de entrega y almacenamiento local de ordenes completadas en caso de pérdida de conexión u otros problemas.",
-      "image": "/projects/entrego.png",
-      "technologies": ["KMP", "Android", "iOS"],
-      "liveUrl": "",
-      "githubUrl": "",
-      "featured": true,
-      "private": true,
-      "noCode": true
-    },
-    {
       "id": 3,
       "title": "Marky",
       "description": "Un editor de markdown en línea con almacenamiento local y exportación de archivo.",
@@ -113,13 +89,13 @@
       "id": 4,
       "title": "DownGram CLI",
       "description": "Una herramienta de terminal para descargar multimedia desde canales o bots que el usuario seleccione.",
-      "image": "/projects/downgram-cli.png",
+      "image": "/projects/downgram.png",
       "technologies": ["Python"],
       "liveUrl": "",
       "githubUrl": "https://github.com/andyechc/downgram-cli",
-      "featured": false,
+      "featured": true,
       "private": false,
-      "noPreview": true
+      "noPreview": false
     }
   ],
   "experience": {
@@ -127,7 +103,7 @@
     "items": [
       {
         "id": 3,
-        "company": "Isoltec",
+        "company": "",
         "position": "Desarrollador de Aplicaciones",
         "period": "2025 - Presente",
         "description": "Desarrollo de aplicaciones multiplataforma con KMP y Kotlin. Enfoque en la seguridad y experiencia de usuario. Implementación de encriptaciones, JSONRPC, Comunicación bidireccional y métodos de pago",
@@ -138,7 +114,7 @@
         "company": "Shirkasoft",
         "position": "Desarrollador Full Stack",
         "period": "2022 - 2024",
-        "description": "Creación de aplicaciones web complejas desde el diseño hasta el despliegue. Implementación de APIs RESTful y bases de datos. Implementaciones de Sistemas de Gestiones, asi como uso de documentos Excel y Word para la gestion de datos.",
+        "description": "Creación de aplicaciones web complejas desde el diseño hasta el despliegue. Implementación de APIs RESTful y bases de datos. Implementaciones de Sistemas de Gestiones, asi gestion desde plataforma de documentos Excel y Word para la gestion de datos.",
         "technologies": ["Node.js", "React", "MongoDB", "Next.js", "Tailwind CSS"]
       },
       {
