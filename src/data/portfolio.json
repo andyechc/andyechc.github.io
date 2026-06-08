@@ -38,10 +38,9 @@
       {
         "name": "Backend",
         "items": [
-          { "name": "Ktor", "icon": "devicon-kotlin-plain" },
+          { "name": "Spring Boot", "icon": "devicon-spring-plain" },
           { "name": "Node.js", "icon": "devicon-nodejs-plain" },
-          { "name": "Python", "icon": "devicon-python-plain" },
-          { "name": "MongoDB", "icon": "devicon-mongodb-plain" }
+          { "name": "Python", "icon": "devicon-python-plain" }
         ]
       },
       {
@@ -69,6 +68,13 @@
           { "name": "MacOs", "icon": "devicon-apple-plain" },
           { "name": "Linux", "icon": "devicon-linux-plain" }
         ]
+      },
+      {
+        "name": "Bases de Datos",
+        "items": [
+          { "name": "PostgreSQL", "icon": "devicon-postgresql-plain" },
+          { "name": "MongoDB", "icon": "devicon-mongodb-plain" }
+        ]
       }
     ]
   },
@@ -88,7 +94,7 @@
     {
       "id": 4,
       "title": "DownGram CLI",
-      "description": "Una herramienta de terminal para descargar multimedia desde canales o bots que el usuario seleccione.",
+      "description": "Una herramienta de terminal para descargar multimedia desde canales o bots de Telegram que el usuario seleccione.",
       "image": "/projects/downgram.png",
       "technologies": ["Python"],
       "liveUrl": "",
