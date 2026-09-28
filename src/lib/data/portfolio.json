@@ -1,0 +1,344 @@
+{
+  "site": {
+    "name": "andyechc",
+    "title": "Software Developer",
+    "description": "I build software products across web, backend and mobile, with a focus on thoughtful interfaces and solid engineering.",
+    "language": "en",
+    "theme": "dark",
+    "location": "La Habana, Cuba",
+    "email": "andyechc@gmail.com",
+    "avatar": "/profile.webp",
+    "ogImage": "/og-image.jpg"
+  },
+  "navigation": [
+    {
+      "label": "Work",
+      "target": "#work"
+    },
+    {
+      "label": "Experience",
+      "target": "#experience"
+    },
+    {
+      "label": "About",
+      "target": "#about"
+    },
+    {
+      "label": "Contact",
+      "target": "#contact"
+    }
+  ],
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/andyechc"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/andyechc"
+    },
+    {
+      "name": "X",
+      "url": "https://x.com/andyechc"
+    },
+    {
+      "name": "Substack",
+      "url": "https://substack.com/@andyechc"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Software Developer",
+    "headline": "I build software.",
+    "headlineAccent": "Thoughtfully.",
+    "rotatingWords": [
+      "Thoughtfully.",
+      "Carefully.",
+      "Intentionally.",
+      "Simply."
+    ],
+    "description": "From production applications to experimental interfaces, I enjoy turning ideas into software that feels simple, useful and intentional.",
+    "primaryAction": {
+      "label": "Get in touch",
+      "target": "#contact"
+    },
+    "secondaryAction": {
+      "label": "Explore my work",
+      "target": "#work"
+    },
+    "scrollLabel": "Scroll to explore"
+  },
+  "introduction": {
+    "eyebrow": "A little about me",
+    "title": "Software is more than code.",
+    "body": "I enjoy working across the entire product journey — understanding a problem, shaping an interface, designing the architecture and turning it into something people can actually use.",
+    "secondaryBody": "My work spans web, backend and mobile development, with a particular interest in minimal interfaces, developer experience and thoughtful product design."
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Things I've built.",
+    "description": "A selection of products, experiments and tools I've worked on.",
+    "projects": [
+      {
+        "id": "marky",
+        "number": "01",
+        "title": "Marky",
+        "subtitle": "A fast, effective Markdown editor",
+        "description": "A fast, effective Markdown editor.",
+        "category": "Product",
+        "status": "Open source",
+        "year": "2023",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
+        ],
+        "highlights": [],
+        "links": {
+          "github": "https://github.com/andyechc/marky"
+        },
+        "media": {
+          "cover": "/projects/marky/cover.png",
+          "images": []
+        },
+        "featured": true
+      },
+      {
+        "id": "downgram-cli",
+        "number": "02",
+        "title": "DownGram CLI",
+        "subtitle": "Telegram media downloader",
+        "description": "Terminal utility to search and download media from specific Telegram channels.",
+        "category": "Tooling",
+        "status": "Open source",
+        "year": "2026",
+        "technologies": [
+          "Python"
+        ],
+        "highlights": [],
+        "links": {
+          "github": "https://github.com/andyechc/downgram-cli"
+        },
+        "media": {
+          "cover": "/projects/downgram/cover.png",
+          "images": []
+        },
+        "featured": true
+      },
+      {
+        "id": "macmode",
+        "number": "03",
+        "title": "MacMode",
+        "subtitle": "Native macOS menu bar utility",
+        "description": "Native macOS menu bar utility for switching between development and gaming system profiles.",
+        "category": "macOS",
+        "status": "Open source",
+        "year": "2026",
+        "technologies": [
+          "Swift"
+        ],
+        "highlights": [],
+        "links": {
+          "github": "https://github.com/andyechc/MacMode"
+        },
+        "media": {
+          "cover": "/projects/macmode/cover.png",
+          "images": []
+        },
+        "featured": true
+      },
+      {
+        "id": "makp",
+        "number": "04",
+        "title": "Makp",
+        "subtitle": "A MKV player for macOS",
+        "description": "MAKP is a native macOS MKV player, distributed with a public landing page and DMG download.",
+        "category": "macOS",
+        "status": "Open source",
+        "year": "2026",
+        "technologies": [
+          "Swift"
+        ],
+        "highlights": [],
+        "links": {
+          "github": "https://github.com/andyechc/makp-landing",
+          "live": "https://andyechc.github.io/makp-landing/"
+        },
+        "media": {
+          "cover": "/projects/makp/cover.png",
+          "images": []
+        },
+        "featured": true
+      },
+      {
+        "id": "downgram-desktop",
+        "number": "05",
+        "title": "Downgram Desktop",
+        "subtitle": "Telegram media downloader for desktop",
+        "description": "A desktop app to download multimedia content from Telegram channels, groups and bots.",
+        "category": "Desktop",
+        "status": "Open source",
+        "year": "2026",
+        "technologies": [
+          "Kotlin"
+        ],
+        "highlights": [],
+        "links": {
+          "github": "https://github.com/andyechc/downgram-desktop"
+        },
+        "media": {
+          "cover": "/projects/downgram-desktop/cover.png",
+          "images": []
+        },
+        "featured": false
+      },
+      {
+        "id": "patrona",
+        "number": "06",
+        "title": "Patrona",
+        "subtitle": "Accounting management system",
+        "description": "An accounting management system for the La Patrona startup.",
+        "category": "Product",
+        "status": "Open source",
+        "year": "2025",
+        "technologies": [
+          "TypeScript"
+        ],
+        "highlights": [],
+        "links": {
+          "github": "https://github.com/andyechc/patrona-management"
+        },
+        "media": {
+          "cover": "/projects/patrona/cover.png",
+          "images": []
+        },
+        "featured": false
+      },
+      {
+        "id": "youtube-downloader",
+        "number": "07",
+        "title": "YouTube Downloader",
+        "subtitle": "Download YouTube videos in your browser",
+        "description": "Paste a YouTube link and download in your browser. Serverless static web plus a Python CLI powered by yt-dlp.",
+        "category": "Tooling",
+        "status": "Open source",
+        "year": "2026",
+        "technologies": [
+          "Python"
+        ],
+        "highlights": [],
+        "links": {
+          "github": "https://github.com/andyechc/youtube-downloader"
+        },
+        "media": {
+          "cover": "/projects/youtube-downloader/cover.png",
+          "images": []
+        },
+        "featured": false
+      }
+    ]
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "Where I've worked.",
+    "items": [
+      {
+        "id": "current",
+        "period": "2025 — Present",
+        "company": "",
+        "role": "Software Developer",
+        "description": "Developing cross-platform applications with Kotlin Multiplatform and Kotlin, with a focus on security, communication and user experience.",
+        "highlights": [
+          "Kotlin Multiplatform development",
+          "Android and iOS applications",
+          "Encryption and security-sensitive flows",
+          "JSON-RPC communication",
+          "Bidirectional communication",
+          "Payment integrations"
+        ]
+      },
+      {
+        "id": "shirkasoft",
+        "period": "2022 — 2024",
+        "company": "Shirkasoft",
+        "role": "Full Stack Developer",
+        "description": "Built and maintained complex web applications from initial design through deployment.",
+        "highlights": [
+          "REST API development",
+          "Database architecture",
+          "React and Next.js applications",
+          "MongoDB systems",
+          "Business management platforms",
+          "Document and data management workflows"
+        ]
+      },
+      {
+        "id": "freelance",
+        "period": "2021 — 2022",
+        "company": "Freelance",
+        "role": "Web Developer",
+        "description": "Developed landing pages, web applications and utilities for different clients.",
+        "highlights": [
+          "Frontend development",
+          "Responsive interfaces",
+          "React applications",
+          "Client-focused delivery"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "Beyond the code",
+    "title": "Curious by default.",
+    "paragraphs": [
+      "I'm a software developer who enjoys understanding how things work and turning that understanding into useful software.",
+      "I care about interfaces, architecture and the small details that make a product feel finished.",
+      "When I'm not working on a product, I like building experiments simply because I want to know if I can."
+    ],
+    "principles": [
+      {
+        "title": "Keep it simple",
+        "description": "Complex problems don't always need complicated interfaces."
+      },
+      {
+        "title": "Build to learn",
+        "description": "The fastest way to understand an idea is often to build it."
+      },
+      {
+        "title": "Details matter",
+        "description": "Small interactions can completely change how software feels."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Have an idea?",
+    "title": "Let's build something.",
+    "description": "I'm always interested in interesting products, technical challenges and collaborations.",
+    "email": "andyechc@gmail.com",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send message"
+    },
+    "formspree": {
+      "endpoint": "https://formspree.io/f/xnjbendl"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 andyechc",
+    "message": "Built with curiosity."
+  },
+  "seo": {
+    "title": "andyechc — Software Developer",
+    "description": "Portfolio of andyechc, a software developer building products across web, backend and mobile.",
+    "keywords": [
+      "software developer",
+      "web developer",
+      "Kotlin Multiplatform",
+      "React",
+      "Svelte",
+      "TypeScript"
+    ],
+    "image": "/og-image.jpg"
+  }
+}
