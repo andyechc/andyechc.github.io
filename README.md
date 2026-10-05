@@ -1,196 +1,82 @@
-# Portafolio Minimalista con SvelteKit
+# andyechc — Portfolio
 
-Un portafolio web minimalista y moderno construido con SvelteKit + Tailwind CSS v4, que obtiene toda su información desde un archivo JSON. La arquitectura está diseñada para que puedas actualizar el contenido simplemente modificando el archivo JSON.
+Personal portfolio. Interactive editorial / digital magazine, not a generic dev template.
 
-## 🚀 Características
+Live: https://andyechc.github.io
+Custom domain (in progress): https://andyechc.is-a.dev
 
-- **Minimalista**: Diseño limpio y enfocado en el contenido
-- **JSON-Driven**: Todo el contenido se gestiona desde un archivo JSON
-- **Responsive**: Adaptado para todos los dispositivos
-- **Animaciones Smooth**: Transiciones suaves y elegantes
-- **SEO Optimizado**: Meta tags optimizados para motores de búsqueda
-- **Performance**: Construido con SvelteKit + prerender estático para máxima velocidad
-- **Deploy**: Sitio estático listo para GitHub Pages (`adapter-static` → `build/`)
+## Stack
 
-## 📁 Estructura del Proyecto
+- SvelteKit + Svelte 5 (runes) + TypeScript
+- Tailwind CSS v4 (`@theme` tokens in `src/app.css`)
+- `adapter-static` → prerendered site in `build/`
+- Content as data: `src/lib/data/portfolio.json` is the single source of truth
+- Deployed with GitHub Actions to GitHub Pages (user site, no base path)
+
+## Structure
 
 ```
-static/                        # Assets públicos (avatar, proyectos, og-image, logo)
+static/
+  CNAME                  # custom domain (copied to build/)
+  profile.webp, og-image.jpg, logo.svg
+  projects/*/cover.png
 src/
-├── app.html                   # Template HTML (lang="es", CDNs, verificación Google)
-├── app.css                    # Estilos globales + Tailwind v4 (@theme accent)
-├── app.d.ts                   # Tipos de SvelteKit
-├── lib/
-│   ├── data/
-│   │   └── portfolio.json     # Todo el contenido del portafolio
-│   └── components/
-│       ├── Header.svelte      # Navegación fija + menú móvil
-│       ├── Hero.svelte        # Sección principal
-│       ├── About.svelte       # Sobre mí
-│       ├── Technologies.svelte# Tecnologías y habilidades
-│       ├── Experience.svelte  # Timeline de experiencia
-│       ├── Projects.svelte    # Proyectos destacados + otros
-│       └── Contact.svelte     # Formulario de contacto (Formspree)
-└── routes/
-    ├── +layout.ts             # prerender = true
-    ├── +layout.svelte         # SEO desde JSON + contenedor
-    └── +page.svelte           # Página principal
+  app.html               # lang, fonts, theme-color, search verification
+  app.css                # tokens, base, editorial styles
+  routes/
+    +layout.ts           # prerender = true
+    +layout.svelte       # SEO from JSON (canonical, OG, Twitter)
+    +page.svelte         # Hero / Work / Experience / About / Contact
+    work/[slug]/+page.svelte  # project case study
+  lib/
+    data/portfolio.json
+    components/
+      layout/            # SiteNav, SiteFooter, MobileTabs, SectionHeading
+      hero/              # Hero, Introduction, Typewriter
+      work/              # FeaturedProject, WorkIndex, SecondaryProject
+      experience/        # ExperienceList
+      about/             # AboutSection
+      contact/           # ContactClosing
+      ui/                # CustomCursor, ReadingProgress
 ```
 
-## ⚙️ Personalización
+Page flow: Hero → Introduction → Selected Work → Experience → About → Contact → Footer.
 
-### 1. Editar Información Personal
+## Content editing
 
-Abre `src/lib/data/portfolio.json` y actualiza la sección `personal`:
+Everything lives in `src/lib/data/portfolio.json`:
 
-```json
-{
-  "personal": {
-    "name": "Tu Nombre",
-    "title": "Desarrollador Web",
-    "description": "Tu descripción profesional",
-    "email": "tu-email@example.com",
-    "location": "Ciudad, País",
-    "avatar": "/avatar.jpg",
-    "social": [
-      { "name": "github", "url": "https://github.com/tu-usuario", "icon": "devicon-github-original" }
-    ]
-  }
-}
-```
+- `site`, `navigation`, `social`, `hero`, `introduction`
+- `work.projects[]` (`id`, `number`, `title`, `subtitle`, `category`, `technologies[]`, `links`, `media.cover`, `featured`)
+- `experience[]`, `about`, `contact`, `footer`
+- `seo` (`title`, `description`, `url`, `keywords[]`, `image` — absolute URL for OG)
 
-### 2. Actualizar Proyectos
+Components must not hardcode project copy. No invented clients, metrics, or outcomes.
 
-Modifica la sección `projects` para mostrar tus proyectos:
-
-```json
-{
-  "projects": [
-    {
-      "id": 1,
-      "title": "Nombre del Proyecto",
-      "description": "Descripción del proyecto",
-      "image": "/projects/project1.jpg",
-      "technologies": ["React", "TypeScript", "Tailwind"],
-      "liveUrl": "https://proyecto-demo.com",
-      "githubUrl": "https://github.com/tu-usuario/proyecto",
-      "featured": true
-    }
-  ]
-}
-```
-
-### 3. Configurar Tecnologías
-
-Actualiza la sección `technologies` con tus habilidades:
-
-```json
-{
-  "technologies": {
-    "categories": [
-      {
-        "name": "Frontend",
-        "items": [{ "name": "React", "icon": "devicon-react-original" }]
-      }
-    ]
-  }
-}
-```
-
-### 4. Personalizar Colores y Estilos
-
-- Color accent: `src/app.css` → `@theme { --color-accent: #fb923c; }`
-- Estilos globales y animaciones: `src/app.css`
-- Estilos del glow de experiencia: `src/lib/components/Experience.svelte` (`<style>`)
-
-## 🖼️ Assets
-
-Agrega tus imágenes en la carpeta `static/`:
-
-- `static/profile.png` - Tu foto de perfil
-- `static/projects/` - Imágenes de los proyectos
-- `static/og-image.jpg` - Imagen para redes sociales
-
-## 🚀 Desarrollo
-
-### Instalación
+## Local development
 
 ```bash
 npm install
-```
-
-### Desarrollo
-
-```bash
 npm run dev
-```
-
-### Verificación de tipos
-
-```bash
 npm run check
-```
-
-### Build (sitio estático en `build/`)
-
-```bash
 npm run build
-```
-
-### Preview
-
-```bash
 npm run preview
 ```
 
-## 📱 Secciones del Portafolio
+## Deploy / domain
 
-1. **Hero**: Presentación principal con tu información
-2. **About**: Detalles sobre ti y tus habilidades
-3. **Technologies**: Tus tecnologías organizadas por categorías
-4. **Experience**: Timeline de experiencia
-5. **Projects**: Galería de proyectos con destacados
-6. **Contact**: Formulario de contacto (Formspree)
+Workflow `.github/workflows/deploy.yml` runs `npm ci && npm run build` on push to `main` and publishes `build/` via `actions/deploy-pages`.
 
-## 🎨 Diseño y Animaciones
+Custom domain:
 
-El portafolio incluye:
+1. `static/CNAME` contains `andyechc.is-a.dev` (persists across deploys)
+2. `is-a.dev` record: `domains/andyechc.json` in `is-a-dev/register` → `CNAME: andyechc.github.io` — PR: https://github.com/is-a-dev/register/pull/55229
+3. After merge: repo `Settings > Pages > Custom domain = andyechc.is-a.dev` + `Enforce HTTPS`
 
-- **Scroll suave** entre secciones
-- **Animaciones de entrada** para elementos
-- **Hover effects** interactivos (incluye glow que sigue el cursor en Experiencia)
-- **Transiciones suaves** en todos los elementos
-- **Header fijo** con efecto de scroll + marca que aparece al salir del hero
+## Design notes
 
-## 🔧 Configuración Adicional
-
-### Meta Tags SEO
-
-Los meta tags se configuran automáticamente desde el JSON en la sección `seo` (vía `<svelte:head>` en `src/routes/+layout.svelte`):
-
-```json
-{
-  "seo": {
-    "title": "Tu Nombre - Desarrollador Web",
-    "description": "Descripción para motores de búsqueda",
-    "keywords": ["desarrollador", "frontend", "react"],
-    "image": "/og-image.jpg"
-  }
-}
-```
-
-### Formulario de Contacto
-
-El formulario envía vía POST al endpoint de Formspree definido en `portfolio.json` → `contact.formspree.endpoint`.
-
-### Deploy en GitHub Pages
-
-El workflow `.github/workflows/deploy.yml` hace `npm ci && npm run build` y publica `build/` con `adapter-static`. Al ser sitio de usuario (`andyechc.github.io`), no se usa `base path`.
-
-## 📄 Licencia
-
-Este proyecto está bajo licencia MIT. Siéntete libre de usarlo para tus proyectos.
-
----
-
-**Construido con ❤️ usando [SvelteKit](https://kit.svelte.dev) (migrado desde Astro)**
+- Dark editorial palette: ink `#0a0a0a`, paper `#f2f0ea`, muted `#9a9891`, accent `#346c6e`
+- Display: Instrument Serif / UI: Inter / Strong: Space Grotesk
+- Motion in layers (micro 100–250ms, interface 300–600ms, cinematic 700–1400ms), CSS + Svelte first, no GSAP by default
+- Accessibility: semantic HTML, keyboard nav, visible focus, `prefers-reduced-motion` disables parallax / cursor / 3D pointer
+- Performance targets: LCP < 2.5s, CLS < 0.1, INP < 200ms; transform/opacity animations, lazy non-critical images
