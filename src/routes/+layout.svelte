@@ -16,6 +16,8 @@
 	<title>{seo.title}</title>
 	<meta name="description" content={seo.description} />
 	<meta name="keywords" content={seo.keywords.join(', ')} />
+	<link rel="canonical" href={seo.url} />
+	<meta property="og:url" content={seo.url} />
 	<meta property="og:title" content={seo.title} />
 	<meta property="og:description" content={seo.description} />
 	<meta property="og:image" content={seo.image} />

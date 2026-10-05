@@ -331,6 +331,7 @@
   "seo": {
     "title": "andyechc — Software Developer",
     "description": "Portfolio of andyechc, a software developer building products across web, backend and mobile.",
+    "url": "https://andyechc.is-a.dev",
     "keywords": [
       "software developer",
       "web developer",
@@ -339,6 +340,6 @@
       "Svelte",
       "TypeScript"
     ],
-    "image": "/og-image.jpg"
+    "image": "https://andyechc.is-a.dev/og-image.jpg"
   }
 }
