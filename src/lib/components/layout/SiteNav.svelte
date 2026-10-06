@@ -55,8 +55,8 @@
 		aria-label="Primary"
 	>
 		<div class="flex h-14 items-center justify-between px-5 sm:px-6">
-			<a href="{homePath}#top" class="font-display text-2xl leading-none tracking-wide" aria-label="{siteName} — home">
-				ae<span class="text-accent">.</span>
+			<a href="{homePath}#top" class="inline-flex items-center" aria-label="{siteName} — home">
+				<img src="/logo.svg" alt="" width="34" height="34" class="h-8 w-8" />
 				<span class="sr-only">{siteName}</span>
 			</a>
 

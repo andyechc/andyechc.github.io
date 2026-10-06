@@ -176,9 +176,9 @@
 		transform: scale(0.98);
 	}
 
-	/* Square portrait with a double hairline frame detail */
+	/* Round portrait with a double hairline ring detail */
 	.portrait-frame {
-		border-radius: 14px;
+		border-radius: 999px;
 		border: 0.5px solid rgba(242, 240, 234, 0.3);
 		outline: 0.5px solid rgba(242, 240, 234, 0.14);
 		outline-offset: 6px;
@@ -206,35 +206,7 @@ section[id] {
 	scroll-margin-top: 96px;
 }
 
-/* ---------- Scroll reveals (JS-gated: visible without JS) ---------- */
-
-.js .reveal {
-	opacity: 0;
-}
-
-.js .reveal-rise {
-	transform: translateY(28px);
-}
-
-.js .reveal-slide-left {
-	transform: translateX(48px);
-}
-
-.js .reveal-slide-right {
-	transform: translateX(-48px);
-}
-
-.js .reveal-scale {
-	transform: scale(1.06);
-}
-
-.js .reveal.is-inview {
-	opacity: 1;
-	transform: none;
-	transition:
-		opacity 0.8s cubic-bezier(0.22, 0.61, 0.21, 1),
-		transform 0.8s cubic-bezier(0.22, 0.61, 0.21, 1);
-}
+/* ---------- Scroll reveals (GSAP-driven, see lib/effects/reveal.ts) ---------- */
 
 /* ---------- Scroll emphasis for experience entries ---------- */
 

@@ -1,63 +1,75 @@
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 interface ParallaxOptions {
-	/** Translate factor in px at full progress (positive moves down). */
+	/** Translate range in px across the full viewport travel. */
 	speed?: number;
-	/** Fade out while scrolling away (0 = no fade). */
+	/** Fade out toward the edges of the travel (0 = no fade). */
 	fade?: number;
-	/** 0..1 progress source: element's own travel through the viewport. */
 }
 
-const fineMotion =
-	typeof window !== 'undefined' &&
-	window.matchMedia('(pointer: fine)').matches &&
-	!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let registered = false;
+
+function ensureRegistered() {
+	if (!registered && typeof window !== 'undefined') {
+		gsap.registerPlugin(ScrollTrigger);
+		registered = true;
+	}
+}
 
 /**
- * Subtle transform-only parallax driven by the element's viewport travel.
- * Passive scroll listener + rAF, transform/opacity only, desktop pointers only.
+ * Subtle scrubbed parallax tied to the element's viewport travel.
+ * Transform-only (plus optional opacity), desktop pointers only.
  */
 export function parallax(node: HTMLElement, options: ParallaxOptions = {}) {
 	const { speed = 60, fade = 0 } = options;
+	ensureRegistered();
+
+	const fineMotion =
+		window.matchMedia('(pointer: fine)').matches &&
+		!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 	if (!fineMotion) {
 		return {};
 	}
 
-	let raf = 0;
-	let scheduled = false;
+	const ctx = gsap.context(() => {
+		gsap.fromTo(
+			node,
+			{ y: -speed / 2 },
+			{
+				y: speed / 2,
+				ease: 'none',
+				scrollTrigger: {
+					trigger: node,
+					start: 'top bottom',
+					end: 'bottom top',
+					scrub: true
+				}
+			}
+		);
 
-	function update() {
-		scheduled = false;
-		const rect = node.getBoundingClientRect();
-		const viewport = window.innerHeight;
-		// 0 when the element top hits the viewport bottom, 1 when it leaves the top.
-		const total = viewport + rect.height;
-		const progress = Math.min(1, Math.max(0, (viewport - rect.top) / total));
-		const centered = progress - 0.5;
-
-		node.style.transform = `translate3d(0, ${(centered * speed).toFixed(1)}px, 0)`;
 		if (fade > 0) {
-			node.style.opacity = (1 - Math.abs(centered) * 2 * fade).toFixed(3);
+			gsap.fromTo(
+				node,
+				{ opacity: 1 },
+				{
+					opacity: 1 - fade,
+					ease: 'none',
+					scrollTrigger: {
+						trigger: node,
+						start: 'top 30%',
+						end: 'bottom top',
+						scrub: true
+					}
+				}
+			);
 		}
-	}
-
-	function onScroll() {
-		if (!scheduled) {
-			scheduled = true;
-			raf = requestAnimationFrame(update);
-		}
-	}
-
-	update();
-	window.addEventListener('scroll', onScroll, { passive: true });
-	window.addEventListener('resize', onScroll);
+	}, node);
 
 	return {
 		destroy() {
-			cancelAnimationFrame(raf);
-			window.removeEventListener('scroll', onScroll);
-			window.removeEventListener('resize', onScroll);
-			node.style.transform = '';
-			node.style.opacity = '';
+			ctx.revert();
 		}
 	};
 }

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { reveal, type RevealVariant } from '$lib/effects/reveal';
+	import { splitLines } from '$lib/effects/splitLines';
 	import type { Project } from '$lib/data/types';
 
 	interface Props {
@@ -9,7 +10,7 @@
 		imageReveal?: RevealVariant;
 	}
 
-	let { project, flip = false, eager = false, imageReveal = 'scale' }: Props = $props();
+	let { project, flip = false, eager = false, imageReveal = 'clip' }: Props = $props();
 
 	const caseUrl = $derived(`/work/${project.id}`);
 </script>
@@ -47,7 +48,7 @@
 				{project.number}
 			</p>
 
-			<h3 id={`project-${project.id}`} class="display mt-4 text-4xl sm:text-5xl">
+			<h3 id={`project-${project.id}`} class="display mt-4 text-4xl sm:text-5xl" use:splitLines>
 				<a href={caseUrl} class="transition-colors duration-200 hover:text-accent">
 					{project.title}
 				</a>

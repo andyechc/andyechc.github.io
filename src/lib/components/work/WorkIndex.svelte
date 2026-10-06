@@ -17,7 +17,7 @@
 	const featured = $derived(projects.filter((p) => p.featured));
 	const secondary = $derived(projects.filter((p) => !p.featured));
 
-	const imageReveals: RevealVariant[] = ['scale', 'slide-left', 'slide-right'];
+	const imageReveals: RevealVariant[] = ['clip', 'slide-left', 'slide-right'];
 </script>
 
 <section aria-label="Selected work">

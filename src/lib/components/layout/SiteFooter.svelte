@@ -16,7 +16,8 @@
 		class="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-12 sm:px-8 md:flex-row md:items-end md:justify-between"
 	>
 		<div>
-			<p class="font-display text-2xl">{message}</p>
+			<img src="/logo.svg" alt="" width="40" height="40" class="h-10 w-10" />
+			<p class="mt-4 font-display text-2xl">{message}</p>
 			<p class="mt-2 text-sm text-muted">{copyright}</p>
 		</div>
 

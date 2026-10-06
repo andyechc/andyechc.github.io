@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import gsap from 'gsap';
 
 	let dot: HTMLDivElement | undefined = $state();
-	let hovering = $state(false);
-	let shown = $state(false);
 
 	onMount(() => {
 		if (!dot) return;
@@ -15,64 +14,64 @@
 			return;
 		}
 
+		const el = dot;
 		document.documentElement.classList.add('has-custom-cursor');
 
-		let targetX = window.innerWidth / 2;
-		let targetY = window.innerHeight / 2;
-		let x = targetX;
-		let y = targetY;
-		let raf = 0;
-		let visible = false;
+		gsap.set(el, {
+			xPercent: -50,
+			yPercent: -50,
+			x: window.innerWidth / 2,
+			y: window.innerHeight / 2,
+			scale: 1,
+			autoAlpha: 0
+		});
+
+		const xTo = gsap.quickTo(el, 'x', { duration: 0.1, ease: 'power2.out' });
+		const yTo = gsap.quickTo(el, 'y', { duration: 0.1, ease: 'power2.out' });
+
+		let shown = false;
 
 		function onPointerMove(event: PointerEvent) {
-			targetX = event.clientX;
-			targetY = event.clientY;
 			if (!shown) {
 				shown = true;
-				x = targetX;
-				y = targetY;
+				gsap.set(el, { x: event.clientX, y: event.clientY });
+				gsap.to(el, { autoAlpha: 1, duration: 0.25, ease: 'power2.out' });
 			}
+			xTo(event.clientX);
+			yTo(event.clientY);
 		}
 
 		function onPointerOver(event: Event) {
 			const target = event.target as HTMLElement | null;
-			hovering = !!target?.closest('a, button, [data-cursor]');
+			const hot = !!target?.closest('a, button, [data-cursor]');
+			gsap.to(el, {
+				scale: hot ? 1.8 : 1,
+				duration: 0.3,
+				ease: 'power2.out',
+				overwrite: 'auto'
+			});
 		}
 
 		function onPointerLeave() {
 			shown = false;
+			gsap.to(el, { autoAlpha: 0, duration: 0.25, ease: 'power2.in', overwrite: 'auto' });
 		}
 
-		function loop() {
-			x += (targetX - x) * 0.22;
-			y += (targetY - y) * 0.22;
-			dot?.style.setProperty('--cursor-x', `${x.toFixed(1)}px`);
-			dot?.style.setProperty('--cursor-y', `${y.toFixed(1)}px`);
-			raf = requestAnimationFrame(loop);
-		}
-
-		raf = requestAnimationFrame(loop);
 		window.addEventListener('pointermove', onPointerMove, { passive: true });
 		window.addEventListener('pointerover', onPointerOver, { passive: true });
 		document.documentElement.addEventListener('pointerleave', onPointerLeave);
 
 		return () => {
-			cancelAnimationFrame(raf);
 			window.removeEventListener('pointermove', onPointerMove);
 			window.removeEventListener('pointerover', onPointerOver);
 			document.documentElement.removeEventListener('pointerleave', onPointerLeave);
+			gsap.killTweensOf(el);
 			document.documentElement.classList.remove('has-custom-cursor');
 		};
 	});
 </script>
 
-<div
-	bind:this={dot}
-	class="cursor-dot"
-	class:hovering
-	class:shown
-	aria-hidden="true"
-></div>
+<div bind:this={dot} class="cursor-dot" aria-hidden="true"></div>
 
 <style>
 	.cursor-dot {
@@ -87,18 +86,6 @@
 		background: #ffffff;
 		mix-blend-mode: difference;
 		opacity: 0;
-		transform: translate3d(var(--cursor-x, 50vw), var(--cursor-y, 50vh), 0)
-			translate(-50%, -50%) scale(1);
-		transition:
-			opacity 0.25s ease,
-			scale 0.25s ease;
-	}
-
-	.cursor-dot.shown {
-		opacity: 1;
-	}
-
-	.cursor-dot.hovering {
-		scale: 2.4;
+		visibility: hidden;
 	}
 </style>
