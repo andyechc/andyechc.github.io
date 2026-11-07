@@ -107,7 +107,7 @@
           "live": "https://andyechc.is-a.dev/batmonitor/"
         },
         "media": {
-          "cover": "/projects/macmode/cover.png",
+          "cover": "/projects/batmonitor/cover.jpg",
           "images": []
         },
         "featured": true
@@ -140,7 +140,7 @@
           "cover": "/projects/marky/cover.png",
           "images": []
         },
-        "featured": true
+        "featured": false
       },
       {
         "id": "downgram-cli",
@@ -171,7 +171,7 @@
           "cover": "/projects/downgram/cover.png",
           "images": []
         },
-        "featured": true
+        "featured": false
       },
       {
         "id": "macmode",
@@ -202,7 +202,7 @@
           "cover": "/projects/macmode/cover.png",
           "images": []
         },
-        "featured": true
+        "featured": false
       },
       {
         "id": "makp",

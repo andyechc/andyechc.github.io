@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-11-07T20:40:13.659Z",
+  "projects": [
+    {
+      "id": "batmonitor",
+      "title": "BatMonitor",
+      "featured": true,
+      "candidateUrls": [
+        "https://andyechc.is-a.dev/batmonitor/",
+        "https://andyechc.github.io/batmonitor/"
+      ],
+      "pageUrl": "https://andyechc.is-a.dev/batmonitor/",
+      "ogImage": "https://andyechc.is-a.dev/batmonitor/assets/og-image.png",
+      "status": "ok",
+      "error": null,
+      "localCover": "/projects/batmonitor/cover.jpg",
+      "downloaded": false,
+      "downloadReason": "exists"
+    },
+    {
+      "id": "marky",
+      "title": "Marky",
+      "featured": false,
+      "candidateUrls": [
+        "https://andyechc.github.io/marky/",
+        "https://andyechc.is-a.dev/marky/"
+      ],
+      "pageUrl": "https://andyechc.github.io/marky/",
+      "ogImage": null,
+      "status": "fetch-error",
+      "error": "HTTP 404",
+      "localCover": null,
+      "downloaded": false
+    },
+    {
+      "id": "downgram-cli",
+      "title": "DownGram CLI",
+      "featured": false,
+      "candidateUrls": [
+        "https://andyechc.github.io/downgram-cli/",
+        "https://andyechc.is-a.dev/downgram-cli/"
+      ],
+      "pageUrl": "https://andyechc.github.io/downgram-cli/",
+      "ogImage": null,
+      "status": "fetch-error",
+      "error": "HTTP 404",
+      "localCover": null,
+      "downloaded": false
+    },
+    {
+      "id": "macmode",
+      "title": "MacMode",
+      "featured": false,
+      "candidateUrls": [
+        "https://andyechc.github.io/MacMode/",
+        "https://andyechc.is-a.dev/MacMode/"
+      ],
+      "pageUrl": "https://andyechc.is-a.dev/MacMode/",
+      "ogImage": null,
+      "status": "no-og",
+      "error": null,
+      "localCover": null,
+      "downloaded": false
+    },
+    {
+      "id": "makp",
+      "title": "Makp",
+      "featured": true,
+      "candidateUrls": [
+        "https://andyechc.github.io/makp-landing/",
+        "https://andyechc.is-a.dev/makp-landing/"
+      ],
+      "pageUrl": "https://andyechc.is-a.dev/makp-landing/",
+      "ogImage": "https://andyechc.github.io/makp-landing/assets/og.png",
+      "status": "ok",
+      "error": null,
+      "localCover": "/projects/makp/cover.png",
+      "downloaded": false,
+      "downloadReason": "exists"
+    },
+    {
+      "id": "downgram-desktop",
+      "title": "Downgram Desktop",
+      "featured": false,
+      "candidateUrls": [
+        "https://andyechc.github.io/downgram-desktop/",
+        "https://andyechc.is-a.dev/downgram-desktop/"
+      ],
+      "pageUrl": "https://andyechc.github.io/downgram-desktop/",
+      "ogImage": null,
+      "status": "fetch-error",
+      "error": "HTTP 404",
+      "localCover": null,
+      "downloaded": false
+    },
+    {
+      "id": "patrona",
+      "title": "Patrona",
+      "featured": false,
+      "candidateUrls": [
+        "https://andyechc.github.io/patrona-management/",
+        "https://andyechc.is-a.dev/patrona-management/"
+      ],
+      "pageUrl": "https://andyechc.github.io/patrona-management/",
+      "ogImage": null,
+      "status": "fetch-error",
+      "error": "HTTP 404",
+      "localCover": null,
+      "downloaded": false
+    },
+    {
+      "id": "youtube-downloader",
+      "title": "YouTube Downloader",
+      "featured": false,
+      "candidateUrls": [
+        "https://andyechc.github.io/youtube-downloader/",
+        "https://andyechc.is-a.dev/youtube-downloader/"
+      ],
+      "pageUrl": "https://andyechc.github.io/youtube-downloader/",
+      "ogImage": null,
+      "status": "fetch-error",
+      "error": "HTTP 404",
+      "localCover": null,
+      "downloaded": false
+    }
+  ]
+}
