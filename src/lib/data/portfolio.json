@@ -79,20 +79,60 @@
     "description": "A selection of products, experiments and tools I've worked on.",
     "projects": [
       {
-        "id": "marky",
+        "id": "batmonitor",
         "number": "01",
+        "title": "BatMonitor",
+        "subtitle": "Your BMS over Bluetooth",
+        "description": "A native iOS and Android app that reads XiaoXiang-compatible BMS batteries over Bluetooth LE, with no account and no cloud. It shows live voltage, current, per-cell voltages, protections, balancing and charging state in a dark or light theme.",
+        "longDescription": "BatMonitor talks directly to the BMS over Bluetooth Low Energy and renders whatever it answers: pack voltage and current, state of charge, remaining and nominal capacity, cycle count, 24 cell voltages with bars, pack imbalance, protections, NTC temperatures and balancing cells. Saved batteries and their last real readings stay on the device, and the app reconnects on its own when the link drops. iOS is built with SwiftUI and Android is a strict Material 3 port in Kotlin with Jetpack Compose; both ship in Spanish and English. Distributed as a signed APK through GitHub Releases, with an in-app update check against a version.json served by GitHub Pages.",
+        "category": "Mobile",
+        "status": "Open source",
+        "year": "2026",
+        "technologies": [
+          "Swift",
+          "SwiftUI",
+          "Kotlin",
+          "Jetpack Compose",
+          "CoreBluetooth",
+          "BLE"
+        ],
+        "highlights": [
+          "Direct BLE connection to XiaoXiang-compatible BMS units, with automatic reconnect on link drops",
+          "Live pack voltage, current, state of charge, capacity, cycle count and 24 per-cell voltages with imbalance",
+          "Protections, NTC temperatures and balancing cells surfaced in dedicated summary, cells and status tabs",
+          "Native SwiftUI on iOS and a strict Material 3 port in Kotlin + Jetpack Compose on Android, both bilingual"
+        ],
+        "links": {
+          "github": "https://github.com/andyechc/batmonitor",
+          "live": "https://andyechc.is-a.dev/batmonitor/"
+        },
+        "media": {
+          "cover": "/projects/macmode/cover.png",
+          "images": []
+        },
+        "featured": true
+      },
+      {
+        "id": "marky",
+        "number": "02",
         "title": "Marky",
-        "subtitle": "A fast, effective Markdown editor",
-        "description": "A fast, effective Markdown editor.",
+        "subtitle": "Browser-based Markdown editor with live preview",
+        "description": "A fast Markdown editor that runs entirely in the browser, with a resizable split preview, formatting toolbar and export to HTML. No server, no accounts and no telemetry: everything stays on your device.",
+        "longDescription": "Marky is a client-side Markdown editor with a real-time preview, resizable and collapsible side panel, line numbers that follow wrapped text, search and replace with regex, a command palette, document outline and recent files. It supports full keyboard shortcuts, drag-and-drop of .md files, undo/redo with its own history and light, dark and sepia themes that respect the system preference. Export is real and self-contained to HTML, plain text or Markdown, with print styles included.",
         "category": "Product",
         "status": "Open source",
         "year": "2023",
         "technologies": [
           "React",
-          "TypeScript",
+          "Vite",
           "Tailwind CSS"
         ],
-        "highlights": [],
+        "highlights": [
+          "Real-time editor and preview with a resizable, collapsible side panel and optional scroll sync",
+          "Full formatting toolbar, search and replace with regex, command palette and navigable document outline",
+          "Light, dark and sepia themes that follow the system preference and apply before first paint",
+          "Self-contained export to HTML, plain text or Markdown, including styles and print rules"
+        ],
         "links": {
           "github": "https://github.com/andyechc/marky"
         },
@@ -104,17 +144,26 @@
       },
       {
         "id": "downgram-cli",
-        "number": "02",
+        "number": "03",
         "title": "DownGram CLI",
-        "subtitle": "Telegram media downloader",
-        "description": "Terminal utility to search and download media from specific Telegram channels.",
+        "subtitle": "Interactive Telegram media downloader for the terminal",
+        "description": "A Python CLI that searches and downloads videos from Telegram channels and groups through interactive menus. It organizes downloads by channel and shows real progress with speed and size.",
+        "longDescription": "DownGram CLI lets you pick multiple channels or groups to build a search pool, browse paginated results and manually select which videos to download. It handles FloodWaitError and other common Telegram errors, keeps a persistent session so no SMS code is needed on every run and lets you choose a custom destination folder through a native picker or a manual path.",
         "category": "Tooling",
         "status": "Open source",
         "year": "2026",
         "technologies": [
-          "Python"
+          "Python",
+          "Telethon",
+          "Rich",
+          "Inquirer"
         ],
-        "highlights": [],
+        "highlights": [
+          "Smart keyword search across multiple selected channels and groups",
+          "Manual selection of results with pagination and multi-select support",
+          "Automatic organization of downloads into per-channel folders",
+          "Persistent Telegram session with FloodWaitError handling and real progress bars"
+        ],
         "links": {
           "github": "https://github.com/andyechc/downgram-cli"
         },
@@ -126,17 +175,26 @@
       },
       {
         "id": "macmode",
-        "number": "03",
+        "number": "04",
         "title": "MacMode",
-        "subtitle": "Native macOS menu bar utility",
-        "description": "Native macOS menu bar utility for switching between development and gaming system profiles.",
+        "subtitle": "Native macOS menu bar utility for system profiles",
+        "description": "A lightweight macOS menu bar agent that switches the Mac between DEV and GAMING profiles in one click. The MVP controls function key behavior through IOKit HID.",
+        "longDescription": "MacMode puts a profile switch one click away in the menu bar instead of digging through System Settings. It models modes and features as a tested domain layer, applies them through isolated controllers and persists the chosen mode across restarts, with explicit errors and OSLog logging. Built with Swift and SwiftUI, using AppKit and IOKit where macOS integration requires it.",
         "category": "macOS",
         "status": "Open source",
         "year": "2026",
         "technologies": [
-          "Swift"
+          "Swift",
+          "SwiftUI",
+          "AppKit",
+          "IOKit"
         ],
-        "highlights": [],
+        "highlights": [
+          "Menu bar agent with DEV and GAMING profiles, per-mode accent colors and a settings window",
+          "Function key behavior controlled through IOKit HID with read-back verification",
+          "Idempotent mode transitions with confirmed-versus-desired state and explicit errors",
+          "Unit-tested domain layer with mocks, plus a custom mode library with persistence"
+        ],
         "links": {
           "github": "https://github.com/andyechc/MacMode"
         },
@@ -148,17 +206,26 @@
       },
       {
         "id": "makp",
-        "number": "04",
+        "number": "05",
         "title": "Makp",
-        "subtitle": "A MKV player for macOS",
-        "description": "MAKP is a native macOS MKV player, distributed with a public landing page and DMG download.",
+        "subtitle": "Native macOS MKV player",
+        "description": "A native macOS MKV player built with SwiftUI and Liquid Glass, with a Finder-style browser, hover preview and a dual AVFoundation/VLC engine. Distributed as a DMG with a public landing page.",
+        "longDescription": "MAKP is a native macOS video player focused on MKV playback, combining a Finder-like browser with hover previews, playlists with resume and a dual engine that falls back between AVFoundation and VLCKit. It targets macOS 26 and uses Liquid Glass styling, and ships as a signed DMG alongside a public landing page.",
         "category": "macOS",
         "status": "Open source",
         "year": "2026",
         "technologies": [
-          "Swift"
+          "Swift",
+          "SwiftUI",
+          "VLCKit",
+          "AVFoundation"
         ],
-        "highlights": [],
+        "highlights": [
+          "Finder-style file browser with hover preview for quick selection",
+          "Dual playback engine combining AVFoundation and VLCKit for broad format support",
+          "Playlists with resume and native macOS 26 Liquid Glass interface",
+          "Distributed as a DMG with a public landing page and download"
+        ],
         "links": {
           "github": "https://github.com/andyechc/makp-landing",
           "live": "https://andyechc.github.io/makp-landing/"
@@ -171,17 +238,26 @@
       },
       {
         "id": "downgram-desktop",
-        "number": "05",
+        "number": "06",
         "title": "Downgram Desktop",
         "subtitle": "Telegram media downloader for desktop",
-        "description": "A desktop app to download multimedia content from Telegram channels, groups and bots.",
+        "description": "A desktop application for downloading multimedia from Telegram channels, groups and bots. Built with Kotlin Multiplatform and Compose, with a native feel on every platform.",
+        "longDescription": "Downgram Desktop brings the DownGram downloading workflow to the desktop as a Kotlin Multiplatform app with a Compose UI, Ktor networking and coroutines. It targets JVM desktop builds and reuses the same download and organization logic across platforms.",
         "category": "Desktop",
         "status": "Open source",
         "year": "2026",
         "technologies": [
-          "Kotlin"
+          "Kotlin",
+          "Compose Multiplatform",
+          "Ktor",
+          "Coroutines"
         ],
-        "highlights": [],
+        "highlights": [
+          "Kotlin Multiplatform desktop app with a Compose Multiplatform interface",
+          "Downloads media from Telegram channels, groups and bots",
+          "Ktor-based networking and coroutine-driven concurrency",
+          "Native desktop packaging for macOS and Windows"
+        ],
         "links": {
           "github": "https://github.com/andyechc/downgram-desktop"
         },
@@ -193,17 +269,26 @@
       },
       {
         "id": "patrona",
-        "number": "06",
+        "number": "07",
         "title": "Patrona",
-        "subtitle": "Accounting management system",
-        "description": "An accounting management system for the La Patrona startup.",
+        "subtitle": "Accounting management system for startups",
+        "description": "An accounting management system built for the La Patrona startup, with invoicing, balances and financial dashboards. Full-stack on Next.js with MongoDB.",
+        "longDescription": "Patrona is a modern accounting platform for startups, covering income, expenses, invoicing and balances with an interactive financial dashboard and report generation. It is built as a full-stack Next.js app with Tailwind CSS, shadcn/ui components, MongoDB Atlas and Mongoose, written in TypeScript.",
         "category": "Product",
         "status": "Open source",
         "year": "2025",
         "technologies": [
-          "TypeScript"
+          "TypeScript",
+          "Next.js",
+          "Tailwind CSS",
+          "MongoDB"
         ],
-        "highlights": [],
+        "highlights": [
+          "Integral accounting: income, expenses, invoicing and balances",
+          "Interactive dashboard with real-time financial metrics",
+          "Report generation including balance sheet, income statement and cash flow",
+          "Customizable templates adaptable to different business models"
+        ],
         "links": {
           "github": "https://github.com/andyechc/patrona-management"
         },
@@ -215,17 +300,25 @@
       },
       {
         "id": "youtube-downloader",
-        "number": "07",
+        "number": "08",
         "title": "YouTube Downloader",
-        "subtitle": "Download YouTube videos in your browser",
-        "description": "Paste a YouTube link and download in your browser. Serverless static web plus a Python CLI powered by yt-dlp.",
+        "subtitle": "Download YouTube videos in your browser or terminal",
+        "description": "Paste a YouTube link and download it in your browser, with a Python CLI powered by yt-dlp for maximum quality. No accounts or ads, fully local.",
+        "longDescription": "YouTube Downloader ships a local web app and a Python CLI sharing the same quality logic: the browser path downloads MP4 up to 1080p, while running the local server unlocks maximum quality, MP3 audio and full playlists. The CLI ships as a single binary and handles 4K merge, playlists and MP3 320kbps via ffmpeg.",
         "category": "Tooling",
         "status": "Open source",
         "year": "2026",
         "technologies": [
-          "Python"
+          "Python",
+          "yt-dlp",
+          "JavaScript"
         ],
-        "highlights": [],
+        "highlights": [
+          "Browser-based download with real progress, speed and size indicators",
+          "Local server mode unlocking maximum quality, MP3 audio and full playlists",
+          "Python CLI shipped as a single binary with 4K merge via ffmpeg",
+          "Shared quality logic between the web app and the CLI"
+        ],
         "links": {
           "github": "https://github.com/andyechc/youtube-downloader"
         },
